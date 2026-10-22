@@ -108,14 +108,10 @@ p {
 }
 .brand {
   display: inline-flex;
-  gap: 12px;
   align-items: center;
-  font-weight: 700;
-  font-size: 1.85rem;
-  letter-spacing: -0.04em;
 }
 .brand img {
-  width: 38px;
+  width: auto;
   height: 40px;
   object-fit: contain;
 }
@@ -1014,11 +1010,7 @@ p {
     flex-wrap: wrap;
     padding-block: 14px;
   }
-  .brand {
-    font-size: 1.6rem;
-  }
   .brand img {
-    width: 30px;
     height: 33px;
   }
   .header .main-nav {

@@ -14,12 +14,12 @@ export function Brand({ locale }: LocalizedProps) {
       aria-label={t.common.home}
     >
       <Image
-        src={assetPath("/images/brand/mark.png")}
-        width={40}
-        height={40}
-        alt=""
+        src={assetPath("/images/brand/logo-avyn.webp")}
+        width={420}
+        height={126}
+        alt="Avyn"
+        priority
       />
-      <span>Avyn</span>
     </Link>
   );
 }
