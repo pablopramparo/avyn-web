@@ -7,6 +7,8 @@ import { localizedPath, type LocalizedProps } from "@/i18n/config";
 import styles from "./auren.module.css";
 import { AurenControls } from "./auren-controls";
 import { MicrosoftStoreBadge } from "../microsoft-store-badge";
+import { JsonLd } from "../json-ld";
+import { productData } from "@/config/structured-data";
 
 const icons = ["play", "monitor", "move", "folder", "power", "windows"];
 
@@ -15,6 +17,7 @@ export function AurenPage({ locale }: LocalizedProps) {
   const storeLink = <MicrosoftStoreBadge locale={locale} href={siteConfig.urls.auren} label={t.store} />;
   return (
     <div className={styles.page}>
+      <JsonLd data={productData(locale, "auren")!} />
       <section className={styles.hero}>
         <div className={styles.art}>
           <Image

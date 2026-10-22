@@ -6,6 +6,8 @@ import { assetPath, siteConfig } from "@/config/site";
 import { Icon } from "../icon";
 import { MicrosoftStoreBadge } from "../microsoft-store-badge";
 import { KantorPhoneShowcase } from "./kantor-phone-showcase";
+import { JsonLd } from "../json-ld";
+import { productData } from "@/config/structured-data";
 import styles from "./kantor.module.css";
 
 export function KantorPage({ locale }: LocalizedProps) {
@@ -13,6 +15,7 @@ export function KantorPage({ locale }: LocalizedProps) {
   const storeLink = <MicrosoftStoreBadge locale={locale} href={siteConfig.urls.kantor} label={t.store} />;
   return (
     <div className={styles.page}>
+      <JsonLd data={productData(locale, "kantor")!} />
       <section className={styles.hero}>
         <div className={styles.art}>
           <Image src={assetPath("/images/kantor/hero.webp")} alt={t.heroImageAlt} fill preload sizes="100vw" />

@@ -453,24 +453,24 @@
       "description": "A free Windows player with 4K video, HDR, audio and subtitles your way. Use it on its own or control it with Avyn."
     },
     "home": {
-      "title": "Avyn Remote — Move Windows. Not yourself.",
-      "description": "Your Windows PC from your Android phone. Open apps, move windows, play on your TV and transfer files. Local first, by design."
+      "title": "Control your Windows PC from Android | Avyn Remote",
+      "description": "Avyn Remote: control your Windows PC from your Android phone. Open apps, move windows, play on your TV and transfer files over your local network."
     },
     "security": {
-      "title": "Security",
-      "description": "How Avyn approaches pairing, encrypted connections, device authorization and local control."
+      "title": "Security: encrypted local connection",
+      "description": "How Avyn handles per-device pairing, encrypted connections and local control, with no cloud and no accounts."
     },
     "verify": {
-      "title": "Verify Avyn",
-      "description": "A transparent, in-progress guide to inspecting Avyn network behavior."
+      "title": "Verify Avyn: check its network connections",
+      "description": "A guide to inspect the Avyn Agent's network connections with PowerShell and Windows Firewall, and check for yourself who it talks to."
     },
     "download": {
-      "title": "Download",
-      "description": "Avyn for Android and the Windows Agent. Requirements and release availability."
+      "title": "Download Avyn for Windows and Android",
+      "description": "Get the Avyn Agent for Windows and the Android app. Requirements, availability and how to join the Android closed beta."
     },
     "kantor": {
-      "title": "Kantor — Karaoke for Windows",
-      "description": "Karaoke for Windows with UltraStar songs, multiple players, live scoring and QR guest mode on your local network."
+      "title": "Kantor — Karaoke for Windows with UltraStar songs",
+      "description": "Free karaoke for Windows that works with UltraStar songs: multiple players, live scoring and QR guest mode on your local network."
     }
   },
   "kantor": {

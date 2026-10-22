@@ -453,24 +453,24 @@
       "description": "Un reproductor gratuito para Windows con video 4K, HDR, audio y subtítulos a tu gusto. Usalo por su cuenta o controlalo desde Avyn."
     },
     "home": {
-      "title": "Avyn Remote — Mové ventanas. No te muevas vos.",
-      "description": "Tu PC Windows desde tu teléfono Android. Abrí apps, mové ventanas, reproducí en la TV y transferí archivos. Local desde el diseño."
+      "title": "Controlá tu PC Windows desde Android | Avyn Remote",
+      "description": "Avyn Remote es el control remoto de tu PC Windows desde el teléfono Android: abrí apps, mové ventanas, reproducí en la TV y transferí archivos por tu red local."
     },
     "security": {
-      "title": "Seguridad",
-      "description": "Cómo funcionan la vinculación, las conexiones cifradas, la autorización por dispositivo y el control local en Avyn."
+      "title": "Seguridad: conexión local cifrada",
+      "description": "Cómo funcionan la vinculación por dispositivo, las conexiones cifradas y el control local de Avyn, sin nube y sin cuentas."
     },
     "verify": {
-      "title": "Verificar Avyn",
-      "description": "Una guía transparente, en preparación, para inspeccionar las comunicaciones de red de Avyn."
+      "title": "Verificar Avyn: comprobá sus conexiones de red",
+      "description": "Guía para inspeccionar las conexiones de red del Agent de Avyn con PowerShell y el Firewall de Windows, y comprobar por tu cuenta con quién se comunica."
     },
     "download": {
-      "title": "Descargar",
-      "description": "Avyn para Android y el Agent de Windows. Requisitos y disponibilidad de descargas."
+      "title": "Descargar Avyn para Windows y Android",
+      "description": "Descargá el Agent de Avyn para Windows y la app para Android. Requisitos, disponibilidad y cómo sumarte a la beta cerrada de Android."
     },
     "kantor": {
-      "title": "Kantor — Karaoke para Windows",
-      "description": "Karaoke para Windows con canciones UltraStar, varios jugadores, puntuación en vivo y modo invitados por QR en tu red local."
+      "title": "Kantor — Karaoke para Windows con canciones UltraStar",
+      "description": "Karaoke gratis para Windows compatible con canciones UltraStar: varios jugadores, puntuación en vivo y modo invitados por QR en tu red local."
     }
   },
   "kantor": {

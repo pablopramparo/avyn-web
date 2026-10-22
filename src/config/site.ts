@@ -2,6 +2,8 @@ export const siteConfig = {
   name: "Avyn",
   origin: process.env.NEXT_PUBLIC_SITE_URL || "",
   basePath: process.env.NEXT_PUBLIC_BASE_PATH || "",
+  // Search engines stay blocked until the site is launched: set NEXT_PUBLIC_INDEXING=on.
+  indexing: process.env.NEXT_PUBLIC_INDEXING === "on",
   contactEmail: "avyn.remote@gmail.com",
   urls: {
     auren: "https://apps.microsoft.com/store/detail/9PGX6BJ5B1JL?cid=DevShareMCLPCS",

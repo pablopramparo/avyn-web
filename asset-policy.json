@@ -1,7 +1,12 @@
 {
   "approved": {
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "apple-touch-icon.png": "5c56f2fabd405259afff6fc3c27f1217f976a0d939edb236226fd3f70781937a",
     "CNAME": "1d74954456c280380c8ccb60e0fd8a057e5fcde31c026eb06614f36e9b1a338d",
+    "favicon.ico": "c9166587cfbb999b6e9c19cfbf8e812d549b858bf79d6a577f0d392bdc91cc67",
+    "icon-192.png": "3251d70e47c47b2b163b8cb00f3f8039a368837b482a2d54af852e2afb4a1d8c",
+    "icon-512.png": "8fd3ea31462f9bf230bd3ff9e6235852858392b197e8a150c348bf88a437b90f",
+    "icon-maskable-512.png": "b56673bf03f16cef2892aa7dc4741d9df43b1713a7989ae018fffa83aec2ef7f",
     "images/brand/auren-en-1.webp": "a97975b144f6adac903be86415bffcd34dedb0fc16f4a6bfab4086d92e0ceaec",
     "images/brand/auren-en-2.webp": "f6afe5c2ef83485142bcfc1dc99b0e7f36bd2d445ea58bc69a3bf50cd36aea3a",
     "images/brand/auren-es-1.webp": "65708a6a1157a97fa39ecb9911fc689de28976149c4eb63c93c53b33c701eb50",
@@ -44,6 +49,12 @@
     "images/kantor/hero.webp": "64eb69e1f693bd3df76c68e2c2d16659cd907ddec477f3f0c6a6d1f62ddcdf9d",
     "images/kantor/logo.webp": "ef399fd007bd939a570bc754a4252125c49aa05f57a75042cdb8b82941b07884",
     "images/kantor/ultrasongs-logo.webp": "abfb492e6ce4829eb9f6e3e7ccb5259f0b85193fa83d3a6d2f6fb68ef7b87b45",
+    "images/og/auren-en.jpg": "6484b2adbc7648477c1c275df058acc78b4c39e157735a07a797ad17c2a71d73",
+    "images/og/auren.jpg": "14a5f6fa5fb80d02a43d19e3c127122e706a82e57175736e5c2fd23d15a111bb",
+    "images/og/home-en.jpg": "eaf3096348c25891dff208514f2988c1b01998a0174f5f3a85ca4f34e243f6ff",
+    "images/og/home-es.jpg": "efbfdbb4254bece927493e1e95b1704ab7d439403e53da92db061a1e27a7e21b",
+    "images/og/kantor-en.jpg": "4b92fda3ab5d6c601551a0747b9a4592cc13605b7ae94c3bcb358c71ff6c9118",
+    "images/og/kantor.jpg": "42639fe308e195d7bd7aef5e5698bb0ac370987191a8113835c4cfcb6128b600",
     "images/product/en/control.webp": "daacb3daac9bcc773652e911c18ccfbc00310d3bbbe1e78b099fd80a54fc8327",
     "images/product/en/files.webp": "143a48f75497ae471b9f2320b7a064d5794c789fbb4edf18a3484393200e4969",
     "images/product/en/power.webp": "eb767cfea21e88f79c9b197944560ef24c65b2dbb98a255add91fb0f6c59112c",
@@ -57,6 +68,7 @@
     "images/product/es/programs.webp": "dbfbb0f5885c3f1cc5d2154857d0a3d6a5e113e84719023de9840601d70aef4e",
     "images/product/es/subtitles.webp": "91c7bb0ad4e62898b807ea8fdb019ab039d1040d13c48c1de67003f6bcb2be0a",
     "images/product/es/touchpad.webp": "ac138845048ec1f277aaa7cead96ec10d9abe7d294c42d8c90a90714c460a66c",
-    "images/product/es/windows.webp": "ac3dabe0b4c2dee35ebe8761f7d7e51542f40acc6c86f4f9b06bc06c8f6fa868"
+    "images/product/es/windows.webp": "ac3dabe0b4c2dee35ebe8761f7d7e51542f40acc6c86f4f9b06bc06c8f6fa868",
+    "site.webmanifest": "c355763e8c1466ea3f30e83a71bdabcc070fa383729a7c98e1b0c46b1a40dab6"
   }
 }
