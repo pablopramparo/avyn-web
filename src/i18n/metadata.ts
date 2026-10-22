@@ -34,7 +34,7 @@ export function pageMetadata(locale: Locale, page: PageName): Metadata {
       title: copy.title,
       description: copy.description,
       type: "website",
-      siteName: "Avyn",
+      siteName: "Avyn Remote",
       images: [image],
       locale: locale === "es" ? "es_AR" : "en_US",
       alternateLocale: locale === "es" ? "en_US" : "es_AR",

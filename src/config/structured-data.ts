@@ -15,14 +15,14 @@ export function siteData(locale: Locale) {
       {
         "@type": "Organization",
         "@id": (canonical("/") ?? "") + "#organization",
-        name: "Avyn",
+        name: "Avyn Remote",
         ...(canonical("/") ? { url: canonical("/") } : {}),
         logo: logo(),
       },
       {
         "@type": "WebSite",
         "@id": (canonical("/") ?? "") + "#website",
-        name: "Avyn",
+        name: "Avyn Remote",
         inLanguage: locale,
         ...(url ? { url } : {}),
         description: copy.description,
