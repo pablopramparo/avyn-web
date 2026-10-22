@@ -1,0 +1,548 @@
+{
+  "common": {
+    "slogan": "MOVE WINDOWS. NOT YOURSELF.",
+    "home": "Avyn home",
+    "skip": "Skip to content",
+    "windows": "Download for Windows",
+    "android": "Get it on Google Play",
+    "releasePending": "Download link coming soon",
+    "releaseDetails": "Release details will appear here when available.",
+    "verify": "Verify Avyn",
+    "trust": "Don’t trust us. Verify it."
+  },
+  "nav": {
+    "main": "Main navigation",
+    "footer": "Footer navigation",
+    "features": "Features",
+    "how": "How it works",
+    "security": "Security",
+    "download": "Download",
+    "get": "Get Avyn",
+    "requirements": "Requirements",
+    "soon": "soon",
+    "language": "Language",
+    "footerNote": "Android + Windows. A little less getting up.",
+    "kantor": "Kantor"
+  },
+  "hero": {
+    "title": "Your Windows PC.",
+    "from": "From your",
+    "phone": "Android phone.",
+    "description": "Turn it on. Unlock it. Open apps. Move windows. Play on your TV. Transfer files.",
+    "comfort": "Without leaving the couch.",
+    "local": "Local first",
+    "secure": "Secure by design",
+    "account": "No account required",
+    "caption": "YOUR PHONE. YOUR PC. YOUR SPACE.",
+    "localDetail": "No cloud for everyday control",
+    "secureDetail": "Encrypted and paired",
+    "simple": "Powerful yet simple",
+    "simpleDetail": "Real control, not remote desktop"
+  },
+  "actions": {
+    "eyebrow": "LESS DISTANCE. MORE CONTROL.",
+    "title": "Your PC. From here.",
+    "items": [
+      {
+        "title": "Wake & Unlock",
+        "text": "Wake your PC and unlock Windows from your phone."
+      },
+      {
+        "title": "Open Apps",
+        "text": "Your favorite applications, ready with a tap."
+      },
+      {
+        "title": "Move Windows",
+        "text": "Organize your windows and send them to the right screen."
+      },
+      {
+        "title": "Play on TV",
+        "text": "Move a window to your TV and enjoy it in fullscreen."
+      },
+      {
+        "title": "Transfer Files",
+        "text": "Browse, upload and download files between your devices."
+      }
+    ]
+  },
+  "everyday": {
+    "eyebrow": "STAY COMFORTABLE",
+    "title": "Don’t get up just to do this.",
+    "description": "The little things that interrupt a good moment.",
+    "cards": [
+      {
+        "title": "Take control",
+        "text": "Mouse, keyboard and media controls. Your PC, within reach."
+      },
+      {
+        "title": "Manage your windows",
+        "text": "Find open windows. Move, minimize or maximize them."
+      },
+      {
+        "title": "Play on TV",
+        "text": "Send Auren or a window to your TV. Avyn coordinates the steps for your setup."
+      }
+    ],
+    "note": "Real Avyn screenshots in demo mode.",
+    "details": [
+      {
+        "title": "Browse your files",
+        "text": "Find and open files on your PC. Upload or download them."
+      },
+      {
+        "title": "Launch applications",
+        "text": "Your programs and favorites, without reaching for the mouse."
+      },
+      {
+        "title": "Power & displays",
+        "text": "Lock, sleep, restart or shut down your PC. Control your displays."
+      },
+      {
+        "title": "Subtitles & audio",
+        "text": "Choose tracks and fine-tune timing in Auren."
+      }
+    ],
+    "openScreenshot": "View larger screenshot",
+    "closeScreenshot": "Close enlarged screenshot",
+    "carouselLabel": "More Avyn screenshots",
+    "carouselDescription": "carousel",
+    "carouselPrevious": "Previous screenshot",
+    "carouselNext": "Next screenshot",
+    "carouselPosition": "Screenshot {current} of {total}"
+  },
+  "intent": {
+    "eyebrow": "ONE INTENTION. EVERYTHING IN PLACE.",
+    "title": "Tell your PC",
+    "want": "what you want.",
+    "how": "Not how to do it.",
+    "lead": "One intention. Several actions coordinated by Avyn.",
+    "text": "Ask to play on your TV and Avyn organizes the steps that are available.",
+    "note": "Available actions depend on your TV, displays and setup.",
+    "action": "Play on TV",
+    "one": "Your intention",
+    "sequenceLabel": "Actions coordinated by Avyn",
+    "steps": [
+      "Activate the display",
+      "Move the window to the TV",
+      "Expand to fullscreen",
+      "Arrange other displays"
+    ],
+    "caption": "Your PC handles the steps. You keep the couch."
+  },
+  "groups": [
+    {
+      "label": "CONTROL",
+      "title": "A PC at your fingertips.",
+      "text": "Touchpad and keyboard when you need them. Direct actions for the things you do every day.",
+      "items": [
+        "Touchpad & keyboard",
+        "Windows & apps",
+        "Media & volume"
+      ]
+    },
+    {
+      "label": "MOVE",
+      "title": "Less emailing yourself.",
+      "text": "Send a file from your phone. Share straight from Android. Keep your devices working together.",
+      "items": [
+        "File transfers",
+        "Android Share",
+        "Uploads & downloads"
+      ]
+    },
+    {
+      "label": "POWER",
+      "title": "From wake-up to lights-out.",
+      "text": "Wake your PC, lock it, or call it a night. Bring your displays into the same routine.",
+      "items": [
+        "Wake-on-LAN",
+        "Lock & opt-in unlock",
+        "Sleep, restart & displays"
+      ]
+    }
+  ],
+  "how": {
+    "eyebrow": "TWO DEVICES. ONE SIMPLE CONNECTION.",
+    "title": "Set up. Sit back.",
+    "text": "The PC is the remote device. Your phone is its interface.",
+    "detail": "Actions, not screen streaming.",
+    "steps": [
+      {
+        "title": "Install on both devices.",
+        "text": "Avyn on Android. The Avyn Agent on your Windows PC."
+      },
+      {
+        "title": "Pair on your local network.",
+        "text": "Explicitly connect your phone and PC. You choose which devices get access."
+      },
+      {
+        "title": "Make yourself comfortable.",
+        "text": "Your phone is the interface. Your PC does the work."
+      }
+    ]
+  },
+  "local": {
+    "diagram": "Phone and Windows PC communicate over your local network",
+    "network": "Your local network",
+    "eyebrow": "YOUR DEVICES. YOUR CONNECTION.",
+    "title": "Local first. By design.",
+    "text": "Your phone talks directly to your PC over your local network. No Avyn account. No Avyn cloud required for everyday control.",
+    "security": "Explore security",
+    "verifyText": "See what to inspect, what to test, and what still needs documenting.",
+    "titleLead": "Local first.",
+    "titleAccent": "By design.",
+    "noCloud": "No Avyn cloud",
+    "encrypted": "Encrypted & authenticated",
+    "benefits": [
+      {
+        "title": "No Avyn account",
+        "text": "Just your devices"
+      },
+      {
+        "title": "No cloud required",
+        "text": "Stays on your network"
+      },
+      {
+        "title": "Encrypted & paired",
+        "text": "Only your devices"
+      }
+    ]
+  },
+  "integrations": {
+    "eyebrow": "GO A LITTLE DEEPER",
+    "title": "Movie night.",
+    "subtitle": "Fine-tuned.",
+    "text": "Control subtitles, audio tracks and timing from your phone. Without leaving the couch.",
+    "free": "Auren Player is free.",
+    "aurenStore": "Get it from Microsoft Store",
+    "aurenDetails": "Discover Auren Player",
+    "captureAlt": "Auren Player playing a movie on Windows",
+    "included": "Its full Avyn integration is free, too.",
+    "browserEyebrow": "CHROME + EDGE",
+    "browserTitle": "Your browser. Your remote.",
+    "browserText": "Control videos playing in Chrome and Edge, right from your phone.",
+    "browserNote": "Install the extension in your PC browser and use it with Avyn Agent."
+  },
+  "editions": {
+    "eyebrow": "USEFUL FROM THE START",
+    "title": "Free for the essentials.",
+    "subtitle": "No fine print.",
+    "text": "Control your PC from Android, securely and without relying on the cloud.",
+    "benefits": [
+      "No ads",
+      "No subscriptions",
+      "No Avyn account required",
+      "Free Auren integration"
+    ],
+    "note": "Later, Avyn may offer advanced features through a one-time purchase. Features and terms are still being defined.",
+    "freeSummary": "Everyday control, full security and Auren integration.",
+    "premiumSummary": "Advanced capabilities. Planned as a one-time purchase."
+  },
+  "cta": {
+    "eyebrow": "MAKE YOURSELF COMFORTABLE",
+    "title": "Your PC is over there.",
+    "subtitle": "You’re good right here.",
+    "detail": "Avyn for Android + Avyn Agent for Windows"
+  },
+  "images": {
+    "windows": "Avyn Android: windows and connected displays",
+    "files": "Avyn Android: file browser",
+    "power": "Avyn Android: PC power and display controls",
+    "subtitles": "Avyn Android: Auren subtitle controls",
+    "agent": "Avyn Windows Agent",
+    "agentTitle": "Avyn for Windows",
+    "agentPending": "Agent screenshot coming soon",
+    "agentNote": "Preview space · not the Agent interface",
+    "control": "Avyn Android: media controls in demo mode",
+    "touchpad": "Avyn Android: touchpad and keyboard in demo mode",
+    "programs": "Avyn Android: programs and favorites in demo mode",
+    "heroPhone": "Android phone running Avyn"
+  },
+  "security": {
+    "eyebrow": "SECURITY, WITHOUT THE MYSTERY",
+    "title": "Your PC. Your permission.",
+    "intro": "Clear connections. Explicit choices. Security built around the devices you choose to use.",
+    "mechanisms": [
+      {
+        "title": "Pairing is explicit.",
+        "text": "A phone must be paired with your PC before it can control it. You decide which devices belong."
+      },
+      {
+        "title": "Connections are encrypted.",
+        "text": "Encryption protects communication between your paired phone and PC. It is one layer of protection, alongside device authorization."
+      },
+      {
+        "title": "Your PC recognizes your device.",
+        "text": "Authorization is handled per device. Pairing does not mean opening control to everyone on your network."
+      },
+      {
+        "title": "The connection has an identity.",
+        "text": "Certificate pinning ties the connection to the expected certificate, helping the phone recognize the Agent it paired with."
+      },
+      {
+        "title": "Access can be revoked.",
+        "text": "Remove a device’s authorization when you no longer want it to control your PC."
+      },
+      {
+        "title": "Unlock is your choice.",
+        "text": "Windows Unlock is opt-in. Enable it only if you want to use your phone for this action."
+      }
+    ],
+    "local": "LOCAL FIRST",
+    "bandTitle": "A shorter path between your devices.",
+    "bandText": "Everyday control goes directly between your phone and PC on the local network. It does not require an Avyn account or an Avyn cloud service.",
+    "note": "These mechanisms do not replace securing your phone, your PC and your network. Detailed protocol documentation and release-specific verification are still being prepared."
+  },
+  "verify": {
+    "eyebrow": "VERIFY AVYN",
+    "intro": "You should be able to understand how Avyn communicates. Here is the path to checking it for yourself.",
+    "noticeTitle": "Tested versions.",
+    "notice": "This guide was verified on 22 October 2026 on Windows 11 with the direct download (Avyn Agent 0.1.0-alpha.42) and the Microsoft Store version (1.2.5.0), using an Android phone. Results may vary with your network, your Windows version and the Avyn version.",
+    "steps": [
+      {
+        "title": "Identify the Agent's connections.",
+        "text": "Avyn Agent runs as `Avyn.Agent.exe`. In the direct download it is in `%LocalAppData%\\Avyn.Agent\\current`; in the Microsoft Store version, inside `C:\\Program Files\\WindowsApps`. In PowerShell, `Get-NetTCPConnection -OwningProcess (Get-Process Avyn.Agent).Id` lists its TCP connections and `Get-NetUDPEndpoint -OwningProcess (Get-Process Avyn.Agent).Id` its UDP ports."
+      },
+      {
+        "title": "Separate local traffic from external traffic.",
+        "text": "At rest, the Agent listens on TCP 47821 (connection with the phone) and UDP 47822 (discovery on your local network); the optional unlock service listens on TCP 47822. At startup, the Agent also probes TCP port 8002 on the addresses of your subnet (up to 254) to look for Samsung TVs, even if you have none paired: this is local traffic and does not leave your network. With a phone controlling the PC, we saw connections only from the phone's address (192.168.1.150 in the test) to port 47821."
+      },
+      {
+        "title": "Understand the legitimate exceptions.",
+        "text": "In the direct download, the Agent checks for updates at startup and every 6 hours. In the test it contacted `api.github.com`, `github.com` and `release-assets.githubusercontent.com` on port 443; GitHub receives your PC's IP address, as any website does. The Microsoft Store version does not declare Internet access and, in 80 seconds of observation, opened no connections: the Store updates it. If a Samsung TV is present, the Agent talks to it inside your network. For now there is no setting to turn off the update check; if you do not want it to run, block the Agent's Internet access (next step)."
+      },
+      {
+        "title": "Restrict Internet with Windows Firewall.",
+        "text": "From an administrator PowerShell, this rule blocks the Agent's outbound connections to the Internet and keeps the local network: `New-NetFirewallRule -DisplayName 'Avyn Agent - sin Internet' -Direction Outbound -Program 'RUTA\\Avyn.Agent.exe' -Action Block -RemoteAddress Internet`. Replace `RUTA` with the path of your installation. To undo it: `Remove-NetFirewallRule -DisplayName 'Avyn Agent - sin Internet'`. In the test, with the rule in place, the Agent's connections to GitHub no longer left the PC; Windows still queried DNS for those names, because a system service makes those queries, not the Agent. Also, the first time the direct download runs, Windows shows a firewall prompt; until it is allowed, the phone cannot connect. With the rule in place the Agent cannot check for updates either: install new versions manually."
+      },
+      {
+        "title": "Repeat everyday actions.",
+        "text": "With the Microsoft Store version, an already paired phone and the blocking rule in place, pointer control, volume and browsing the shared folders worked. Also try pairing, file transfers and unlocking with the rule in place, and record what works, what changes and which product version you used."
+      },
+      {
+        "title": "Read the source code.",
+        "text": "Avyn's source code is still private. The public repository `github.com/pablopramparo/avyn-releases` only contains the installers and the update manifest. We will add a link to the code once it is public."
+      }
+    ],
+    "bandTitle": "Evidence, not a blanket promise.",
+    "bandText": "This guide lists the tested versions, the conditions and the limitations. It does not claim that every feature works with all Internet traffic blocked: check the ones you use.",
+    "source": "Explore the source",
+    "sourcePending": "Public source link coming later."
+  },
+  "download": {
+    "eyebrow": "GET AVYN",
+    "title": "Two devices. One connection.",
+    "intro": "Install the Windows Agent on your PC and Avyn on your Android phone. Pair them on your local network.",
+    "windowsTitle": "Windows Agent",
+    "windowsText": "The part that runs on your PC and carries out your actions.",
+    "androidTitle": "Android app",
+    "androidText": "Your PC’s interface, right on your phone.",
+    "extensionTitle": "Browser extension",
+    "extensionText": "Deeper web media controls for Chrome and Edge. Requires Avyn Agent on your PC. Available actions depend on each site.",
+    "chromeExtension": "Install in Chrome",
+    "edgeExtension": "Install in Edge",
+    "before": "BEFORE YOU START",
+    "requirementsTitle": "A Windows PC. An Android phone.",
+    "windowsRequirements": "Minimum version and hardware requirements to be confirmed.",
+    "androidRequirements": "Minimum version and device requirements to be confirmed.",
+    "networkTitle": "A shared local network",
+    "networkText": "Keep your PC and phone on the same LAN for normal local operation.",
+    "compatibility": "Wake-on-LAN, display control and TV actions depend on compatible hardware and configuration. The detailed compatibility guide is being prepared.",
+    "editionsTitle": "Start with Free. Go further with Premium.",
+    "editionsText": "No ads. No subscription. No Avyn account required. Premium is planned as a one-time purchase; the feature split and release details are still being finalized."
+  },
+  "auren": {
+    "eyebrow": "VIDEO PLAYER FOR WINDOWS",
+    "title": "Less interface.",
+    "accent": "More movie.",
+    "intro": "Auren Player puts your video first. Open a file and enjoy: the controls appear when you need them.",
+    "store": "Get it from Microsoft Store",
+    "requirements": "Free · Windows 10 and 11 · x64",
+    "learnMore": "Discover Auren Player",
+    "featuresEyebrow": "PRESS PLAY",
+    "featuresTitle": "Ready for movie night.",
+    "controlsEyebrow": "THE CONTROLS",
+    "controlsTitle": "Every control, in plain sight.",
+    "controlsHint": "Explore the controls to see what each one does.",
+    "controlsLabel": "Auren player controls",
+    "controls": [
+      {
+        "title": "Progress",
+        "text": "Scrub through the video and see elapsed and total time."
+      },
+      {
+        "title": "Play and skip",
+        "text": "Pause or resume, and go back or forward 10 seconds."
+      },
+      {
+        "title": "Volume",
+        "text": "Adjust the volume and see the current level."
+      },
+      {
+        "title": "Settings",
+        "text": "Open the player options."
+      },
+      {
+        "title": "Subtitles",
+        "text": "Pick, adjust and restyle subtitles."
+      },
+      {
+        "title": "Audio",
+        "text": "Switch between the available audio tracks."
+      },
+      {
+        "title": "Speed",
+        "text": "Change the playback speed."
+      },
+      {
+        "title": "Full screen",
+        "text": "Go full screen and back to the window."
+      }
+    ],
+    "features": [
+      {
+        "title": "Your videos, made simple.",
+        "text": "Play formats like MKV and MP4, 4K HEVC video and PGS subtitles without installing codec packs."
+      },
+      {
+        "title": "A picture that fits.",
+        "text": "HDR playback and automatic conversion to SDR. The HDR experience depends on your display and compatible hardware."
+      },
+      {
+        "title": "Every word, on time.",
+        "text": "Choose audio and subtitle tracks, adjust their timing and change subtitle size and style."
+      },
+      {
+        "title": "Find your subtitles.",
+        "text": "Search for subtitles online when you need them and load them without interrupting playback."
+      },
+      {
+        "title": "Pick up where you left off.",
+        "text": "Resume your video and optionally remember the volume and window position."
+      },
+      {
+        "title": "Controls within reach.",
+        "text": "Preview thumbnails as you scrub, media keys and playback controls in the Windows taskbar."
+      }
+    ],
+    "independentTitle": "Open it. Press play.",
+    "independentText": "Auren works on its own on your PC. You don't need Avyn or a phone to watch your videos.",
+    "privacy": "No accounts, no ads, no telemetry.",
+    "integrationEyebrow": "AUREN + AVYN",
+    "integrationTitle": "Your movie there. Your controls here.",
+    "integrationText": "With Avyn on Android and the Agent on your PC, control Auren from the couch: playback, audio tracks, subtitles, timing and fullscreen.",
+    "integrationNote": "Full Auren integration is included in Avyn Free. Connect your devices to the same local network.",
+    "integrationLink": "Get Avyn",
+    "caption": "Auren subtitle controls in Avyn for Android.",
+    "screenshots": [
+      "Auren playing a video",
+      "Auren subtitle menu"
+    ],
+    "closingTitle": "Pick the movie.",
+    "closingText": "Auren takes care of playback."
+  },
+  "notFound": {
+    "title": "This window leads nowhere.",
+    "back": "Back to Avyn"
+  },
+  "metadata": {
+    "auren": {
+      "title": "Auren Player — Video player for Windows",
+      "description": "A free Windows player with 4K video, HDR, audio and subtitles your way. Use it on its own or control it with Avyn."
+    },
+    "home": {
+      "title": "Avyn Remote — Move Windows. Not yourself.",
+      "description": "Your Windows PC from your Android phone. Open apps, move windows, play on your TV and transfer files. Local first, by design."
+    },
+    "security": {
+      "title": "Security",
+      "description": "How Avyn approaches pairing, encrypted connections, device authorization and local control."
+    },
+    "verify": {
+      "title": "Verify Avyn",
+      "description": "A transparent, in-progress guide to inspecting Avyn network behavior."
+    },
+    "download": {
+      "title": "Download",
+      "description": "Avyn for Android and the Windows Agent. Requirements and release availability."
+    },
+    "kantor": {
+      "title": "Kantor — Karaoke for Windows",
+      "description": "Karaoke for Windows with UltraStar songs, multiple players, live scoring and QR guest mode on your local network."
+    }
+  },
+  "kantor": {
+    "eyebrow": "KARAOKE FOR WINDOWS",
+    "title": "Your stage.",
+    "accent": "Your song.",
+    "intro": "Turn any night into karaoke night. Sing, compete and have fun with friends, simply and on your own computer.",
+    "songsNote": "Compatible with UltraStar songs. Kantor does not include songs: bring your own.",
+    "ultrasongsEyebrow": "NO SONGS YET?",
+    "ultrasongsTitle": "Make your own songs for Kantor.",
+    "ultrasongsText": "UltraSongs is a free, open source tool that turns your music and its lyrics into an UltraStar song. It separates the vocals, detects the notes and lets you fine-tune everything in a visual editor. All processed on your computer.",
+    "ultrasongsNote": "Use only music you have the right to use.",
+    "ultrasongsLink": "Discover UltraSongs",
+    "ultrasongsImageAlt": "UltraSongs note editor",
+    "store": "Get it from Microsoft Store",
+    "requirements": "Free · Windows 10 and 11 · x64",
+    "experienceEyebrow": "THE EXPERIENCE",
+    "experienceTitle": "Karaoke the way it should be.",
+    "experienceText": "Choose your singers, find songs and sing with friends. Kantor takes care of the rest.",
+    "libraryPlaceholder": "Kantor song selector screenshot",
+    "heroImageAlt": "Friends singing karaoke in front of the TV while controlling Kantor from a phone",
+    "libraryLabel": "Kantor song selector",
+    "featuresEyebrow": "EVERYTHING YOU NEED",
+    "featuresTitle": "Ready for the party.",
+    "features": [
+      {
+        "title": "Your songs, unlimited.",
+        "text": "Compatible with UltraStar songs. Kantor does not include songs: add the ones you already have to your local library."
+      },
+      {
+        "title": "Sing with friends.",
+        "text": "Add multiple players, assign singers and use several microphones."
+      },
+      {
+        "title": "Live scores.",
+        "text": "Follow pitch while you sing and see the results at the end."
+      },
+      {
+        "title": "Guests on their phones.",
+        "text": "Friends can find songs and add them to the queue by QR, with no install."
+      },
+      {
+        "title": "Organize your library.",
+        "text": "Browse folders, create playlists and find favorites in seconds."
+      },
+      {
+        "title": "Simple, with no accounts.",
+        "text": "Kantor runs on your PC and local network, with no accounts or cloud services."
+      }
+    ],
+    "competitionEyebrow": "SING. COMPETE. ENJOY.",
+    "competitionTitle": "Every song tells a story.",
+    "competitionText": "Follow the notes, live scores and results that make every round unique.",
+    "resultsPlaceholder": "Kantor results screenshot",
+    "resultsLabel": "Results from a Kantor round",
+    "guestsEyebrow": "GUEST MODE",
+    "guestsTitle": "The party is in their hands.",
+    "guestsText": "Guests can scan a QR code on their phones, find their favorite songs and add them to the queue right away.",
+    "guestBenefits": [
+      "No install needed.",
+      "On your local network.",
+      "Everyone joins in."
+    ],
+    "guestsPlaceholder": "Mobile guest screenshots",
+    "guestsLabel": "Kantor mobile guest access",
+    "integrationEyebrow": "KANTOR + AVYN",
+    "integrationTitle": "The show on the TV. The controls in your hand.",
+    "integrationText": "With Avyn on Android and the Agent on your PC, Kantor gets its own tab on your phone: see what is playing, search songs, manage the queue and handle players without leaving the couch.",
+    "integrationLabel": "Kantor tab in the Avyn app",
+    "integrationScreens": ["Now playing", "Songs", "Queue", "People"],
+    "integrationNote": "Connect your devices to the same local network.",
+    "integrationLink": "Get Avyn",
+    "closingEyebrow": "OPEN IT. SING.",
+    "closingTitle": "Your next karaoke night starts here.",
+    "closingText": "Kantor runs on your PC. All you need are your own UltraStar songs (Kantor does not include any) and a couple of microphones. No accounts or cloud services."
+  }
+}
