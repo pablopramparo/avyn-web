@@ -9,6 +9,7 @@ import { HowItWorks, LocalFirst } from "@/components/sections/local";
 import { Integrations, Editions, FinalCta } from "@/components/sections/more";
 import { JsonLd } from "@/components/json-ld";
 import { productData, siteData } from "@/config/structured-data";
+import { RelatedGuides } from "@/components/related-guides";
 import type { LocalizedProps } from "@/i18n/config";
 export function HomePage({ locale }: LocalizedProps) {
   return (
@@ -24,6 +25,7 @@ export function HomePage({ locale }: LocalizedProps) {
       <LocalFirst locale={locale} />
       <Integrations locale={locale} />
       <Editions locale={locale} />
+      <RelatedGuides locale={locale} ids={["control-pc", "tv", "karaoke"]} />
       <FinalCta locale={locale} />
     </>
   );

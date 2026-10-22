@@ -22,7 +22,8 @@
     "soon": "soon",
     "language": "Language",
     "footerNote": "Android + Windows. A little less getting up.",
-    "kantor": "Kantor"
+    "kantor": "Kantor",
+    "guides": "Guides"
   },
   "hero": {
     "title": "Your Windows PC.",
@@ -446,6 +447,19 @@
   "notFound": {
     "title": "This window leads nowhere.",
     "back": "Back to Avyn"
+  },
+  "guides": {
+    "eyebrow": "GUIDES",
+    "title": "Guides to get the most out of Avyn, Auren and Kantor.",
+    "intro": "Step by step, covering what each program really does and promising nothing more.",
+    "read": "Read the guide",
+    "updated": "Updated",
+    "related": "Keep reading",
+    "faq": "Frequently asked questions",
+    "breadcrumb": "Guides",
+    "home": "Home",
+    "metaTitle": "Avyn, Auren and Kantor guides",
+    "metaDescription": "Step-by-step guides to control your PC from your phone, sing karaoke with UltraStar songs and watch your PC videos on your TV."
   },
   "metadata": {
     "auren": {

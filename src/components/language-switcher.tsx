@@ -3,6 +3,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { locales, localizedPath, type Locale } from "@/i18n/config";
 import { siteConfig } from "@/config/site";
+import { translatePath } from "@/content/guide-paths";
 export function LanguageSwitcher({
   locale,
   label,
@@ -19,12 +20,13 @@ export function LanguageSwitcher({
       ? pathname.slice(siteConfig.basePath.length)
       : pathname;
   const path = withoutBase.replace(/^\/(?:es|en)(?=\/|$)/, "") || "/";
+  const pathFor = (language: Locale) => translatePath(path, locale, language);
   return (
     <nav className="language-switcher" aria-label={label}>
       {locales.map((language) => (
         <Link
           key={language}
-          href={localizedPath(language, path)}
+          href={localizedPath(language, pathFor(language))}
           scroll={false}
           hrefLang={language}
           lang={language}
@@ -34,7 +36,7 @@ export function LanguageSwitcher({
             // onNavigate leaves modified clicks and open-in-new-tab behavior intact.
             event.preventDefault();
             router.push(
-              localizedPath(language, path) +
+              localizedPath(language, pathFor(language)) +
                 window.location.search +
                 window.location.hash,
               { scroll: false },

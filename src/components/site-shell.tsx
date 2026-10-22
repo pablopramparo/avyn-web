@@ -3,6 +3,7 @@ import Link from "next/link";
 import { assetPath } from "@/config/site";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedPath, type LocalizedProps } from "@/i18n/config";
+import { guidePath } from "@/content/guide-paths";
 import { LanguageSwitcher } from "./language-switcher";
 export function Brand({ locale }: LocalizedProps) {
   const t = getDictionary(locale);
@@ -66,6 +67,7 @@ export function Footer({ locale }: LocalizedProps) {
         <Link href={localizedPath(locale, "/security/")}>{t.nav.security}</Link>
         <Link href={localizedPath(locale, "/auren/")}>Auren</Link>
         <Link href={localizedPath(locale, "/kantor/")}>Kantor</Link>
+        <Link href={guidePath(locale)}>{t.nav.guides}</Link>
         <Link href={localizedPath(locale, "/verify/")}>{t.common.verify}</Link>
         <Link href={localizedPath(locale, "/download/#requirements")}>
           {t.nav.requirements}

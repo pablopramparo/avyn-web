@@ -7,6 +7,7 @@ import { Icon } from "../icon";
 import { MicrosoftStoreBadge } from "../microsoft-store-badge";
 import { KantorPhoneShowcase } from "./kantor-phone-showcase";
 import { JsonLd } from "../json-ld";
+import { RelatedGuides } from "../related-guides";
 import { productData } from "@/config/structured-data";
 import styles from "./kantor.module.css";
 
@@ -103,6 +104,8 @@ export function KantorPage({ locale }: LocalizedProps) {
         </div>
         <figure className={styles.screenshot}><Image src={assetPath(`/images/kantor/${locale}/ultrasongs-editor.webp`)} alt={t.ultrasongsImageAlt} width={1200} height={667} sizes="(max-width: 900px) 100vw, 58vw" /></figure>
       </section>
+
+      <RelatedGuides locale={locale} ids={["karaoke"]} />
 
       <section className={styles.closing}>
         <div className={`container ${styles.closingInner}`}>

@@ -2,6 +2,8 @@ import { assetPath, canonical } from "./site";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedPath, type Locale } from "@/i18n/config";
 import type { PageName } from "@/i18n/metadata";
+import type { Guide } from "@/content/guides";
+import { guidePath } from "@/content/guide-paths";
 
 const logo = () => canonical("/icon-512.png") ?? assetPath("/icon-512.png");
 
@@ -54,5 +56,37 @@ export function productData(locale: Locale, page: PageName) {
     inLanguage: locale,
     ...(url ? { url } : {}),
     offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+  };
+}
+
+/** Article and breadcrumb for a guide. */
+export function articleData(locale: Locale, guide: Guide) {
+  const url = canonical(guidePath(locale, guide.slug));
+  const home = canonical(localizedPath(locale, "/"));
+  const index = canonical(guidePath(locale));
+  const t = getDictionary(locale).guides;
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        headline: guide.title,
+        description: guide.description,
+        inLanguage: locale,
+        datePublished: guide.updated,
+        dateModified: guide.updated,
+        ...(url ? { mainEntityOfPage: url, url } : {}),
+        author: { "@type": "Organization", name: "Avyn Remote" },
+        publisher: { "@type": "Organization", name: "Avyn Remote", logo: logo() },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: t.home, ...(home ? { item: home } : {}) },
+          { "@type": "ListItem", position: 2, name: t.breadcrumb, ...(index ? { item: index } : {}) },
+          { "@type": "ListItem", position: 3, name: guide.title, ...(url ? { item: url } : {}) },
+        ],
+      },
+    ],
   };
 }

@@ -872,6 +872,19 @@ p {
   margin-top: 14px;
   max-width: 850px;
 }
+.related-guides {
+  padding-block: 40px 20px;
+}
+.related-guides h2 {
+  font-size: 1.4rem;
+}
+.related-guides ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 16px;
+  display: grid;
+  gap: 10px;
+}
 .verify-list code {
   padding: 1px 6px;
   border-radius: 5px;

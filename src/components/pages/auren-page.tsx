@@ -8,6 +8,7 @@ import styles from "./auren.module.css";
 import { AurenControls } from "./auren-controls";
 import { MicrosoftStoreBadge } from "../microsoft-store-badge";
 import { JsonLd } from "../json-ld";
+import { RelatedGuides } from "../related-guides";
 import { productData } from "@/config/structured-data";
 
 const icons = ["play", "monitor", "move", "folder", "power", "windows"];
@@ -98,6 +99,8 @@ export function AurenPage({ locale }: LocalizedProps) {
           </div>
         </div>
       </section>
+
+      <RelatedGuides locale={locale} ids={["tv"]} />
 
       <section className={`container ${styles.closing}`}>
         <h2>{t.closingTitle}</h2>

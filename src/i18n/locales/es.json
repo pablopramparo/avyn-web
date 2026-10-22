@@ -22,7 +22,8 @@
     "soon": "pronto",
     "language": "Idioma",
     "footerNote": "Android + Windows. Una razón menos para levantarte.",
-    "kantor": "Kantor"
+    "kantor": "Kantor",
+    "guides": "Guías"
   },
   "hero": {
     "title": "Tu PC Windows.",
@@ -446,6 +447,19 @@
   "notFound": {
     "title": "Esta ventana no lleva a ningún lado.",
     "back": "Volver a Avyn"
+  },
+  "guides": {
+    "eyebrow": "GUÍAS",
+    "title": "Guías para sacarle el jugo a Avyn, Auren y Kantor.",
+    "intro": "Paso a paso, con lo que realmente hace cada programa y sin promesas de más.",
+    "read": "Leer la guía",
+    "updated": "Actualizada el",
+    "related": "Seguí leyendo",
+    "faq": "Preguntas frecuentes",
+    "breadcrumb": "Guías",
+    "home": "Inicio",
+    "metaTitle": "Guías de Avyn, Auren y Kantor",
+    "metaDescription": "Guías paso a paso para controlar tu PC desde el celular, cantar karaoke con canciones UltraStar y ver videos de tu PC en la TV."
   },
   "metadata": {
     "auren": {
