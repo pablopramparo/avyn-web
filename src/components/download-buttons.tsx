@@ -3,21 +3,29 @@ import { GooglePlayBadge } from "./google-play-badge";
 import Image from "next/image";
 import { assetPath, siteConfig } from "@/config/site";
 import { getDictionary } from "@/i18n/dictionaries";
-import { localizedPath, type LocalizedProps } from "@/i18n/config";
+import type { LocalizedProps } from "@/i18n/config";
+/** Shown instead of a store badge while the store listing is not published yet. */
+export function ComingSoon({ label }: { label: string }) {
+  return (
+    <span className="coming-soon" aria-disabled="true">
+      {label}
+    </span>
+  );
+}
 export function DownloadButtons({ locale }: LocalizedProps) {
   const t = getDictionary(locale).common;
   return (
     <div className="button-row">
-      <MicrosoftStoreBadge
-        locale={locale}
-        href={siteConfig.urls.windows || localizedPath(locale, "/download/#windows")}
-        label={t.windows}
-      />
-      <GooglePlayBadge
-        locale={locale}
-        href={siteConfig.urls.android || localizedPath(locale, "/download/#android")}
-        label={t.android}
-      />
+      {siteConfig.urls.windows ? (
+        <MicrosoftStoreBadge locale={locale} href={siteConfig.urls.windows} label={t.windows} />
+      ) : (
+        <ComingSoon label={t.windowsSoon} />
+      )}
+      {siteConfig.urls.android ? (
+        <GooglePlayBadge locale={locale} href={siteConfig.urls.android} label={t.android} />
+      ) : (
+        <ComingSoon label={t.androidSoon} />
+      )}
     </div>
   );
 }
@@ -33,23 +41,6 @@ export function ExtensionButtons({ locale }: LocalizedProps) {
         <Image src={assetPath("/images/brand/edge.svg")} alt="" width={22} height={22} />
         {t.edgeExtension}
       </a>
-    </div>
-  );
-}
-export function ReleaseLink({
-  href,
-  label,
-  locale,
-}: { href: string; label: string } & LocalizedProps) {
-  const t = getDictionary(locale).common;
-  return href ? (
-    <a className="button" href={href} target="_blank" rel="noopener noreferrer">
-      {label}
-    </a>
-  ) : (
-    <div className="release-pending">
-      <span>{t.releasePending}</span>
-      <p>{t.releaseDetails}</p>
     </div>
   );
 }

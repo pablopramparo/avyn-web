@@ -2,6 +2,7 @@ export const siteConfig = {
   name: "Avyn",
   origin: process.env.NEXT_PUBLIC_SITE_URL || "",
   basePath: process.env.NEXT_PUBLIC_BASE_PATH || "",
+  contactEmail: "avyn.remote@gmail.com",
   urls: {
     auren: "https://apps.microsoft.com/store/detail/9PGX6BJ5B1JL?cid=DevShareMCLPCS",
     kantor: "https://apps.microsoft.com/store/detail/9P8ZKZBJ4RHB?cid=DevShareMCLPCS",

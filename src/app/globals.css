@@ -911,18 +911,30 @@ p {
   margin-top: 15px;
   min-height: 82px;
 }
-.release-pending {
-  margin-top: 25px;
-  border-top: 1px solid var(--line);
-  padding-top: 22px;
-}
-.release-pending span {
-  font-size: 0.9rem;
+.coming-soon {
+  display: inline-flex;
+  align-items: center;
+  min-height: 52px;
+  padding: 0 20px;
+  border: 1px dashed #3b5870;
+  border-radius: 8px;
   color: #c4d4e1;
+  font-size: 0.92rem;
+  font-weight: 600;
 }
-.release-pending p {
-  font-size: 0.8rem;
-  margin-top: 7px;
+.download-card .coming-soon {
+  margin-top: 24px;
+}
+.beta-note {
+  margin-top: 16px;
+  font-size: 0.85rem;
+  min-height: 0;
+}
+.beta-note a {
+  color: var(--cyan);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
 }
 .download-card .button,
 .download-card .store-badge {

@@ -1,5 +1,5 @@
 import { PageIntro } from "../page-intro";
-import { ExtensionButtons, ReleaseLink } from "../download-buttons";
+import { ComingSoon, ExtensionButtons } from "../download-buttons";
 import { Icon } from "../icon";
 import { MicrosoftStoreBadge } from "../microsoft-store-badge";
 import { GooglePlayBadge } from "../google-play-badge";
@@ -18,6 +18,7 @@ export function DownloadPage({ locale }: LocalizedProps) {
       text: t.windowsText,
       url: siteConfig.urls.windows,
       label: d.common.windows,
+      soon: d.common.windowsSoon,
     },
     {
       id: "android",
@@ -27,6 +28,7 @@ export function DownloadPage({ locale }: LocalizedProps) {
       text: t.androidText,
       url: siteConfig.urls.android,
       label: d.common.android,
+      soon: d.common.androidSoon,
     },
   ];
   return (
@@ -41,12 +43,21 @@ export function DownloadPage({ locale }: LocalizedProps) {
               <Icon name={item.icon} />
               <h2>{item.name}</h2>
               <p>{item.text}</p>
-              {item.badge === "microsoft" ? (
-                <MicrosoftStoreBadge locale={locale} href={item.url || `#${item.id}`} label={item.label} />
+              {!item.url ? (
+                <ComingSoon label={item.soon} />
+              ) : item.badge === "microsoft" ? (
+                <MicrosoftStoreBadge locale={locale} href={item.url} label={item.label} />
               ) : (
-                <GooglePlayBadge locale={locale} href={item.url || `#${item.id}`} label={item.label} />
+                <GooglePlayBadge locale={locale} href={item.url} label={item.label} />
               )}
-              {!item.url && <ReleaseLink locale={locale} href="" label={item.label} />}
+              {item.id === "android" && (
+                <p className="beta-note">
+                  {t.betaText}{" "}
+                  <a href={`mailto:${siteConfig.contactEmail}?subject=${encodeURIComponent(t.betaSubject)}`}>
+                    {siteConfig.contactEmail}
+                  </a>
+                </p>
+              )}
             </section>
           ))}
           <section className="download-card" id="extension">
