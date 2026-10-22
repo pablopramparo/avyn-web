@@ -770,6 +770,19 @@ p {
   width: 100%;
   font-size: 0.75rem;
 }
+.footer-origin .flag {
+  display: inline-block;
+  width: 1.35em;
+  height: 0.9em;
+  vertical-align: -0.12em;
+  margin-inline: 0.1em;
+}
+.footer-origin {
+  width: 100%;
+  text-align: center;
+  font-size: 0.72rem;
+  color: #8da1b2;
+}
 .skip-link {
   position: fixed;
   top: -80px;
