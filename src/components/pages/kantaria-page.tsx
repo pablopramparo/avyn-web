@@ -68,7 +68,7 @@ export function KantariaPage({ locale }: LocalizedProps) {
       </section>
 
       <section className={`container ${styles.guests}`}>
-        <div className={styles.guestScreens}><Image src={assetPath("/images/kantaria/guests.webp")} alt={t.guestsLabel} width={1100} height={733} sizes="(max-width: 900px) 100vw, 50vw" /></div>
+        <div className={styles.guestScreens}><Image src={assetPath("/images/kantaria/guests.webp")} alt={t.guestsLabel} width={1280} height={853} sizes="(max-width: 900px) 100vw, 50vw" /></div>
         <div className={styles.guestsCopy}>
           <p className="eyebrow">{t.guestsEyebrow}</p>
           <h2>{t.guestsTitle}</h2>
