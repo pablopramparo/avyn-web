@@ -62,7 +62,7 @@ export function Header({ locale }: LocalizedProps) {
             {t.nav.security}
           </Link>
           <Link href={localizedPath(locale, "/auren/")}>Auren</Link>
-          <Link href={localizedPath(locale, "/kantor/")}>Kantor</Link>
+          <Link href={localizedPath(locale, "/kantaria/")}>Kantaria</Link>
         </nav>
         <div className="header-tools">
           <LanguageSwitcher locale={locale} label={t.nav.language} />
@@ -88,7 +88,7 @@ export function Footer({ locale }: LocalizedProps) {
       <nav aria-label={t.nav.footer}>
         <Link href={localizedPath(locale, "/security/")}>{t.nav.security}</Link>
         <Link href={localizedPath(locale, "/auren/")}>Auren</Link>
-        <Link href={localizedPath(locale, "/kantor/")}>Kantor</Link>
+        <Link href={localizedPath(locale, "/kantaria/")}>Kantaria</Link>
         <Link href={guidePath(locale)}>{t.nav.guides}</Link>
         <Link href={localizedPath(locale, "/verify/")}>{t.common.verify}</Link>
         <Link href={localizedPath(locale, "/download/#requirements")}>

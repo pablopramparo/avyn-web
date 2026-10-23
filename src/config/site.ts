@@ -7,7 +7,7 @@ export const siteConfig = {
   contactEmail: "avyn.remote@gmail.com",
   urls: {
     auren: "https://apps.microsoft.com/store/detail/9PGX6BJ5B1JL?cid=DevShareMCLPCS",
-    kantor: "https://apps.microsoft.com/store/detail/9P8ZKZBJ4RHB?cid=DevShareMCLPCS",
+    kantaria: "https://apps.microsoft.com/store/detail/9P8ZKZBJ4RHB?cid=DevShareMCLPCS",
     ultrasongs: { es: "https://pablopramparo.github.io/ultrasongs/", en: "https://pablopramparo.github.io/ultrasongs/en/" },
     windows: process.env.NEXT_PUBLIC_WINDOWS_URL || "",
     android: process.env.NEXT_PUBLIC_GOOGLE_PLAY_URL || "",

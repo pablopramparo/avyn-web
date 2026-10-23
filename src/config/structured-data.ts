@@ -37,7 +37,7 @@ export function siteData(locale: Locale) {
 const products: Partial<Record<PageName, { name: string; os: string[]; category: string }>> = {
   home: { name: "Avyn Remote", os: ["Android", "Windows 10", "Windows 11"], category: "UtilitiesApplication" },
   auren: { name: "Auren Player", os: ["Windows 10", "Windows 11"], category: "MultimediaApplication" },
-  kantor: { name: "Kantor", os: ["Windows 10", "Windows 11"], category: "GameApplication" },
+  kantaria: { name: "Kantaria", os: ["Windows 10", "Windows 11"], category: "GameApplication" },
 };
 
 /** SoftwareApplication for a product page. Free download; no ratings are claimed. */

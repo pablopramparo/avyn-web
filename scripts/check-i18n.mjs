@@ -33,7 +33,7 @@ if (process.argv.includes("--export")) {
       .replaceAll("'", "&#x27;")
       .replaceAll("<", "&lt;")
       .replaceAll(">", "&gt;");
-  const pages = ["", "security", "verify", "download", "auren", "kantor"];
+  const pages = ["", "security", "verify", "download", "auren", "kantaria"];
   let checked = 0;
   for (const locale of ["es", "en"]) {
     const dict = read(locale);

@@ -23,7 +23,7 @@
     "language": "Idioma",
     "footerNote": "Android + Windows. Una razón menos para levantarte.",
     "footerOrigin": "Desde 🇦🇷 para el mundo.",
-    "kantor": "Kantor",
+    "kantaria": "Kantaria",
     "guides": "Guías"
   },
   "hero": {
@@ -451,7 +451,7 @@
   },
   "guides": {
     "eyebrow": "GUÍAS",
-    "title": "Guías para sacarle el jugo a Avyn, Auren y Kantor.",
+    "title": "Guías para sacarle el jugo a Avyn, Auren y Kantaria.",
     "intro": "Paso a paso, con lo que realmente hace cada programa y sin promesas de más.",
     "read": "Leer la guía",
     "updated": "Actualizada el",
@@ -459,7 +459,7 @@
     "faq": "Preguntas frecuentes",
     "breadcrumb": "Guías",
     "home": "Inicio",
-    "metaTitle": "Guías de Avyn, Auren y Kantor",
+    "metaTitle": "Guías de Avyn, Auren y Kantaria",
     "metaDescription": "Guías paso a paso para controlar tu PC desde el celular, cantar karaoke con canciones UltraStar y ver videos de tu PC en la TV."
   },
   "metadata": {
@@ -483,19 +483,19 @@
       "title": "Descargar Avyn para Windows y Android",
       "description": "Descargá el Agent de Avyn para Windows y la app para Android. Requisitos, disponibilidad y cómo sumarte a la beta cerrada de Android."
     },
-    "kantor": {
-      "title": "Kantor — Karaoke para Windows con canciones UltraStar",
+    "kantaria": {
+      "title": "Kantaria — Karaoke para Windows con canciones UltraStar",
       "description": "Karaoke gratis para Windows compatible con canciones UltraStar: varios jugadores, puntuación en vivo y modo invitados por QR en tu red local."
     }
   },
-  "kantor": {
+  "kantaria": {
     "eyebrow": "KARAOKE PARA WINDOWS",
     "title": "Tu escenario.",
     "accent": "Tu canción.",
     "intro": "Convertí cualquier noche en una noche de karaoke. Cantá, competí y disfrutá con tus amigos, de forma simple y en tu propia computadora.",
-    "songsNote": "Compatible con canciones UltraStar. Kantor no incluye canciones: traé las tuyas.",
+    "songsNote": "Compatible con canciones UltraStar. Kantaria no incluye canciones: traé las tuyas.",
     "ultrasongsEyebrow": "¿TODAVÍA SIN CANCIONES?",
-    "ultrasongsTitle": "Creá tus propias canciones para Kantor.",
+    "ultrasongsTitle": "Creá tus propias canciones para Kantaria.",
     "ultrasongsText": "UltraSongs es una herramienta gratuita y de código abierto que convierte tu música y su letra en una canción UltraStar. Separa las voces, detecta las notas y te deja ajustar todo en un editor visual. Todo se procesa en tu computadora.",
     "ultrasongsNote": "Usá solo música que tengas derecho a usar.",
     "ultrasongsLink": "Conocer UltraSongs",
@@ -504,16 +504,16 @@
     "requirements": "Gratis · Windows 10 y 11 · x64",
     "experienceEyebrow": "LA EXPERIENCIA",
     "experienceTitle": "Karaoke como tiene que ser.",
-    "experienceText": "Elegí tus cantantes, buscá canciones y cantá con tus amigos. Kantor se encarga del resto.",
-    "libraryPlaceholder": "Captura del selector de canciones de Kantor",
-    "heroImageAlt": "Amigos cantando karaoke frente al televisor mientras controlan Kantor desde el teléfono",
-    "libraryLabel": "Selector de canciones de Kantor",
+    "experienceText": "Elegí tus cantantes, buscá canciones y cantá con tus amigos. Kantaria se encarga del resto.",
+    "libraryPlaceholder": "Captura del selector de canciones de Kantaria",
+    "heroImageAlt": "Amigos cantando karaoke frente al televisor mientras controlan Kantaria desde el teléfono",
+    "libraryLabel": "Selector de canciones de Kantaria",
     "featuresEyebrow": "TODO LO QUE NECESITÁS",
     "featuresTitle": "Listo para la fiesta.",
     "features": [
       {
         "title": "Tus canciones, sin límites.",
-        "text": "Compatible con canciones UltraStar. Kantor no incluye canciones: sumá las que ya tenés a tu biblioteca local."
+        "text": "Compatible con canciones UltraStar. Kantaria no incluye canciones: sumá las que ya tenés a tu biblioteca local."
       },
       {
         "title": "Cantá con amigos.",
@@ -533,14 +533,14 @@
       },
       {
         "title": "Simple y sin cuentas.",
-        "text": "Kantor funciona en tu PC, en tu red local, sin cuentas ni servicios en la nube."
+        "text": "Kantaria funciona en tu PC, en tu red local, sin cuentas ni servicios en la nube."
       }
     ],
     "competitionEyebrow": "CANTÁ. COMPETÍ. DISFRUTÁ.",
     "competitionTitle": "Cada canción es una historia.",
     "competitionText": "Seguí las notas, los puntajes en tiempo real y los resultados que hacen que cada partida sea única.",
-    "resultsPlaceholder": "Captura de resultados de Kantor",
-    "resultsLabel": "Resultados de una partida de Kantor",
+    "resultsPlaceholder": "Captura de resultados de Kantaria",
+    "resultsLabel": "Resultados de una partida de Kantaria",
     "guestsEyebrow": "MODO INVITADOS",
     "guestsTitle": "La fiesta está en sus manos.",
     "guestsText": "Tus invitados pueden escanear un código QR desde sus celulares, buscar sus canciones favoritas y agregarlas a la cola al instante.",
@@ -550,16 +550,16 @@
       "Todos participan."
     ],
     "guestsPlaceholder": "Capturas de invitados desde el celular",
-    "guestsLabel": "Acceso móvil para invitados de Kantor",
-    "integrationEyebrow": "KANTOR + AVYN",
+    "guestsLabel": "Acceso móvil para invitados de Kantaria",
+    "integrationEyebrow": "KANTARIA + AVYN",
     "integrationTitle": "El show en la tele. Los controles en tu mano.",
-    "integrationText": "Con Avyn en Android y el Agent en tu PC, Kantor tiene su propia pestaña en el celular: mirá qué está sonando, buscá canciones, manejá la cola y administrá a los jugadores sin levantarte del sillón.",
-    "integrationLabel": "Pestaña Kantor en la app de Avyn",
+    "integrationText": "Con Avyn en Android y el Agent en tu PC, Kantaria tiene su propia pestaña en el celular: mirá qué está sonando, buscá canciones, manejá la cola y administrá a los jugadores sin levantarte del sillón.",
+    "integrationLabel": "Pestaña Kantaria en la app de Avyn",
     "integrationScreens": ["Sonando", "Canciones", "Cola", "Gente"],
     "integrationNote": "Conectá tus dispositivos a la misma red local.",
     "integrationLink": "Conseguí Avyn",
     "closingEyebrow": "ABRILO. CANTÁ.",
     "closingTitle": "La próxima noche de karaoke empieza acá.",
-    "closingText": "Kantor funciona en tu PC. Solo necesitás tus propias canciones UltraStar (Kantor no incluye ninguna) y un par de micrófonos. Sin cuentas ni servicios en la nube."
+    "closingText": "Kantaria funciona en tu PC. Solo necesitás tus propias canciones UltraStar (Kantaria no incluye ninguna) y un par de micrófonos. Sin cuentas ni servicios en la nube."
   }
 }

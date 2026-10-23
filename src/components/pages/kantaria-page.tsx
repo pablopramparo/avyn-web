@@ -5,25 +5,25 @@ import { localizedPath, type LocalizedProps } from "@/i18n/config";
 import { assetPath, siteConfig } from "@/config/site";
 import { Icon } from "../icon";
 import { MicrosoftStoreBadge } from "../microsoft-store-badge";
-import { KantorPhoneShowcase } from "./kantor-phone-showcase";
+import { KantariaPhoneShowcase } from "./kantaria-phone-showcase";
 import { JsonLd } from "../json-ld";
 import { RelatedGuides } from "../related-guides";
 import { productData } from "@/config/structured-data";
-import styles from "./kantor.module.css";
+import styles from "./kantaria.module.css";
 
-export function KantorPage({ locale }: LocalizedProps) {
-  const t = getDictionary(locale).kantor;
-  const storeLink = <MicrosoftStoreBadge locale={locale} href={siteConfig.urls.kantor} label={t.store} />;
+export function KantariaPage({ locale }: LocalizedProps) {
+  const t = getDictionary(locale).kantaria;
+  const storeLink = <MicrosoftStoreBadge locale={locale} href={siteConfig.urls.kantaria} label={t.store} />;
   return (
     <div className={styles.page}>
-      <JsonLd data={productData(locale, "kantor")!} />
+      <JsonLd data={productData(locale, "kantaria")!} />
       <section className={styles.hero}>
         <div className={styles.art}>
-          <Image src={assetPath("/images/kantor/hero.webp")} alt={t.heroImageAlt} fill preload sizes="100vw" />
+          <Image src={assetPath("/images/kantaria/hero.webp")} alt={t.heroImageAlt} fill preload sizes="100vw" />
         </div>
         <div className={`container ${styles.heroInner}`}>
           <div className={styles.copy}>
-            <p className={styles.identity}><Image src={assetPath("/images/kantor/logo.webp")} alt="Kantor" width={450} height={183} sizes="150px" /><i />{t.eyebrow}</p>
+            <p className={styles.identity}><Image src={assetPath("/images/kantaria/logo.webp")} alt="Kantaria" width={900} height={360} sizes="150px" /><i />{t.eyebrow}</p>
             <h1>{t.title}<br /><span>{t.accent}</span></h1>
             <p className={styles.intro}>{t.intro}</p>
             <p className={styles.songsNote}>{t.songsNote}</p>
@@ -39,7 +39,7 @@ export function KantorPage({ locale }: LocalizedProps) {
           <h2>{t.experienceTitle}</h2>
           <p>{t.experienceText}</p>
         </div>
-        <figure className={styles.screenshot}><Image src={assetPath(`/images/kantor/${locale}/library.webp`)} alt={t.libraryLabel} width={1600} height={900} sizes="(max-width: 760px) 100vw, 90vw" /><figcaption>{t.experienceTitle}</figcaption></figure>
+        <figure className={styles.screenshot}><Image src={assetPath(`/images/kantaria/${locale}/library.webp`)} alt={t.libraryLabel} width={1600} height={900} sizes="(max-width: 760px) 100vw, 90vw" /><figcaption>{t.experienceTitle}</figcaption></figure>
       </section>
 
       <section className={`container ${styles.features}`}>
@@ -64,11 +64,11 @@ export function KantorPage({ locale }: LocalizedProps) {
           <h2>{t.competitionTitle}</h2>
           <p>{t.competitionText}</p>
         </div>
-        <figure className={styles.screenshot}><Image src={assetPath(`/images/kantor/${locale}/results.webp`)} alt={t.resultsLabel} width={1600} height={900} sizes="(max-width: 760px) 100vw, 65vw" /></figure>
+        <figure className={styles.screenshot}><Image src={assetPath(`/images/kantaria/${locale}/results.webp`)} alt={t.resultsLabel} width={1600} height={900} sizes="(max-width: 760px) 100vw, 65vw" /></figure>
       </section>
 
       <section className={`container ${styles.guests}`}>
-        <div className={styles.guestScreens}><Image src={assetPath("/images/kantor/guests.webp")} alt={t.guestsLabel} width={1100} height={733} sizes="(max-width: 900px) 100vw, 50vw" /></div>
+        <div className={styles.guestScreens}><Image src={assetPath("/images/kantaria/guests.webp")} alt={t.guestsLabel} width={1100} height={733} sizes="(max-width: 900px) 100vw, 50vw" /></div>
         <div className={styles.guestsCopy}>
           <p className="eyebrow">{t.guestsEyebrow}</p>
           <h2>{t.guestsTitle}</h2>
@@ -86,23 +86,23 @@ export function KantorPage({ locale }: LocalizedProps) {
             <p className="fine-print">{t.integrationNote}</p>
             <Link className="button secondary" href={localizedPath(locale, "/download/")}>{t.integrationLink}</Link>
           </div>
-          <KantorPhoneShowcase
+          <KantariaPhoneShowcase
             label={t.integrationLabel}
-            slides={["playing", "songs", "queue", "people"].map((name, index) => ({ src: `/images/kantor/${locale}/avyn-${name}.webp`, label: t.integrationScreens[index] }))}
+            slides={["playing", "songs", "queue", "people"].map((name, index) => ({ src: `/images/kantaria/${locale}/avyn-${name}.webp`, label: t.integrationScreens[index] }))}
           />
         </div>
       </section>
 
       <section className={`container ${styles.ultrasongs}`}>
         <div className={styles.ultrasongsCopy}>
-          <Image src={assetPath("/images/kantor/ultrasongs-logo.webp")} alt="UltraSongs" width={500} height={338} sizes="170px" />
+          <Image src={assetPath("/images/kantaria/ultrasongs-logo.webp")} alt="UltraSongs" width={500} height={338} sizes="170px" />
           <p className="eyebrow">{t.ultrasongsEyebrow}</p>
           <h2>{t.ultrasongsTitle}</h2>
           <p>{t.ultrasongsText}</p>
           <p className="fine-print">{t.ultrasongsNote}</p>
           <a className="button secondary" href={siteConfig.urls.ultrasongs[locale === "es" ? "es" : "en"]} target="_blank" rel="noopener noreferrer">{t.ultrasongsLink}</a>
         </div>
-        <figure className={styles.screenshot}><Image src={assetPath(`/images/kantor/${locale}/ultrasongs-editor.webp`)} alt={t.ultrasongsImageAlt} width={1200} height={667} sizes="(max-width: 900px) 100vw, 58vw" /></figure>
+        <figure className={styles.screenshot}><Image src={assetPath(`/images/kantaria/${locale}/ultrasongs-editor.webp`)} alt={t.ultrasongsImageAlt} width={1200} height={667} sizes="(max-width: 900px) 100vw, 58vw" /></figure>
       </section>
 
       <RelatedGuides locale={locale} ids={["karaoke"]} />

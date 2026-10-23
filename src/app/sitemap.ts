@@ -5,7 +5,7 @@ import { guidePath } from "@/content/guide-paths";
 import { localizedPath, locales, type Locale } from "@/i18n/config";
 export const dynamic = "force-static";
 
-const pages = ["", "security/", "verify/", "download/", "auren/", "kantor/"];
+const pages = ["", "security/", "verify/", "download/", "auren/", "kantaria/"];
 
 /** One sitemap entry per language of a page, each listing all its language alternates. */
 function entries(pathFor: (locale: Locale) => string | undefined): MetadataRoute.Sitemap {

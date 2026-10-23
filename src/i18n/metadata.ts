@@ -4,15 +4,15 @@ import { getDictionary } from "./dictionaries";
 import { localizedPath, type Locale } from "./config";
 import { guideTranslation, type Guide } from "@/content/guides";
 import { guidePath } from "@/content/guide-paths";
-export type PageName = "home" | "security" | "verify" | "download" | "auren" | "kantor";
-export type OgName = "home" | "auren" | "kantor";
+export type PageName = "home" | "security" | "verify" | "download" | "auren" | "kantaria";
+export type OgName = "home" | "auren" | "kantaria";
 const ogImages: Record<PageName, OgName> = {
   home: "home",
   security: "home",
   verify: "home",
   download: "home",
   auren: "auren",
-  kantor: "kantor",
+  kantaria: "kantaria",
 };
 function ogImage(locale: Locale, name: OgName, alt: string) {
   const file = name === "home" ? `home-${locale}` : locale === "es" ? name : `${name}-en`;

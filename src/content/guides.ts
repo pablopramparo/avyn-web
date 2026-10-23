@@ -15,8 +15,8 @@ export type Guide = {
   description: string;
   intro: string;
   updated: string;
-  /** Social image used by the guide: "home", "kantor" or "auren". */
-  image: "home" | "kantor" | "auren";
+  /** Social image used by the guide: "home", "kantaria" or "auren". */
+  image: "home" | "kantaria" | "auren";
   sections: { heading: string; blocks: GuideBlock[] }[];
   faq: { q: string; a: string }[];
   /** Product and site pages worth reading next, by locale-free path. */
@@ -146,11 +146,11 @@ const es: Guide[] = [
     slug: guideSlugs["karaoke"].es,
     title: "Cómo cantar karaoke con canciones UltraStar en Windows",
     description:
-      "Guía para armar una noche de karaoke en tu PC con Windows: Kantor, canciones en formato UltraStar, micrófonos, puntuación y modo invitados desde el celular.",
+      "Guía para armar una noche de karaoke en tu PC con Windows: Kantaria, canciones en formato UltraStar, micrófonos, puntuación y modo invitados desde el celular.",
     intro:
-      "Con Kantor podés convertir tu PC con Windows en un karaoke con puntuación en tiempo real, varios micrófonos y canciones en formato UltraStar. Esta guía explica qué necesitás, de dónde salen las canciones y cómo sumar a tus invitados desde el celular.",
+      "Con Kantaria podés convertir tu PC con Windows en un karaoke con puntuación en tiempo real, varios micrófonos y canciones en formato UltraStar. Esta guía explica qué necesitás, de dónde salen las canciones y cómo sumar a tus invitados desde el celular.",
     updated: "2026-10-22",
-    image: "kantor",
+    image: "kantaria",
     sections: [
       {
         heading: "Qué es el formato UltraStar",
@@ -161,7 +161,7 @@ const es: Guide[] = [
           },
           {
             type: "p",
-            text: "Kantor lee canciones en ese formato desde las carpetas que elijas y no modifica tus archivos.",
+            text: "Kantaria lee canciones en ese formato desde las carpetas que elijas y no modifica tus archivos.",
           },
         ],
       },
@@ -172,14 +172,14 @@ const es: Guide[] = [
             type: "list",
             items: [
               "Una PC con Windows 10 u 11 de 64 bits.",
-              "Kantor, que es gratis y está en Microsoft Store.",
+              "Kantaria, que es gratis y está en Microsoft Store.",
               "Uno o más micrófonos. Podés explorar la biblioteca sin ellos, pero para cantar hace falta al menos uno.",
               "Tus propias canciones en formato UltraStar.",
             ],
           },
           {
             type: "note",
-            text: "Kantor no incluye canciones. Usá solo música que tengas derecho a usar.",
+            text: "Kantaria no incluye canciones. Usá solo música que tengas derecho a usar.",
           },
         ],
       },
@@ -188,7 +188,7 @@ const es: Guide[] = [
         blocks: [
           {
             type: "p",
-            text: "Como Kantor no trae canciones, las aportás vos. Algunas opciones:",
+            text: "Como Kantaria no trae canciones, las aportás vos. Algunas opciones:",
           },
           {
             type: "list",
@@ -206,12 +206,12 @@ const es: Guide[] = [
           {
             type: "steps",
             items: [
-              "Instalá Kantor desde Microsoft Store.",
-              "Indicá las carpetas donde tenés tus canciones UltraStar. Kantor arma la biblioteca sin tocar tus archivos.",
-              "Conectá tus micrófonos. Kantor admite hasta cuatro a la vez, cada uno con su jugador, su carril y su nivel de entrada en pantalla.",
+              "Instalá Kantaria desde Microsoft Store.",
+              "Indicá las carpetas donde tenés tus canciones UltraStar. Kantaria arma la biblioteca sin tocar tus archivos.",
+              "Conectá tus micrófonos. Kantaria admite hasta cuatro a la vez, cada uno con su jugador, su carril y su nivel de entrada en pantalla.",
               "Elegí los cantantes y una canción. Podés sumar canciones a la cola.",
               "Cantá. La puntuación se calcula en tiempo real, con tres niveles de dificultad y soporte para dúos.",
-              "Al terminar, mirá los resultados. Kantor guarda jugadores, partidas, historial y rankings en tu PC.",
+              "Al terminar, mirá los resultados. Kantaria guarda jugadores, partidas, historial y rankings en tu PC.",
             ],
           },
         ],
@@ -221,7 +221,7 @@ const es: Guide[] = [
         blocks: [
           {
             type: "p",
-            text: "Kantor tiene un modo invitados, desactivado por defecto. Al activarlo, el menú principal y la lista de canciones muestran un código QR. Tus invitados lo escanean con el celular, buscan canciones, eligen quién canta y las agregan a la cola, sin instalar nada.",
+            text: "Kantaria tiene un modo invitados, desactivado por defecto. Al activarlo, el menú principal y la lista de canciones muestran un código QR. Tus invitados lo escanean con el celular, buscan canciones, eligen quién canta y las agregan a la cola, sin instalar nada.",
           },
           {
             type: "p",
@@ -234,19 +234,19 @@ const es: Guide[] = [
         blocks: [
           {
             type: "p",
-            text: "Kantor también puede controlarse desde Avyn, una integración opcional que viene desactivada. Cuando Kantor está abierto con el control remoto activado, la app de Avyn muestra una pestaña Kantor con lo que está sonando, las canciones, la cola y la gente, para que quien tenga el celular maneje la fiesta sin tocar la PC.",
+            text: "Kantaria también puede controlarse desde Avyn, una integración opcional que viene desactivada. Cuando Kantaria está abierto con el control remoto activado, la app de Avyn muestra una pestaña Kantaria con lo que está sonando, las canciones, la cola y la gente, para que quien tenga el celular maneje la fiesta sin tocar la PC.",
           },
         ],
       },
     ],
     faq: [
       {
-        q: "¿Kantor incluye canciones?",
+        q: "¿Kantaria incluye canciones?",
         a: "No. Tenés que aportar tus propias canciones en formato UltraStar.",
       },
       {
         q: "¿Es gratis?",
-        a: "Sí, Kantor es gratis.",
+        a: "Sí, Kantaria es gratis.",
       },
       {
         q: "¿Cuántos micrófonos puedo usar?",
@@ -254,11 +254,11 @@ const es: Guide[] = [
       },
       {
         q: "¿Necesito Internet?",
-        a: "No. Kantor funciona en tu PC y en tu red local, sin cuentas ni servicios en la nube.",
+        a: "No. Kantaria funciona en tu PC y en tu red local, sin cuentas ni servicios en la nube.",
       },
     ],
     related: [
-      { path: "/kantor/", label: "Conocer Kantor" },
+      { path: "/kantaria/", label: "Conocer Kantaria" },
       { path: "/guias/controlar-pc-windows-desde-android/", label: "Controlar tu PC desde el celular" },
     ],
   },
@@ -498,11 +498,11 @@ const en: Guide[] = [
     slug: guideSlugs["karaoke"].en,
     title: "How to sing karaoke with UltraStar songs on Windows",
     description:
-      "A guide to setting up a karaoke night on your Windows PC: Kantor, UltraStar songs, microphones, scoring and guest mode from phones.",
+      "A guide to setting up a karaoke night on your Windows PC: Kantaria, UltraStar songs, microphones, scoring and guest mode from phones.",
     intro:
-      "With Kantor you can turn your Windows PC into a karaoke machine with live scoring, several microphones and songs in UltraStar format. This guide covers what you need, where songs come from and how to let your guests join from their phones.",
+      "With Kantaria you can turn your Windows PC into a karaoke machine with live scoring, several microphones and songs in UltraStar format. This guide covers what you need, where songs come from and how to let your guests join from their phones.",
     updated: "2026-10-22",
-    image: "kantor",
+    image: "kantaria",
     sections: [
       {
         heading: "What the UltraStar format is",
@@ -513,7 +513,7 @@ const en: Guide[] = [
           },
           {
             type: "p",
-            text: "Kantor reads songs in that format from the folders you choose and never modifies your files.",
+            text: "Kantaria reads songs in that format from the folders you choose and never modifies your files.",
           },
         ],
       },
@@ -524,14 +524,14 @@ const en: Guide[] = [
             type: "list",
             items: [
               "A 64-bit Windows 10 or 11 PC.",
-              "Kantor, which is free and available on Microsoft Store.",
+              "Kantaria, which is free and available on Microsoft Store.",
               "One or more microphones. You can browse the library without them, but singing needs at least one.",
               "Your own songs in UltraStar format.",
             ],
           },
           {
             type: "note",
-            text: "Kantor does not include songs. Only use music you have the right to use.",
+            text: "Kantaria does not include songs. Only use music you have the right to use.",
           },
         ],
       },
@@ -540,7 +540,7 @@ const en: Guide[] = [
         blocks: [
           {
             type: "p",
-            text: "Since Kantor ships without songs, you provide them. Some options:",
+            text: "Since Kantaria ships without songs, you provide them. Some options:",
           },
           {
             type: "list",
@@ -558,12 +558,12 @@ const en: Guide[] = [
           {
             type: "steps",
             items: [
-              "Install Kantor from Microsoft Store.",
-              "Point it to the folders where your UltraStar songs live. Kantor builds the library without touching your files.",
-              "Connect your microphones. Kantor supports up to four at once, each with its own player, lane and on-screen input level.",
+              "Install Kantaria from Microsoft Store.",
+              "Point it to the folders where your UltraStar songs live. Kantaria builds the library without touching your files.",
+              "Connect your microphones. Kantaria supports up to four at once, each with its own player, lane and on-screen input level.",
               "Choose the singers and a song. You can add songs to the queue.",
               "Sing. Scoring is calculated in real time, with three difficulty levels and support for duets.",
-              "When you finish, check the results. Kantor stores players, games, history and rankings on your PC.",
+              "When you finish, check the results. Kantaria stores players, games, history and rankings on your PC.",
             ],
           },
         ],
@@ -573,7 +573,7 @@ const en: Guide[] = [
         blocks: [
           {
             type: "p",
-            text: "Kantor has a guest mode, off by default. When it is on, the main menu and the song list show a QR code. Your guests scan it with their phones, search for songs, choose who sings and add them to the queue, with nothing to install.",
+            text: "Kantaria has a guest mode, off by default. When it is on, the main menu and the song list show a QR code. Your guests scan it with their phones, search for songs, choose who sings and add them to the queue, with nothing to install.",
           },
           {
             type: "p",
@@ -586,19 +586,19 @@ const en: Guide[] = [
         blocks: [
           {
             type: "p",
-            text: "Kantor can also be controlled from Avyn, an optional integration that is off by default. When Kantor is open with remote control on, the Avyn app shows a Kantor tab with what is playing, the songs, the queue and the people, so whoever holds the phone can run the party without touching the PC.",
+            text: "Kantaria can also be controlled from Avyn, an optional integration that is off by default. When Kantaria is open with remote control on, the Avyn app shows a Kantaria tab with what is playing, the songs, the queue and the people, so whoever holds the phone can run the party without touching the PC.",
           },
         ],
       },
     ],
     faq: [
       {
-        q: "Does Kantor include songs?",
+        q: "Does Kantaria include songs?",
         a: "No. You need to provide your own songs in UltraStar format.",
       },
       {
         q: "Is it free?",
-        a: "Yes, Kantor is free.",
+        a: "Yes, Kantaria is free.",
       },
       {
         q: "How many microphones can I use?",
@@ -606,11 +606,11 @@ const en: Guide[] = [
       },
       {
         q: "Do I need Internet?",
-        a: "No. Kantor runs on your PC and your local network, with no accounts or cloud services.",
+        a: "No. Kantaria runs on your PC and your local network, with no accounts or cloud services.",
       },
     ],
     related: [
-      { path: "/kantor/", label: "Discover Kantor" },
+      { path: "/kantaria/", label: "Discover Kantaria" },
       { path: "/guides/control-windows-pc-from-android/", label: "Control your PC from your phone" },
     ],
   },

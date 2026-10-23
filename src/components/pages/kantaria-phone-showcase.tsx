@@ -2,14 +2,14 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { assetPath } from "@/config/site";
-import styles from "./kantor.module.css";
+import styles from "./kantaria.module.css";
 
 type Slide = { src: string; label: string };
 
 const INTERVAL_MS = 4200;
 
-/** Phone frame that cycles through the Kantor tab of the Avyn app. */
-export function KantorPhoneShowcase({ slides, label }: { slides: Slide[]; label: string }) {
+/** Phone frame that cycles through the Kantaria tab of the Avyn app. */
+export function KantariaPhoneShowcase({ slides, label }: { slides: Slide[]; label: string }) {
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
   const [motionOk, setMotionOk] = useState(false);

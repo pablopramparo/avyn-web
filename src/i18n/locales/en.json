@@ -23,7 +23,7 @@
     "language": "Language",
     "footerNote": "Android + Windows. A little less getting up.",
     "footerOrigin": "From 🇦🇷 to the world.",
-    "kantor": "Kantor",
+    "kantaria": "Kantaria",
     "guides": "Guides"
   },
   "hero": {
@@ -451,7 +451,7 @@
   },
   "guides": {
     "eyebrow": "GUIDES",
-    "title": "Guides to get the most out of Avyn, Auren and Kantor.",
+    "title": "Guides to get the most out of Avyn, Auren and Kantaria.",
     "intro": "Step by step, covering what each program really does and promising nothing more.",
     "read": "Read the guide",
     "updated": "Updated",
@@ -459,7 +459,7 @@
     "faq": "Frequently asked questions",
     "breadcrumb": "Guides",
     "home": "Home",
-    "metaTitle": "Avyn, Auren and Kantor guides",
+    "metaTitle": "Avyn, Auren and Kantaria guides",
     "metaDescription": "Step-by-step guides to control your PC from your phone, sing karaoke with UltraStar songs and watch your PC videos on your TV."
   },
   "metadata": {
@@ -483,19 +483,19 @@
       "title": "Download Avyn for Windows and Android",
       "description": "Get the Avyn Agent for Windows and the Android app. Requirements, availability and how to join the Android closed beta."
     },
-    "kantor": {
-      "title": "Kantor — Karaoke for Windows with UltraStar songs",
+    "kantaria": {
+      "title": "Kantaria — Karaoke for Windows with UltraStar songs",
       "description": "Free karaoke for Windows that works with UltraStar songs: multiple players, live scoring and QR guest mode on your local network."
     }
   },
-  "kantor": {
+  "kantaria": {
     "eyebrow": "KARAOKE FOR WINDOWS",
     "title": "Your stage.",
     "accent": "Your song.",
     "intro": "Turn any night into karaoke night. Sing, compete and have fun with friends, simply and on your own computer.",
-    "songsNote": "Compatible with UltraStar songs. Kantor does not include songs: bring your own.",
+    "songsNote": "Compatible with UltraStar songs. Kantaria does not include songs: bring your own.",
     "ultrasongsEyebrow": "NO SONGS YET?",
-    "ultrasongsTitle": "Make your own songs for Kantor.",
+    "ultrasongsTitle": "Make your own songs for Kantaria.",
     "ultrasongsText": "UltraSongs is a free, open source tool that turns your music and its lyrics into an UltraStar song. It separates the vocals, detects the notes and lets you fine-tune everything in a visual editor. All processed on your computer.",
     "ultrasongsNote": "Use only music you have the right to use.",
     "ultrasongsLink": "Discover UltraSongs",
@@ -504,16 +504,16 @@
     "requirements": "Free · Windows 10 and 11 · x64",
     "experienceEyebrow": "THE EXPERIENCE",
     "experienceTitle": "Karaoke the way it should be.",
-    "experienceText": "Choose your singers, find songs and sing with friends. Kantor takes care of the rest.",
-    "libraryPlaceholder": "Kantor song selector screenshot",
-    "heroImageAlt": "Friends singing karaoke in front of the TV while controlling Kantor from a phone",
-    "libraryLabel": "Kantor song selector",
+    "experienceText": "Choose your singers, find songs and sing with friends. Kantaria takes care of the rest.",
+    "libraryPlaceholder": "Kantaria song selector screenshot",
+    "heroImageAlt": "Friends singing karaoke in front of the TV while controlling Kantaria from a phone",
+    "libraryLabel": "Kantaria song selector",
     "featuresEyebrow": "EVERYTHING YOU NEED",
     "featuresTitle": "Ready for the party.",
     "features": [
       {
         "title": "Your songs, unlimited.",
-        "text": "Compatible with UltraStar songs. Kantor does not include songs: add the ones you already have to your local library."
+        "text": "Compatible with UltraStar songs. Kantaria does not include songs: add the ones you already have to your local library."
       },
       {
         "title": "Sing with friends.",
@@ -533,14 +533,14 @@
       },
       {
         "title": "Simple, with no accounts.",
-        "text": "Kantor runs on your PC and local network, with no accounts or cloud services."
+        "text": "Kantaria runs on your PC and local network, with no accounts or cloud services."
       }
     ],
     "competitionEyebrow": "SING. COMPETE. ENJOY.",
     "competitionTitle": "Every song tells a story.",
     "competitionText": "Follow the notes, live scores and results that make every round unique.",
-    "resultsPlaceholder": "Kantor results screenshot",
-    "resultsLabel": "Results from a Kantor round",
+    "resultsPlaceholder": "Kantaria results screenshot",
+    "resultsLabel": "Results from a Kantaria round",
     "guestsEyebrow": "GUEST MODE",
     "guestsTitle": "The party is in their hands.",
     "guestsText": "Guests can scan a QR code on their phones, find their favorite songs and add them to the queue right away.",
@@ -550,16 +550,16 @@
       "Everyone joins in."
     ],
     "guestsPlaceholder": "Mobile guest screenshots",
-    "guestsLabel": "Kantor mobile guest access",
-    "integrationEyebrow": "KANTOR + AVYN",
+    "guestsLabel": "Kantaria mobile guest access",
+    "integrationEyebrow": "KANTARIA + AVYN",
     "integrationTitle": "The show on the TV. The controls in your hand.",
-    "integrationText": "With Avyn on Android and the Agent on your PC, Kantor gets its own tab on your phone: see what is playing, search songs, manage the queue and handle players without leaving the couch.",
-    "integrationLabel": "Kantor tab in the Avyn app",
+    "integrationText": "With Avyn on Android and the Agent on your PC, Kantaria gets its own tab on your phone: see what is playing, search songs, manage the queue and handle players without leaving the couch.",
+    "integrationLabel": "Kantaria tab in the Avyn app",
     "integrationScreens": ["Now playing", "Songs", "Queue", "People"],
     "integrationNote": "Connect your devices to the same local network.",
     "integrationLink": "Get Avyn",
     "closingEyebrow": "OPEN IT. SING.",
     "closingTitle": "Your next karaoke night starts here.",
-    "closingText": "Kantor runs on your PC. All you need are your own UltraStar songs (Kantor does not include any) and a couple of microphones. No accounts or cloud services."
+    "closingText": "Kantaria runs on your PC. All you need are your own UltraStar songs (Kantaria does not include any) and a couple of microphones. No accounts or cloud services."
   }
 }
