@@ -18,7 +18,7 @@ export function DownloadPage({ locale }: LocalizedProps) {
       text: t.windowsText,
       url: siteConfig.urls.windows,
       label: d.common.windows,
-      soon: d.common.windowsSoon,
+      store: "Microsoft Store",
     },
     {
       id: "android",
@@ -28,7 +28,7 @@ export function DownloadPage({ locale }: LocalizedProps) {
       text: t.androidText,
       url: siteConfig.urls.android,
       label: d.common.android,
-      soon: d.common.androidSoon,
+      store: "Google Play",
     },
   ];
   return (
@@ -44,11 +44,19 @@ export function DownloadPage({ locale }: LocalizedProps) {
               <h2>{item.name}</h2>
               <p>{item.text}</p>
               {!item.url ? (
-                <ComingSoon label={item.soon} />
+                <ComingSoon kicker={d.common.comingSoonOn} store={item.store} icon={item.icon} />
               ) : item.badge === "microsoft" ? (
                 <MicrosoftStoreBadge locale={locale} href={item.url} label={item.label} />
               ) : (
                 <GooglePlayBadge locale={locale} href={item.url} label={item.label} />
+              )}
+              {item.id === "windows" && !item.url && (
+                <p className="beta-note">
+                  {t.windowsDirectText}{" "}
+                  <a href={siteConfig.urls.windowsDirect} target="_blank" rel="noopener noreferrer">
+                    {t.windowsDirectLink}
+                  </a>
+                </p>
               )}
               {item.id === "android" && (
                 <p className="beta-note">

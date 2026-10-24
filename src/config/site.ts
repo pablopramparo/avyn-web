@@ -10,6 +10,8 @@ export const siteConfig = {
     kantaria: "https://apps.microsoft.com/store/detail/9P8ZKZBJ4RHB?cid=DevShareMCLPCS",
     ultrasongs: { es: "https://pablopramparo.github.io/ultrasongs/", en: "https://pablopramparo.github.io/ultrasongs/en/" },
     windows: process.env.NEXT_PUBLIC_WINDOWS_URL || "",
+    // Direct download of Avyn Agent while the Microsoft Store listing is not out: the releases page the app already used.
+    windowsDirect: process.env.NEXT_PUBLIC_WINDOWS_DIRECT_URL || "https://github.com/pablopramparo/avyn-releases/releases/latest",
     android: process.env.NEXT_PUBLIC_GOOGLE_PLAY_URL || "",
     github: process.env.NEXT_PUBLIC_GITHUB_URL || "",
     chromeExtension:
