@@ -952,6 +952,9 @@ p {
   flex: none;
   color: #c4d4e1;
 }
+.coming-soon img.coming-soon-icon {
+  object-fit: contain;
+}
 .coming-soon-text {
   display: grid;
   line-height: 1.15;

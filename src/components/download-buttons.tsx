@@ -4,9 +4,14 @@ import Link from "next/link";
 import { assetPath, siteConfig } from "@/config/site";
 import { getDictionary } from "@/i18n/dictionaries";
 import type { LocalizedProps } from "@/i18n/config";
+const storeMarks: Record<string, string> = {
+  windows: "/images/brand/microsoft-store-icon.webp",
+  phone: "/images/brand/google-play-icon.webp",
+};
 /**
- * Store button in the site's own style (dark glass, hairline border, a glyph and two lines), never
- * with the stores' logos. Without `href` it is the "coming soon" placeholder; with it, a link.
+ * Store button in the site's own style (dark glass, hairline border, a glyph and two lines).
+ * Without `href` it is the "coming soon" placeholder, with a generic glyph; with it, a link that
+ * shows the store's mark.
  */
 export function ComingSoon({
   kicker,
@@ -19,9 +24,15 @@ export function ComingSoon({
   icon: string;
   href?: string;
 }) {
+  // Once the listing exists, the button carries the store's own mark.
+  const mark = href && storeMarks[icon];
   const content = (
     <>
-      <Icon name={icon} className="coming-soon-icon" />
+      {mark ? (
+        <Image src={assetPath(mark)} alt="" width={28} height={28} className="coming-soon-icon" />
+      ) : (
+        <Icon name={icon} className="coming-soon-icon" />
+      )}
       <span className="coming-soon-text">
         <small>{kicker}</small>
         <strong>{store}</strong>
