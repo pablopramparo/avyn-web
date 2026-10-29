@@ -968,6 +968,19 @@ p {
   font-size: 1.1rem;
   font-weight: 700;
 }
+.coming-soon-link {
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+.coming-soon-link:hover {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+.coming-soon-link:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
+}
 .download-card .coming-soon {
   margin-top: 24px;
 }

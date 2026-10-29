@@ -8,6 +8,8 @@
     "windowsSoon": "Coming soon to Microsoft Store",
     "androidSoon": "Coming soon to Google Play",
     "comingSoonOn": "Coming soon on",
+    "availableOn": "Available on",
+    "betaOn": "Closed beta on",
     "androidBeta": "The Android app is in closed beta: the Google Play button only installs for testers.",
     "androidBetaLink": "How to join",
     "verify": "Verify Avyn",

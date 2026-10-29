@@ -1,25 +1,38 @@
 import { Icon } from "./icon";
-import { MicrosoftStoreBadge } from "./microsoft-store-badge";
-import { GooglePlayBadge } from "./google-play-badge";
 import Image from "next/image";
 import Link from "next/link";
 import { assetPath, siteConfig } from "@/config/site";
 import { getDictionary } from "@/i18n/dictionaries";
 import type { LocalizedProps } from "@/i18n/config";
 /**
- * Shown instead of a store badge while the store listing is not published yet. It has the shape of
- * the badges (dark glass, hairline border, a glyph and two lines) but never their logos: those are
- * only for the official, unmodified badges once the listing exists.
+ * Store button in the site's own style (dark glass, hairline border, a glyph and two lines), never
+ * with the stores' logos. Without `href` it is the "coming soon" placeholder; with it, a link.
  */
-export function ComingSoon({ kicker, store, icon }: { kicker: string; store: string; icon: string }) {
-  return (
-    <span className="coming-soon">
+export function ComingSoon({
+  kicker,
+  store,
+  icon,
+  href,
+}: {
+  kicker: string;
+  store: string;
+  icon: string;
+  href?: string;
+}) {
+  const content = (
+    <>
       <Icon name={icon} className="coming-soon-icon" />
       <span className="coming-soon-text">
         <small>{kicker}</small>
         <strong>{store}</strong>
       </span>
-    </span>
+    </>
+  );
+  if (!href) return <span className="coming-soon">{content}</span>;
+  return (
+    <a className="coming-soon coming-soon-link" href={href} target="_blank" rel="noopener noreferrer">
+      {content}
+    </a>
   );
 }
 export function DownloadButtons({ locale }: LocalizedProps) {
@@ -27,16 +40,18 @@ export function DownloadButtons({ locale }: LocalizedProps) {
   return (
     <>
       <div className="button-row">
-        {siteConfig.urls.windows ? (
-          <MicrosoftStoreBadge locale={locale} href={siteConfig.urls.windows} label={t.windows} />
-        ) : (
-          <ComingSoon kicker={t.comingSoonOn} store="Microsoft Store" icon="windows" />
-        )}
-        {siteConfig.urls.android ? (
-          <GooglePlayBadge locale={locale} href={siteConfig.urls.android} label={t.android} />
-        ) : (
-          <ComingSoon kicker={t.comingSoonOn} store="Google Play" icon="phone" />
-        )}
+        <ComingSoon
+          kicker={siteConfig.urls.windows ? t.availableOn : t.comingSoonOn}
+          store="Microsoft Store"
+          icon="windows"
+          href={siteConfig.urls.windows}
+        />
+        <ComingSoon
+          kicker={siteConfig.urls.android ? t.betaOn : t.comingSoonOn}
+          store="Google Play"
+          icon="phone"
+          href={siteConfig.urls.android}
+        />
       </div>
       {siteConfig.urls.android && (
         <p className="fine-print beta-note">

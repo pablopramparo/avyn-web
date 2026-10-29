@@ -1,8 +1,6 @@
 import { PageIntro } from "../page-intro";
 import { ComingSoon, ExtensionButtons } from "../download-buttons";
 import { Icon } from "../icon";
-import { MicrosoftStoreBadge } from "../microsoft-store-badge";
-import { GooglePlayBadge } from "../google-play-badge";
 import { siteConfig } from "@/config/site";
 import { getDictionary } from "@/i18n/dictionaries";
 import type { LocalizedProps } from "@/i18n/config";
@@ -43,13 +41,12 @@ export function DownloadPage({ locale }: LocalizedProps) {
               <Icon name={item.icon} />
               <h2>{item.name}</h2>
               <p>{item.text}</p>
-              {!item.url ? (
-                <ComingSoon kicker={d.common.comingSoonOn} store={item.store} icon={item.icon} />
-              ) : item.badge === "microsoft" ? (
-                <MicrosoftStoreBadge locale={locale} href={item.url} label={item.label} />
-              ) : (
-                <GooglePlayBadge locale={locale} href={item.url} label={item.label} />
-              )}
+              <ComingSoon
+                kicker={!item.url ? d.common.comingSoonOn : item.badge === "microsoft" ? d.common.availableOn : d.common.betaOn}
+                store={item.store}
+                icon={item.icon}
+                href={item.url}
+              />
               {item.id === "windows" && (
                 <p className="beta-note">
                   {t.windowsDirectText}{" "}
