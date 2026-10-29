@@ -220,7 +220,7 @@ const es: Guide[] = [
           {
             type: "list",
             items: [
-              "\"Pairing was declined\": la solicitud se rechazó en la PC. Tocá \"Probar de nuevo\" y esta vez aprobala.",
+              "\"La PC rechazó la vinculación. Probá de nuevo y aprobala en la PC\": la solicitud se rechazó en la PC. Tocá \"Probar de nuevo\" y esta vez aprobala.",
               "\"Se emparejó, pero falló la conexión de control\": la vinculación funcionó pero la conexión no se abrió. Probá de nuevo.",
               "\"Actualizá la app\" o \"Actualizá Avyn Agent\": las versiones no son compatibles. En la PC, abrí Avyn Agent, después Acerca de y Buscar actualizaciones. La vinculación se conserva.",
               "\"Reconectando con tu PC\": se cortó la conexión. La app reintenta sola y se reconecta apenas la PC vuelve.",
@@ -699,7 +699,7 @@ const en: Guide[] = [
           {
             type: "list",
             items: [
-              "\"Pairing was declined\": the request was rejected on the PC. Tap \"Try again\" and approve it this time.",
+              "\"The PC declined the pairing request. Try again and approve it on the PC.\": the request was rejected on the PC. Tap \"Try again\" and approve it this time.",
               "\"Paired, but the control connection failed\": the pairing worked but the connection did not open. Try again.",
               "\"Update the app\" or \"Update Avyn Agent\": the versions are not compatible. On the PC, open Avyn Agent, then About, then Check for updates. Your pairing is kept.",
               "\"Reconnecting to your PC\": the connection dropped. The app retries on its own and reconnects as soon as the PC is back.",
