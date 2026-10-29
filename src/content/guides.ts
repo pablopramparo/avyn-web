@@ -234,7 +234,7 @@ const es: Guide[] = [
           {
             type: "list",
             items: [
-              "Reconexión: una vez vinculado, el teléfono se reconecta solo cada vez que abrís la app.",
+              "Reconexión: una vez vinculado, el teléfono se reconecta solo cada vez que abrís la app. Si la PC cambia de IP, la app la vuelve a encontrar sola.",
               "Más de una PC: usá \"Cambiar de PC\" en la app para pasar de una a otra, o \"Agregar PC\" para vincular otra. Vincular varias PC es una función Premium.",
               "Más de un teléfono: podés vincular todos los teléfonos que quieras con la misma PC, aprobando cada uno por separado.",
               "Revocar un teléfono: en Avyn Agent, abrí Dispositivos, tocá el menú de ese teléfono y elegí Revocar. El teléfono pierde el acceso y la app olvida la PC.",
@@ -713,7 +713,7 @@ const en: Guide[] = [
           {
             type: "list",
             items: [
-              "Reconnecting: once paired, the phone reconnects on its own each time you open the app.",
+              "Reconnecting: once paired, the phone reconnects on its own each time you open the app. If the PC changes its IP address, the app finds it again on its own.",
               "More than one PC: use \"Switch PC\" in the app to change between PCs, or \"Add PC\" to pair another one. Pairing several PCs is a Premium feature.",
               "More than one phone: you can pair as many phones as you like with the same PC, approving each one separately.",
               "Revoke a phone: in Avyn Agent, open Devices, tap the menu on that phone and choose Revoke. The phone loses access and the app forgets the PC.",
