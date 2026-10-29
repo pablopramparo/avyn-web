@@ -2,6 +2,7 @@ import { Icon } from "./icon";
 import { MicrosoftStoreBadge } from "./microsoft-store-badge";
 import { GooglePlayBadge } from "./google-play-badge";
 import Image from "next/image";
+import Link from "next/link";
 import { assetPath, siteConfig } from "@/config/site";
 import { getDictionary } from "@/i18n/dictionaries";
 import type { LocalizedProps } from "@/i18n/config";
@@ -24,18 +25,25 @@ export function ComingSoon({ kicker, store, icon }: { kicker: string; store: str
 export function DownloadButtons({ locale }: LocalizedProps) {
   const t = getDictionary(locale).common;
   return (
-    <div className="button-row">
-      {siteConfig.urls.windows ? (
-        <MicrosoftStoreBadge locale={locale} href={siteConfig.urls.windows} label={t.windows} />
-      ) : (
-        <ComingSoon kicker={t.comingSoonOn} store="Microsoft Store" icon="windows" />
+    <>
+      <div className="button-row">
+        {siteConfig.urls.windows ? (
+          <MicrosoftStoreBadge locale={locale} href={siteConfig.urls.windows} label={t.windows} />
+        ) : (
+          <ComingSoon kicker={t.comingSoonOn} store="Microsoft Store" icon="windows" />
+        )}
+        {siteConfig.urls.android ? (
+          <GooglePlayBadge locale={locale} href={siteConfig.urls.android} label={t.android} />
+        ) : (
+          <ComingSoon kicker={t.comingSoonOn} store="Google Play" icon="phone" />
+        )}
+      </div>
+      {siteConfig.urls.android && (
+        <p className="fine-print beta-note">
+          {t.androidBeta} <Link href={`/${locale}/download/#android`}>{t.androidBetaLink}</Link>
+        </p>
       )}
-      {siteConfig.urls.android ? (
-        <GooglePlayBadge locale={locale} href={siteConfig.urls.android} label={t.android} />
-      ) : (
-        <ComingSoon kicker={t.comingSoonOn} store="Google Play" icon="phone" />
-      )}
-    </div>
+    </>
   );
 }
 export function ExtensionButtons({ locale }: LocalizedProps) {

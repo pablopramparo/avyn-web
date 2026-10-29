@@ -1,12 +1,13 @@
 import type { Locale } from "@/i18n/config";
 
-export type GuideId = "control-pc" | "karaoke" | "tv";
+export type GuideId = "control-pc" | "pair-phone" | "karaoke" | "tv";
 
 /** Section name in the URL: /es/guias/... and /en/guides/... */
 export const guideSection: Record<Locale, string> = { es: "guias", en: "guides" };
 
 export const guideSlugs: Record<GuideId, Record<Locale, string>> = {
   "control-pc": { es: "controlar-pc-windows-desde-android", en: "control-windows-pc-from-android" },
+  "pair-phone": { es: "vincular-celular-android-con-avyn-agent", en: "pair-android-phone-with-avyn-agent" },
   karaoke: { es: "karaoke-ultrastar-en-windows", en: "ultrastar-karaoke-on-windows" },
   tv: { es: "ver-peliculas-de-la-pc-en-la-tv", en: "watch-pc-movies-on-your-tv" },
 };

@@ -52,7 +52,7 @@ const es: Guide[] = [
           },
           {
             type: "note",
-            text: "Avyn Agent y Avyn Remote están en proceso de publicación en Microsoft Store y Google Play. Mientras tanto, la app de Android está en beta cerrada: para sumarte como tester, escribinos a avyn.remote@gmail.com.",
+            text: "Avyn Agent ya está en Microsoft Store. Avyn Remote está en Google Play en beta cerrada: solo se instala si sos tester. Para sumarte, escribinos a avyn.remote@gmail.com.",
           },
         ],
       },
@@ -136,9 +136,136 @@ const es: Guide[] = [
       },
     ],
     related: [
+      { path: "/guias/vincular-celular-android-con-avyn-agent/", label: "Vincular el celular con Avyn Agent" },
       { path: "/download/", label: "Descargar Avyn" },
       { path: "/security/", label: "Cómo funciona la seguridad" },
       { path: "/verify/", label: "Verificar Avyn" },
+    ],
+  },
+  {
+    id: "pair-phone",
+    slug: guideSlugs["pair-phone"].es,
+    title: "Cómo vincular tu celular Android con Avyn Agent",
+    description:
+      "Guía paso a paso para conectar la app Avyn Remote de Android con Avyn Agent en Windows: encontrar la PC, comparar el código de verificación, aprobar y resolver los problemas de conexión más comunes.",
+    intro:
+      "La vinculación se hace una sola vez por teléfono. La app encuentra tu PC en la red local, los dos equipos muestran el mismo código de verificación y vos aprobás la solicitud en la PC. Esta guía recorre cada paso y qué revisar si la PC no aparece.",
+    updated: "2026-10-29",
+    image: "home",
+    sections: [
+      {
+        heading: "Antes de empezar",
+        blocks: [
+          {
+            type: "list",
+            items: [
+              "Una PC con Windows de 64 bits con Avyn Agent instalado. Es gratis y está en Microsoft Store o como descarga directa desde la página de descarga.",
+              "Un teléfono Android con la app Avyn Remote.",
+              "Los dos equipos en la misma red local. Una red de invitados o los datos móviles no sirven.",
+            ],
+          },
+          {
+            type: "p",
+            text: "Abrí Avyn Agent en la PC y dejalo corriendo. Su ícono queda junto al reloj; si no está, iniciá el programa desde el menú Inicio.",
+          },
+        ],
+      },
+      {
+        heading: "Paso a paso",
+        blocks: [
+          {
+            type: "steps",
+            items: [
+              "En el teléfono, abrí Avyn Remote. En la pantalla \"Prepará tu PC\", tocá \"Buscar mi PC\". Si todavía no instalaste el Agent, \"Enviarme el enlace de descarga\" comparte el enlace por mail o chat para abrirlo en la PC.",
+              "Esperá unos segundos en \"Buscando tu PC\". La app escanea la red local.",
+              "En \"Elegir PC\", elegí tu PC de la lista (muestra su nombre y su dirección) y tocá \"Vincular\". Si esa PC ya estaba vinculada, el botón dice \"Conectar\".",
+              "El teléfono muestra \"Emparejando con\" y el nombre de tu PC, con un código de verificación grande con el formato XXXX-XXXX-XXXX-XXXX.",
+              "En la PC aparece una ventana \"Solicitud de vinculación\" por encima de todo, incluso si Avyn Agent está minimizado en la bandeja. Muestra el nombre del teléfono y su propio código de verificación.",
+              "Compará los dos códigos. Tocá \"Aprobar\" solamente si son idénticos. Si difieren, tocá \"Rechazar\": significa que algo más en la red puede estar interponiéndose entre el teléfono y la PC.",
+              "La app se conecta sola y abre la pantalla de control, con las pestañas Control, Ventanas, Archivos y Acciones.",
+            ],
+          },
+          {
+            type: "note",
+            text: "El código no se escribe en ningún lado: solo se compara. Cada equipo lo calcula a partir del certificado de la PC y nunca viaja de uno al otro.",
+          },
+        ],
+      },
+      {
+        heading: "Si la PC no aparece",
+        blocks: [
+          {
+            type: "p",
+            text: "Cuando no encuentra nada, la app muestra \"No se encontró ninguna PC\" y sigue buscando cada pocos segundos. Esto es lo que conviene revisar, de lo más frecuente a lo menos:",
+          },
+          {
+            type: "list",
+            items: [
+              "Avyn Agent no está abierto. Buscá su ícono junto al reloj en la PC.",
+              "Redes distintas. El teléfono tiene que estar en el mismo Wi-Fi que la PC, no con datos móviles ni en una red de invitados. Algunos routers también aíslan los dispositivos Wi-Fi de los conectados por cable.",
+              "Red Pública en Windows. Avyn Agent solo recibe conexiones en redes privadas. Si tu red está como Pública, cambiala a Privada en la configuración de Windows, en Red e Internet: es una causa frecuente de \"No se encontró ninguna PC\", y Windows no avisa de nada.",
+              "Firewall de Windows. Con la versión de Microsoft Store las reglas se crean solas para redes privadas. Con la descarga directa, Windows muestra su aviso la primera vez que abrís Avyn Agent: marcá redes privadas y permití el acceso. Si lo cerraste o lo rechazaste, el teléfono no va a poder conectarse hasta que lo permitas.",
+              "Una VPN activa en el teléfono o en la PC. Desactivala mientras vinculás.",
+            ],
+          },
+          {
+            type: "p",
+            text: "Después tocá \"Escanear de nuevo\" en la app. La vinculación solo funciona por el descubrimiento automático en la red local: no hay código QR ni forma de escribir una dirección a mano.",
+          },
+        ],
+      },
+      {
+        heading: "Otros mensajes que podés ver",
+        blocks: [
+          {
+            type: "list",
+            items: [
+              "\"Pairing was declined\": la solicitud se rechazó en la PC. Tocá \"Probar de nuevo\" y esta vez aprobala.",
+              "\"Se emparejó, pero falló la conexión de control\": la vinculación funcionó pero la conexión no se abrió. Probá de nuevo.",
+              "\"Actualizá la app\" o \"Actualizá Avyn Agent\": las versiones no son compatibles. En la PC, abrí Avyn Agent, después Acerca de y Buscar actualizaciones. La vinculación se conserva.",
+              "\"Reconectando con tu PC\": se cortó la conexión. La app reintenta sola y se reconecta apenas la PC vuelve.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Volver a vincular, cambiar de PC y revocar",
+        blocks: [
+          {
+            type: "list",
+            items: [
+              "Reconexión: una vez vinculado, el teléfono se reconecta solo cada vez que abrís la app.",
+              "Más de una PC: usá \"Cambiar de PC\" en la app para pasar de una a otra, o \"Agregar PC\" para vincular otra. Vincular varias PC es una función Premium.",
+              "Más de un teléfono: podés vincular todos los teléfonos que quieras con la misma PC, aprobando cada uno por separado.",
+              "Revocar un teléfono: en Avyn Agent, abrí Dispositivos, tocá el menú de ese teléfono y elegí Revocar. El teléfono pierde el acceso y la app olvida la PC.",
+              "Olvidar una PC en el teléfono: en la app, tocá \"Cambiar de PC\" y después el ícono de papelera de la PC. Esto solo la quita del teléfono, así que quitá también el teléfono en Avyn Agent, en Dispositivos, si querés que la PC deje de reconocerlo.",
+            ],
+          },
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "¿Tengo que escribir un código?",
+        a: "No. Solo comparás el código de verificación que aparece en el teléfono con el de la Solicitud de vinculación en la PC, y aprobás si coinciden.",
+      },
+      {
+        q: "¿Puedo vincular con un código QR o con la IP de la PC?",
+        a: "No. La app encuentra la PC con el descubrimiento automático en la red local.",
+      },
+      {
+        q: "¿Por qué el código se ve distinto en cada equipo?",
+        a: "Tendría que ser idéntico. Si los dos códigos difieren, rechazá la solicitud: algo en la red puede estar interceptando la conexión.",
+      },
+      {
+        q: "¿Necesito una cuenta o Internet para vincular?",
+        a: "No. La vinculación ocurre directamente entre el teléfono y la PC dentro de tu red local.",
+      },
+    ],
+    related: [
+      { path: "/guias/controlar-pc-windows-desde-android/", label: "Controlar tu PC desde el celular" },
+      { path: "/download/", label: "Descargar Avyn" },
+      { path: "/security/", label: "Cómo funciona la seguridad" },
     ],
   },
   {
@@ -331,7 +458,7 @@ const es: Guide[] = [
         blocks: [
           {
             type: "p",
-            text: "Con la extensión de Avyn para Chrome o Edge, el teléfono también puede controlar videos del navegador, como los de YouTube, Netflix, Disney+, HBO Max o Prime Video: pantalla completa, velocidad, subtítulos en YouTube y los botones que la página muestre, como saltar la intro o pasar al siguiente episodio.",
+            text: "Con la extensión de Avyn para Chrome o Edge, el teléfono también puede controlar videos del navegador, como los de YouTube, Netflix, HBO Max, Disney+, Prime Video o Apple TV: reproducción, pantalla completa, velocidad, subtítulos, pista de audio, retroceder o adelantar 10 segundos y los botones que la página muestre, como saltar la intro o pasar al siguiente episodio. Las acciones disponibles dependen de cada sitio y de cada video.",
           },
         ],
       },
@@ -404,7 +531,7 @@ const en: Guide[] = [
           },
           {
             type: "note",
-            text: "Avyn Agent and Avyn Remote are being published on Microsoft Store and Google Play. In the meantime the Android app is in closed beta: to join as a tester, email us at avyn.remote@gmail.com.",
+            text: "Avyn Agent is now on Microsoft Store. Avyn Remote is on Google Play in closed beta: it only installs if you are a tester. To join, email us at avyn.remote@gmail.com.",
           },
         ],
       },
@@ -488,9 +615,136 @@ const en: Guide[] = [
       },
     ],
     related: [
+      { path: "/guides/pair-android-phone-with-avyn-agent/", label: "Pair your phone with Avyn Agent" },
       { path: "/download/", label: "Download Avyn" },
       { path: "/security/", label: "How security works" },
       { path: "/verify/", label: "Verify Avyn" },
+    ],
+  },
+  {
+    id: "pair-phone",
+    slug: guideSlugs["pair-phone"].en,
+    title: "How to pair your Android phone with Avyn Agent",
+    description:
+      "Step-by-step guide to connect the Avyn Remote Android app to Avyn Agent on Windows: find the PC, compare the verification code, approve and fix the usual connection problems.",
+    intro:
+      "Pairing is done once per phone. The app finds your PC on the local network, both devices show the same verification code and you approve the request on the PC. This guide walks through each step and what to check if the PC does not show up.",
+    updated: "2026-10-29",
+    image: "home",
+    sections: [
+      {
+        heading: "Before you start",
+        blocks: [
+          {
+            type: "list",
+            items: [
+              "A 64-bit Windows PC with Avyn Agent installed. It is free and available on Microsoft Store or as a direct download from the download page.",
+              "An Android phone with the Avyn Remote app.",
+              "Both devices on the same local network. A guest network or mobile data will not work.",
+            ],
+          },
+          {
+            type: "p",
+            text: "Open Avyn Agent on the PC and leave it running. Its icon sits next to the clock; if it is not there, start it from the Start menu.",
+          },
+        ],
+      },
+      {
+        heading: "Step by step",
+        blocks: [
+          {
+            type: "steps",
+            items: [
+              "On the phone, open Avyn Remote. On the \"Set up your PC\" screen, tap \"Find my PC\". If you have not installed the Agent yet, \"Send me the download link\" shares the link by email or chat so you can open it on the PC.",
+              "Wait a couple of seconds on \"Looking for your PC\". The app scans the local network.",
+              "On \"Choose a PC\", pick your PC from the list (it shows its name and address) and tap \"Pair\". If that PC was already paired, the button says \"Connect\" instead.",
+              "The phone shows \"Pairing with\" and your PC's name, with a large verification code in the form XXXX-XXXX-XXXX-XXXX.",
+              "On the PC, a \"Pairing request\" window appears in front of everything else, even if Avyn Agent is minimized to the tray. It shows the name of the phone and its own verification code.",
+              "Compare both codes. Tap \"Approve\" only if they are identical. If they differ, tap \"Reject\": that means something else on the network may be sitting between the phone and the PC.",
+              "The app connects on its own and opens the control screen, with the Control, Windows, Files and Actions tabs.",
+            ],
+          },
+          {
+            type: "note",
+            text: "You do not type the code anywhere: you only compare it. Each device works it out from the PC's certificate, and it is never sent from one to the other.",
+          },
+        ],
+      },
+      {
+        heading: "If the PC does not show up",
+        blocks: [
+          {
+            type: "p",
+            text: "When nothing is found, the app shows \"No PC found\" and keeps searching every few seconds. These are the things to check, in order of how often they are the cause:",
+          },
+          {
+            type: "list",
+            items: [
+              "Avyn Agent is not running. Check for its icon next to the clock on the PC.",
+              "Different networks. The phone must be on the same Wi-Fi as the PC, not on mobile data and not on a guest network. Some routers also isolate Wi-Fi devices from the wired ones.",
+              "A Public network in Windows. Avyn Agent only accepts connections on private networks. If your network is set as Public, change it to Private in Windows settings under Network & internet: it is a common cause of \"No PC found\", and Windows gives no warning.",
+              "Windows firewall. With the Microsoft Store version the rules are created automatically for private networks. With the direct download, Windows shows its prompt the first time you open Avyn Agent: tick private networks and allow access. If you closed or declined it, the phone cannot connect until you allow it.",
+              "A VPN active on the phone or the PC. Turn it off for the pairing.",
+            ],
+          },
+          {
+            type: "p",
+            text: "Then tap \"Scan again\" in the app. Pairing only works through automatic discovery on the local network: there is no QR code and no way to type an address by hand.",
+          },
+        ],
+      },
+      {
+        heading: "Other messages you may see",
+        blocks: [
+          {
+            type: "list",
+            items: [
+              "\"Pairing was declined\": the request was rejected on the PC. Tap \"Try again\" and approve it this time.",
+              "\"Paired, but the control connection failed\": the pairing worked but the connection did not open. Try again.",
+              "\"Update the app\" or \"Update Avyn Agent\": the versions are not compatible. On the PC, open Avyn Agent, then About, then Check for updates. Your pairing is kept.",
+              "\"Reconnecting to your PC\": the connection dropped. The app retries on its own and reconnects as soon as the PC is back.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Pairing again, switching and revoking",
+        blocks: [
+          {
+            type: "list",
+            items: [
+              "Reconnecting: once paired, the phone reconnects on its own each time you open the app.",
+              "More than one PC: use \"Switch PC\" in the app to change between PCs, or \"Add PC\" to pair another one. Pairing several PCs is a Premium feature.",
+              "More than one phone: you can pair as many phones as you like with the same PC, approving each one separately.",
+              "Revoke a phone: in Avyn Agent, open Devices, tap the menu on that phone and choose Revoke. The phone loses access and the app forgets the PC.",
+              "Forget a PC on the phone: in the app, tap \"Switch PC\" and then the trash icon on the PC. This only removes it from the phone, so also remove the phone in Avyn Agent under Devices if you want the PC to stop recognizing it.",
+            ],
+          },
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Do I have to type a code?",
+        a: "No. You only compare the verification code that appears on the phone with the one in the Pairing request on the PC, and approve if they match.",
+      },
+      {
+        q: "Can I pair using a QR code or the PC's IP address?",
+        a: "No. The app finds the PC through automatic discovery on the local network.",
+      },
+      {
+        q: "Why does the code look different on each device?",
+        a: "It should be identical. If the two codes differ, reject the request: something on the network may be intercepting the connection.",
+      },
+      {
+        q: "Do I need an account or Internet to pair?",
+        a: "No. Pairing happens directly between the phone and the PC inside your local network.",
+      },
+    ],
+    related: [
+      { path: "/guides/control-windows-pc-from-android/", label: "Control your PC from your phone" },
+      { path: "/download/", label: "Download Avyn" },
+      { path: "/security/", label: "How security works" },
     ],
   },
   {
@@ -683,7 +937,7 @@ const en: Guide[] = [
         blocks: [
           {
             type: "p",
-            text: "With the Avyn extension for Chrome or Edge, the phone can also control browser videos, such as those on YouTube, Netflix, Disney+, HBO Max or Prime Video: full screen, speed, subtitles on YouTube and the buttons the page shows, like skipping the intro or going to the next episode.",
+            text: "With the Avyn extension for Chrome or Edge, the phone can also control browser videos, such as those on YouTube, Netflix, HBO Max, Disney+, Prime Video or Apple TV: playback, full screen, speed, subtitles, audio track, jumping back or forward 10 seconds and the buttons the page shows, like skipping the intro or going to the next episode. Available actions depend on each site and each video.",
           },
         ],
       },

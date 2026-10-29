@@ -8,6 +8,8 @@
     "windowsSoon": "Próximamente en Microsoft Store",
     "androidSoon": "Próximamente en Google Play",
     "comingSoonOn": "Próximamente en",
+    "androidBeta": "La app de Android está en beta cerrada: el botón de Google Play solo instala para testers.",
+    "androidBetaLink": "Cómo sumarte",
     "verify": "Verificar Avyn",
     "trust": "No nos creas. Comprobalo."
   },
@@ -223,8 +225,8 @@
     "included": "Su integración completa con Avyn también.",
     "browserEyebrow": "CHROME + EDGE",
     "browserTitle": "Tu navegador. Tu control remoto.",
-    "browserText": "Controlá los videos que se reproducen en Chrome y Edge, directo desde tu teléfono.",
-    "browserNote": "Instalá la extensión en el navegador de tu PC y usala con Avyn Agent."
+    "browserText": "Controlá los videos que se reproducen en Chrome y Edge, directo desde tu teléfono: pausa, subtítulos, pista de audio, saltar la intro y retroceder o adelantar 10 segundos. Compatible con YouTube, Netflix, HBO Max, Disney+, Prime Video y Apple TV.",
+    "browserNote": "Instalá la extensión en el navegador de tu PC y usala con Avyn Agent. Las acciones disponibles dependen de cada sitio y de cada video."
   },
   "editions": {
     "eyebrow": "ÚTIL DESDE EL PRIMER DÍA",
@@ -268,7 +270,7 @@
     "mechanisms": [
       {
         "title": "La vinculación es explícita.",
-        "text": "Un teléfono tiene que estar vinculado con tu PC antes de poder controlarla. Vos decidís qué dispositivos aceptás."
+        "text": "Un teléfono tiene que estar vinculado con tu PC antes de poder controlarla. Vos decidís qué dispositivos aceptás: al vincular, el teléfono y la PC muestran un código de verificación y solo aprobás si coinciden."
       },
       {
         "title": "Las conexiones están cifradas.",
@@ -300,7 +302,7 @@
     "eyebrow": "VERIFICAR AVYN",
     "intro": "Deberías poder entender cómo se comunica Avyn. Este es el camino para comprobarlo por tu cuenta.",
     "noticeTitle": "Versiones probadas.",
-    "notice": "Esta guía se verificó el 22 de octubre de 2026 en Windows 11 con la descarga directa (Avyn Agent 0.1.0-alpha.42) y con la versión de Microsoft Store (1.2.5.0), usando un teléfono Android. Los resultados pueden variar según tu red, tu versión de Windows y la versión de Avyn.",
+    "notice": "Esta guía se verificó el 22 de octubre de 2026 en Windows 11 con la descarga directa (Avyn Agent 0.1.0-alpha.42) y con la versión de Microsoft Store (1.2.1.0), usando un teléfono Android. Los resultados pueden variar según tu red, tu versión de Windows y la versión de Avyn.",
     "steps": [
       {
         "title": "Identificá las conexiones del Agent.",
@@ -340,12 +342,12 @@
     "windowsText": "La parte que se ejecuta en tu PC y lleva a cabo tus acciones.",
     "androidTitle": "App de Android",
     "androidText": "La interfaz de tu PC, en tu teléfono.",
-    "windowsDirectText": "Mientras tanto, podés descargar el Agent directamente:",
+    "windowsDirectText": "También podés descargar el Agent directamente:",
     "windowsDirectLink": "descarga directa",
     "betaText": "La app de Android está en beta cerrada. Para sumarte como tester, escribinos desde el correo de tu cuenta de Google Play a",
     "betaSubject": "Quiero probar Avyn Remote (beta cerrada)",
     "extensionTitle": "Extensión del navegador",
-    "extensionText": "Controles multimedia web avanzados para Chrome y Edge. Requiere Avyn Agent en tu PC. Las acciones disponibles dependen de cada sitio.",
+    "extensionText": "Controlá YouTube, Netflix, HBO Max, Disney+, Prime Video y Apple TV desde el teléfono: reproducción, subtítulos, pista de audio, saltar la intro y ±10 segundos. Requiere Avyn Agent en tu PC. Las acciones disponibles dependen de cada sitio.",
     "chromeExtension": "Instalar en Chrome",
     "edgeExtension": "Instalar en Edge",
     "before": "ANTES DE EMPEZAR",

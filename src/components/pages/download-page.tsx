@@ -50,7 +50,7 @@ export function DownloadPage({ locale }: LocalizedProps) {
               ) : (
                 <GooglePlayBadge locale={locale} href={item.url} label={item.label} />
               )}
-              {item.id === "windows" && !item.url && (
+              {item.id === "windows" && (
                 <p className="beta-note">
                   {t.windowsDirectText}{" "}
                   <a href={siteConfig.urls.windowsDirect} target="_blank" rel="noopener noreferrer">
