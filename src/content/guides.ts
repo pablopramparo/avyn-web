@@ -210,7 +210,7 @@ const es: Guide[] = [
           },
           {
             type: "p",
-            text: "Después tocá \"Escanear de nuevo\" en la app. La vinculación solo funciona por el descubrimiento automático en la red local: no hay código QR ni forma de escribir una dirección a mano.",
+            text: "Después tocá \"Escanear de nuevo\" en la app. Si todo está bien y la PC sigue sin aparecer, algunos módems y routers dejan pasar la conexión pero no la respuesta de la búsqueda automática. En ese caso tocá \"Conectar por IP\" (desde la versión 1.1.3 de la app), escribí la IP que Avyn Agent muestra en su pantalla de Estado, por ejemplo 192.168.0.81, y seguí con la vinculación normal.",
           },
         ],
       },
@@ -252,7 +252,7 @@ const es: Guide[] = [
       },
       {
         q: "¿Puedo vincular con un código QR o con la IP de la PC?",
-        a: "No. La app encuentra la PC con el descubrimiento automático en la red local.",
+        a: "Con la IP sí: si la búsqueda automática no encuentra la PC, tocá \"Conectar por IP\" en la app (desde la versión 1.1.3) y escribí la IP que muestra Avyn Agent en su pantalla de Estado. Con un código QR no.",
       },
       {
         q: "¿Por qué el código se ve distinto en cada equipo?",
@@ -690,7 +690,7 @@ const en: Guide[] = [
           },
           {
             type: "p",
-            text: "Then tap \"Scan again\" in the app. Pairing only works through automatic discovery on the local network: there is no QR code and no way to type an address by hand.",
+            text: "Then tap \"Scan again\" in the app. If everything checks out and the PC still does not show up, some modems and routers let the connection through but drop the reply to the automatic search. In that case tap \"Connect by IP\" (app version 1.1.3 and later), type the IP address Avyn Agent shows on its Status screen, for example 192.168.0.81, and continue with the normal pairing.",
           },
         ],
       },
@@ -732,7 +732,7 @@ const en: Guide[] = [
       },
       {
         q: "Can I pair using a QR code or the PC's IP address?",
-        a: "No. The app finds the PC through automatic discovery on the local network.",
+        a: "With the IP address, yes: if automatic search does not find the PC, tap \"Connect by IP\" in the app (version 1.1.3 and later) and type the IP address Avyn Agent shows on its Status screen. Not with a QR code.",
       },
       {
         q: "Why does the code look different on each device?",
