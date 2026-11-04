@@ -145,7 +145,8 @@
       "items": [
         "Touchpad y teclado",
         "Ventanas y apps",
-        "Multimedia y volumen"
+        "Multimedia y volumen",
+        "Pantalla en vivo, con puntero y dibujos"
       ]
     },
     {
@@ -173,7 +174,7 @@
     "eyebrow": "DOS DISPOSITIVOS. UNA CONEXIÓN SIMPLE.",
     "title": "Configurá. Ponete cómodo.",
     "text": "La PC es el dispositivo remoto. Tu teléfono es su interfaz.",
-    "detail": "Acciones, sin transmitir la pantalla.",
+    "detail": "Acciones y, cuando la necesitás, la pantalla en vivo.",
     "steps": [
       {
         "title": "Instalá en ambos dispositivos.",
