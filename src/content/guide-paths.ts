@@ -1,6 +1,6 @@
 import type { Locale } from "@/i18n/config";
 
-export type GuideId = "control-pc" | "pair-phone" | "karaoke" | "tv";
+export type GuideId = "control-pc" | "pair-phone" | "karaoke" | "tv" | "vpn";
 
 /** Section name in the URL: /es/guias/... and /en/guides/... */
 export const guideSection: Record<Locale, string> = { es: "guias", en: "guides" };
@@ -10,6 +10,7 @@ export const guideSlugs: Record<GuideId, Record<Locale, string>> = {
   "pair-phone": { es: "vincular-celular-android-con-avyn-agent", en: "pair-android-phone-with-avyn-agent" },
   karaoke: { es: "karaoke-ultrastar-en-windows", en: "ultrastar-karaoke-on-windows" },
   tv: { es: "ver-peliculas-de-la-pc-en-la-tv", en: "watch-pc-movies-on-your-tv" },
+  vpn: { es: "controlar-pc-fuera-de-casa-con-vpn", en: "control-your-pc-away-from-home-with-a-vpn" },
 };
 
 export function guidePath(locale: Locale, slug?: string) {

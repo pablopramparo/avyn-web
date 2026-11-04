@@ -90,6 +90,7 @@ export function Footer({ locale }: LocalizedProps) {
         <Link href={localizedPath(locale, "/auren/")}>Auren</Link>
         <Link href={localizedPath(locale, "/kantaria/")}>Kantaria</Link>
         <Link href={guidePath(locale)}>{t.nav.guides}</Link>
+        <Link href={localizedPath(locale, "/faq/")}>{t.nav.faq}</Link>
         <Link href={localizedPath(locale, "/verify/")}>{t.common.verify}</Link>
         <Link href={localizedPath(locale, "/download/#requirements")}>
           {t.nav.requirements}
