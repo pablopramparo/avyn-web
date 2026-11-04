@@ -82,6 +82,7 @@ const es: Guide[] = [
               "Programas: abrir los programas del menú Inicio con un toque.",
               "Archivos: explorar las carpetas que compartiste, buscar archivos, abrirlos en la PC, y enviar o descargar archivos entre el teléfono y la PC.",
               "Energía y rutinas: bloquear la sesión, suspender, reiniciar o apagar la PC, y ejecutar rutinas guardadas de varios pasos.",
+              "Pantalla en vivo: ver un monitor de la PC en el teléfono, con zoom, puntero resaltado, flechas y círculos.",
             ],
           },
           {
@@ -601,6 +602,105 @@ const es: Guide[] = [
       { path: "/guias/controlar-pc-windows-desde-android/", label: "Controlar tu PC desde el celular" },
     ],
   },
+  {
+    id: "screen",
+    slug: guideSlugs["screen"].es,
+    title: "Cómo ver la pantalla de tu PC en el teléfono y dibujar sobre ella",
+    description:
+      "Guía para ver en vivo un monitor de tu PC con Windows desde el teléfono Android, con zoom, puntero resaltado, flechas, círculos y goma, y qué controles tenés sobre quién mira.",
+    intro:
+      "Avyn puede mostrar en el teléfono, en vivo, uno de los monitores de tu PC. Mientras mirás, podés señalar con un puntero resaltado y dibujar flechas y círculos que se ven también en la pantalla de la PC. Sirve para explicar algo a quien está frente a la PC, para guiar una presentación o para ver qué está pasando sin levantarte.",
+    updated: "2026-11-04",
+    image: "home",
+    sections: [
+      {
+        heading: "Qué necesitás",
+        blocks: [
+          {
+            type: "list",
+            items: [
+              "Avyn Agent en la PC y la app Avyn Remote en un teléfono Android, ya vinculados y en la misma red local.",
+              "La opción de transmisión de pantalla activada en Avyn Agent (puede apagarse desde sus ajustes).",
+              "Según la edición de la app, esta función puede aparecer con un candado y mostrar su pantalla de Premium.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Paso a paso",
+        blocks: [
+          {
+            type: "steps",
+            items: [
+              "En la app, entrá en Control y abrí la subpestaña Pantalla. La transmisión empieza al entrar y se detiene al salir o al pasar la app a segundo plano.",
+              "Si la PC tiene varios monitores, elegí cuál ver. Podés cambiarlo en vivo, sin salir de la sesión.",
+              "Pasá a pantalla completa para ver el monitor en horizontal, sin las barras de la app. Para volver, usá el botón de salida o Atrás.",
+              "Acercá con dos dedos, hasta 4 veces; movete por la imagen con dos dedos, y volvé a tamaño normal con un doble toque.",
+              "Elegí una herramienta: el puntero resaltado para señalar, la flecha, el círculo o la goma. Dibujá con el dedo.",
+              "Usá deshacer para quitar el último dibujo, o limpiar para borrarlos todos.",
+            ],
+          },
+          {
+            type: "p",
+            text: "Los dibujos y el puntero se ven también en el monitor de la PC, en una ventana transparente, pero no interfieren: los clics y el teclado pasan de largo. Al cambiar de monitor o al terminar la sesión, los dibujos se borran.",
+          },
+          {
+            type: "note",
+            text: "El video se transmite en H.264 de hasta 720p a 30 cuadros por segundo, por tu red local. La calidad real depende de tu Wi-Fi.",
+          },
+        ],
+      },
+      {
+        heading: "Quién mira y cómo cortarlo",
+        blocks: [
+          {
+            type: "list",
+            items: [
+              "Solo un teléfono vinculado puede ver la pantalla, y solo uno a la vez: si otro ya la está viendo, la app te lo dice.",
+              "Mientras alguien mira, Avyn Agent lo muestra en la bandeja y en su ventana, con un botón para detener la transmisión al instante.",
+              "Podés apagar la función en los ajustes de Avyn Agent: corta la transmisión en curso.",
+              "La transmisión termina sola si el teléfono pierde la conexión, si pasan unos segundos sin señal, si el monitor desaparece o si revocás el teléfono.",
+              "Avyn no guarda ninguna imagen de tu pantalla, ni en el disco ni en los registros.",
+              "Todo viaja por tu red local, con la misma conexión cifrada y fijada a tu PC que usa el resto de Avyn.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Si algo no sale como esperabas",
+        blocks: [
+          {
+            type: "list",
+            items: [
+              "Otro teléfono la tiene: solo una sesión por PC. Pedí que la cierre, o detenela desde la bandeja de la PC.",
+              "La función está apagada en la PC: activala en los ajustes de Avyn Agent.",
+              "Se corta en la pantalla de bloqueo o ante un aviso de permisos: Windows no deja que un programa común capture esas pantallas. La app te avisa el motivo.",
+              "Un video con protección de copia se ve en negro: lo decide Windows, no Avyn.",
+              "Se ve entrecortado: depende de la señal de tu Wi-Fi. Si no puede seguir el ritmo, Avyn descarta imágenes viejas y retoma desde un cuadro completo en vez de acumular retraso.",
+            ],
+          },
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "¿Se oye el audio de la PC?",
+        a: "No. La función transmite solo la imagen de un monitor.",
+      },
+      {
+        q: "¿Puedo manejar la PC mientras la veo?",
+        a: "Sí: con el teléfono podés mover el mouse y escribir como siempre, y ver el resultado en vivo.",
+      },
+      {
+        q: "¿Los dibujos quedan guardados?",
+        a: "No. Se borran al cambiar de monitor y al terminar la sesión, y Avyn no guarda ninguna imagen de la pantalla.",
+      },
+    ],
+    related: [
+      { path: "/guias/controlar-pc-windows-desde-android/", label: "Controlar tu PC desde el celular" },
+      { path: "/security/", label: "Cómo cuida Avyn tu PC" },
+    ],
+  },
 ];
 
 const en: Guide[] = [
@@ -662,6 +762,7 @@ const en: Guide[] = [
               "Programs: open the programs in the Start menu with one tap.",
               "Files: browse the folders you shared, search for files, open them on the PC, and send or download files between the phone and the PC.",
               "Power and routines: lock the session, sleep, restart or shut down the PC, and run saved multi-step routines.",
+              "Live screen: watch a monitor of the PC on the phone, with zoom, a highlighted pointer, arrows and circles.",
             ],
           },
           {
@@ -1179,6 +1280,105 @@ const en: Guide[] = [
     related: [
       { path: "/guides/pair-android-phone-with-avyn-agent/", label: "Pair your phone with Avyn Agent" },
       { path: "/guides/control-windows-pc-from-android/", label: "Control your PC from your phone" },
+    ],
+  },
+  {
+    id: "screen",
+    slug: guideSlugs["screen"].en,
+    title: "How to see your PC screen on your phone and draw on it",
+    description:
+      "Guide to watching a monitor of your Windows PC live from your Android phone, with zoom, a highlighted pointer, arrows, circles and an eraser, and the controls you have over who is watching.",
+    intro:
+      "Avyn can show one of your PC's monitors on your phone, live. While you watch, you can point with a highlighted pointer and draw arrows and circles that also show on the PC's screen. It is useful for explaining something to whoever is at the PC, for guiding a presentation or for seeing what is going on without getting up.",
+    updated: "2026-11-04",
+    image: "home",
+    sections: [
+      {
+        heading: "What you need",
+        blocks: [
+          {
+            type: "list",
+            items: [
+              "Avyn Agent on the PC and the Avyn Remote app on an Android phone, already paired and on the same local network.",
+              "Screen streaming turned on in Avyn Agent (it can be turned off in its settings).",
+              "Depending on the app's edition, this feature may show a lock and its Premium screen.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Step by step",
+        blocks: [
+          {
+            type: "steps",
+            items: [
+              "In the app, go to Control and open the Screen sub-tab. Streaming starts when you enter it and stops when you leave or send the app to the background.",
+              "If the PC has several monitors, pick which one to watch. You can change it live, without leaving the session.",
+              "Switch to full screen to see the monitor in landscape, without the app's bars. To go back, use the exit button or Back.",
+              "Zoom in with two fingers, up to 4 times; move around the image with two fingers, and return to normal size with a double tap.",
+              "Pick a tool: the highlighted pointer to point, the arrow, the circle or the eraser. Draw with your finger.",
+              "Use undo to remove the last drawing, or clear to remove them all.",
+            ],
+          },
+          {
+            type: "p",
+            text: "The drawings and the pointer also show on the PC's monitor, in a transparent window, but they do not get in the way: clicks and keyboard pass right through. When you change monitor or the session ends, the drawings are erased.",
+          },
+          {
+            type: "note",
+            text: "Video is streamed as H.264 up to 720p at 30 frames per second, over your local network. Actual quality depends on your Wi-Fi.",
+          },
+        ],
+      },
+      {
+        heading: "Who is watching and how to cut it off",
+        blocks: [
+          {
+            type: "list",
+            items: [
+              "Only a paired phone can see the screen, and only one at a time: if another phone already has it, the app tells you.",
+              "While someone is watching, Avyn Agent shows it in the tray and in its window, with a button to stop the stream at once.",
+              "You can turn the feature off in Avyn Agent's settings: it cuts any stream in progress.",
+              "The stream ends by itself if the phone loses its connection, if a few seconds pass with no signal, if the monitor disappears or if you revoke the phone.",
+              "Avyn stores no image of your screen, neither on disk nor in its logs.",
+              "Everything travels over your local network, on the same encrypted connection pinned to your PC that the rest of Avyn uses.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "If something does not go as expected",
+        blocks: [
+          {
+            type: "list",
+            items: [
+              "Another phone has it: only one session per PC. Ask them to close it, or stop it from the PC's tray.",
+              "The feature is off on the PC: turn it on in Avyn Agent's settings.",
+              "It stops at the lock screen or on a permission prompt: Windows does not let an ordinary program capture those screens. The app tells you the reason.",
+              "A copy-protected video shows black: Windows decides that, not Avyn.",
+              "It looks choppy: it depends on your Wi-Fi signal. If it cannot keep up, Avyn drops old frames and resumes from a full frame instead of building up delay.",
+            ],
+          },
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Can I hear the PC's audio?",
+        a: "No. The feature streams only the picture of one monitor.",
+      },
+      {
+        q: "Can I control the PC while watching it?",
+        a: "Yes: from the phone you can move the mouse and type as usual, and see the result live.",
+      },
+      {
+        q: "Are the drawings saved?",
+        a: "No. They are erased when you change monitor and when the session ends, and Avyn stores no image of the screen.",
+      },
+    ],
+    related: [
+      { path: "/guides/control-windows-pc-from-android/", label: "Control your PC from your phone" },
+      { path: "/security/", label: "How Avyn protects your PC" },
     ],
   },
 ];
