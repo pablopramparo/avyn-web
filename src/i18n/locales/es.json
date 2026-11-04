@@ -29,7 +29,8 @@
     "footerNote": "Android + Windows. Una razón menos para levantarte.",
     "footerOrigin": "Desde 🇦🇷 para el mundo.",
     "kantaria": "Kantaria",
-    "guides": "Guías"
+    "guides": "Guías",
+    "faq": "Preguntas frecuentes"
   },
   "hero": {
     "title": "Tu PC Windows.",
@@ -456,6 +457,12 @@
     "title": "Esta ventana no lleva a ningún lado.",
     "back": "Volver a Avyn"
   },
+  "faq": {
+    "eyebrow": "PREGUNTAS FRECUENTES",
+    "title": "Lo que más se pregunta.",
+    "intro": "Respuestas cortas, agrupadas por tema. Cada grupo enlaza con la guía donde está el paso a paso.",
+    "guide": "Ver la guía completa"
+  },
   "guides": {
     "eyebrow": "GUÍAS",
     "title": "Guías para sacarle el jugo a Avyn, Auren y Kantaria.",
@@ -489,6 +496,10 @@
     "download": {
       "title": "Descargar Avyn para Windows y Android",
       "description": "Descargá el Agent de Avyn para Windows y la app para Android. Requisitos, disponibilidad y cómo sumarte a la beta cerrada de Android."
+    },
+    "faq": {
+      "title": "Preguntas frecuentes sobre Avyn, Auren y Kantaria",
+      "description": "Respuestas cortas a las preguntas más comunes: vinculación, red local, Internet, TV, karaoke y VPN, con enlace a la guía de cada tema."
     },
     "kantaria": {
       "title": "Kantaria — Karaoke para Windows con canciones UltraStar",

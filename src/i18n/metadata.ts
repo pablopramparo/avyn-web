@@ -4,7 +4,7 @@ import { getDictionary } from "./dictionaries";
 import { localizedPath, type Locale } from "./config";
 import { guideTranslation, type Guide } from "@/content/guides";
 import { guidePath } from "@/content/guide-paths";
-export type PageName = "home" | "security" | "verify" | "download" | "auren" | "kantaria";
+export type PageName = "home" | "security" | "verify" | "download" | "auren" | "kantaria" | "faq";
 export type OgName = "home" | "auren" | "kantaria";
 const ogImages: Record<PageName, OgName> = {
   home: "home",
@@ -13,6 +13,7 @@ const ogImages: Record<PageName, OgName> = {
   download: "home",
   auren: "auren",
   kantaria: "kantaria",
+  faq: "home",
 };
 function ogImage(locale: Locale, name: OgName, alt: string) {
   const file = name === "home" ? `home-${locale}` : locale === "es" ? name : `${name}-en`;

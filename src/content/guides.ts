@@ -501,6 +501,106 @@ const es: Guide[] = [
       { path: "/guias/controlar-pc-windows-desde-android/", label: "Controlar tu PC desde el celular" },
     ],
   },
+  {
+    id: "vpn",
+    slug: guideSlugs["vpn"].es,
+    title: "Cómo controlar tu PC fuera de casa con una VPN",
+    description:
+      "Guía para usar Avyn con un teléfono Android ya vinculado desde otra red, mediante una VPN como Tailscale: qué necesitás, paso a paso, qué no cambia y qué hacer si no conecta.",
+    intro:
+      "Avyn funciona por la red local, pero un teléfono que ya está vinculado también puede conectarse a la PC desde otra red (datos móviles, el Wi-Fi de otra casa) si ambos están dentro de una VPN. Esta guía lo muestra con Tailscale, que es gratis para uso personal y no obliga a abrir puertos en el router.",
+    updated: "2026-11-04",
+    image: "home",
+    sections: [
+      {
+        heading: "Qué cambia y qué no",
+        blocks: [
+          {
+            type: "list",
+            items: [
+              "Vincular un teléfono nuevo se hace siempre en la red local, con el código de verificación y la aprobación en la PC. Por VPN la PC lo rechaza y la app te lo explica.",
+              "El desbloqueo desde la pantalla de inicio de sesión sigue funcionando solo en la red local.",
+              "Encender la PC desde el teléfono (Wake-on-LAN) no cruza la VPN: funciona solo en la red local.",
+              "La seguridad de la conexión es la misma: certificado fijado y clave compartida. La VPN no agrega ni quita confianza, y no hay ningún servidor de Avyn en el medio.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Qué necesitás",
+        blocks: [
+          {
+            type: "list",
+            items: [
+              "El teléfono ya vinculado con la PC en tu red local.",
+              "La app Avyn Remote 1.3.0 o posterior y una versión de Avyn Agent que incluya esta función.",
+              "Una VPN que conecte la PC y el teléfono entre sí. Tailscale sirve para probar.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Paso a paso con Tailscale",
+        blocks: [
+          {
+            type: "steps",
+            items: [
+              "Protegé la cuenta: Tailscale usa tu cuenta de Google o Microsoft, y quien entre a ella puede agregar dispositivos a tu red. Activá ahí la verificación en dos pasos.",
+              "En la PC, instalá Tailscale desde tailscale.com/download e iniciá sesión. Anotá la IP que le da (algo como 100.x.y.z): se ve en el ícono de la bandeja o con el comando tailscale ip -4 en PowerShell.",
+              "En el teléfono, instalá Tailscale desde Play Store e iniciá sesión con la misma cuenta. Dejalo activado.",
+              "En Avyn, abrí la lista de PCs, tocá el ícono del escudo de tu PC, escribí la IP que la PC tiene en Tailscale y guardá. El escudo queda marcado.",
+              "Probalo: apagá el Wi-Fi, dejá los datos móviles y abrí Avyn. Tendría que reconectar solo.",
+            ],
+          },
+          {
+            type: "p",
+            text: "Al reconectar, la app prueba primero la dirección que funcionó la última vez y después la otra, así que no espera de más en la dirección equivocada. Si volvés a casa, sigue funcionando con la VPN activada; y si la apagás, usa la dirección de la red local.",
+          },
+        ],
+      },
+      {
+        heading: "Si no conecta",
+        blocks: [
+          {
+            type: "list",
+            items: [
+              "Se queda cargando: Windows puede estar clasificando la red de la VPN como Pública, y Avyn Agent solo recibe conexiones en redes Privadas. Podés ver el perfil con Get-NetConnectionProfile en PowerShell y, si confiás en esa red, pasarlo a Privada con Set-NetConnectionProfile -InterfaceAlias \"Tailscale\" -NetworkCategory Private. Con Tailscale normalmente no hace falta.",
+              "Prueba rápida sin Avyn: con la VPN activa y sin Wi-Fi, abrí en el navegador del teléfono https://IP-DE-LA-PC:47821. Una advertencia de certificado significa que el camino llega al Agent; un tiempo agotado significa que algo lo bloquea.",
+              "Dice que una PC nueva solo se puede vincular desde la red local: es lo esperado. Vinculá en casa, con el Wi-Fi, y después agregá la dirección de la VPN.",
+              "La PC está apagada o dormida: por VPN no se puede encender, así que no la va a encontrar hasta que la enciendas.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Otras VPN",
+        blocks: [
+          {
+            type: "p",
+            text: "La función no depende de una marca: escribís la IP que la PC tiene dentro de la VPN. WireGuard, ZeroTier o la VPN de tu router sirven si llevan el tráfico hasta esa IP. Una limitación: si la VPN reparte direcciones en una subred que la PC también tiene en una tarjeta de red física, el Agent la toma por red local y permitiría vincular ahí.",
+          },
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "¿Puedo vincular un teléfono nuevo por VPN?",
+        a: "No. Un teléfono nuevo se vincula siempre en la red local, delante de la PC, comparando el código de verificación. Después de vincularlo, sí podés agregar la dirección por VPN.",
+      },
+      {
+        q: "¿Avyn ve mi tráfico o necesita un servidor?",
+        a: "No. Avyn no tiene servidores intermedios: el tráfico va directo entre tu teléfono y tu PC por tu propia VPN.",
+      },
+      {
+        q: "¿Puedo desbloquear la PC desde fuera de casa?",
+        a: "No. El desbloqueo desde la pantalla de inicio de sesión funciona solo en la red local, a propósito: escribe la contraseña de Windows desde un servicio con privilegios altos.",
+      },
+    ],
+    related: [
+      { path: "/guias/vincular-celular-android-con-avyn-agent/", label: "Vincular tu celular con Avyn Agent" },
+      { path: "/guias/controlar-pc-windows-desde-android/", label: "Controlar tu PC desde el celular" },
+    ],
+  },
 ];
 
 const en: Guide[] = [
@@ -978,6 +1078,106 @@ const en: Guide[] = [
     ],
     related: [
       { path: "/auren/", label: "Discover Auren Player" },
+      { path: "/guides/control-windows-pc-from-android/", label: "Control your PC from your phone" },
+    ],
+  },
+  {
+    id: "vpn",
+    slug: guideSlugs["vpn"].en,
+    title: "How to control your PC away from home with a VPN",
+    description:
+      "Guide to using Avyn from another network with an already paired Android phone, through a VPN such as Tailscale: what you need, step by step, what does not change and what to do if it does not connect.",
+    intro:
+      "Avyn works over the local network, but a phone that is already paired can also reach the PC from another network (mobile data, another home's Wi-Fi) when both are inside a VPN. This guide shows it with Tailscale, which is free for personal use and does not require opening ports on your router.",
+    updated: "2026-11-04",
+    image: "home",
+    sections: [
+      {
+        heading: "What changes and what does not",
+        blocks: [
+          {
+            type: "list",
+            items: [
+              "Pairing a new phone is always done on the local network, with the verification code and the approval on the PC. Over a VPN the PC refuses it and the app explains why.",
+              "Unlocking from the sign-in screen still works only on the local network.",
+              "Turning the PC on from the phone (Wake-on-LAN) does not cross the VPN: it works only on the local network.",
+              "The connection is just as secure: pinned certificate and shared key. The VPN adds no trust and removes none, and there is no Avyn server in the middle.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "What you need",
+        blocks: [
+          {
+            type: "list",
+            items: [
+              "The phone already paired with the PC on your local network.",
+              "Avyn Remote app 1.3.0 or later and a version of Avyn Agent that includes this feature.",
+              "A VPN that connects the PC and the phone to each other. Tailscale works for trying it out.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Step by step with Tailscale",
+        blocks: [
+          {
+            type: "steps",
+            items: [
+              "Protect the account: Tailscale signs you in with your Google or Microsoft account, and anyone who gets into it can add devices to your network. Turn on two-step verification there.",
+              "On the PC, install Tailscale from tailscale.com/download and sign in. Note the IP address it gives the PC (something like 100.x.y.z): you can see it in the tray icon or with the command tailscale ip -4 in PowerShell.",
+              "On the phone, install Tailscale from the Play Store and sign in with the same account. Leave it turned on.",
+              "In Avyn, open the PC list, tap the shield icon of your PC, type the address the PC has in Tailscale and save. The shield is marked.",
+              "Try it: turn Wi-Fi off, keep mobile data on and open Avyn. It should reconnect by itself.",
+            ],
+          },
+          {
+            type: "p",
+            text: "When reconnecting, the app tries the address that worked last first and then the other, so it does not wait on the wrong one. Back home it keeps working with the VPN on; if you turn the VPN off, it uses the local network address.",
+          },
+        ],
+      },
+      {
+        heading: "If it does not connect",
+        blocks: [
+          {
+            type: "list",
+            items: [
+              "It keeps loading: Windows may be classing the VPN's network as Public, and Avyn Agent only accepts connections on Private networks. You can see the profile with Get-NetConnectionProfile in PowerShell and, if you trust that network, set it to Private with Set-NetConnectionProfile -InterfaceAlias \"Tailscale\" -NetworkCategory Private. With Tailscale it is usually not needed.",
+              "Quick test without Avyn: with the VPN on and Wi-Fi off, open https://PC-IP-ADDRESS:47821 in the phone's browser. A certificate warning means the path reaches the Agent; a timeout means something is blocking it.",
+              "It says a new PC can only be paired from its local network: that is expected. Pair at home, on Wi-Fi, then add the VPN address.",
+              "The PC is off or asleep: it cannot be turned on over a VPN, so it will not be found until you turn it on.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Other VPNs",
+        blocks: [
+          {
+            type: "p",
+            text: "The feature does not depend on a brand: you type the address the PC has inside the VPN. WireGuard, ZeroTier or your router's VPN work if they carry traffic to that address. One limit: if the VPN hands out addresses on a subnet the PC also has on a physical network card, the Agent takes it for the local network and would allow pairing there.",
+          },
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Can I pair a new phone over a VPN?",
+        a: "No. A new phone is always paired on the local network, in front of the PC, by comparing the verification code. Once it is paired, you can add the VPN address.",
+      },
+      {
+        q: "Does Avyn see my traffic or need a server?",
+        a: "No. Avyn has no intermediate servers: traffic goes straight between your phone and your PC over your own VPN.",
+      },
+      {
+        q: "Can I unlock the PC from outside my home?",
+        a: "No. Unlocking from the sign-in screen works only on the local network, on purpose: it types the Windows password from a high-privilege service.",
+      },
+    ],
+    related: [
+      { path: "/guides/pair-android-phone-with-avyn-agent/", label: "Pair your phone with Avyn Agent" },
       { path: "/guides/control-windows-pc-from-android/", label: "Control your PC from your phone" },
     ],
   },
