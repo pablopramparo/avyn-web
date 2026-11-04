@@ -5,7 +5,8 @@ export type GuideBlock =
   | { type: "p"; text: string }
   | { type: "list"; items: string[] }
   | { type: "steps"; items: string[] }
-  | { type: "note"; text: string };
+  | { type: "note"; text: string }
+  | { type: "shot"; shot: "screen"; caption: string };
 
 export type Guide = {
   /** Shared between languages so each guide can point to its translation. */
@@ -643,6 +644,11 @@ const es: Guide[] = [
           {
             type: "p",
             text: "Los dibujos y el puntero se ven también en el monitor de la PC, en una ventana transparente, pero no interfieren: los clics y el teclado pasan de largo. Al cambiar de monitor o al terminar la sesión, los dibujos se borran.",
+          },
+          {
+            type: "shot",
+            shot: "screen",
+            caption: "La subpestaña Pantalla en Control, con una flecha y un círculo dibujados sobre el monitor. Capturada en modo demo.",
           },
           {
             type: "note",
@@ -1323,6 +1329,11 @@ const en: Guide[] = [
           {
             type: "p",
             text: "The drawings and the pointer also show on the PC's monitor, in a transparent window, but they do not get in the way: clicks and keyboard pass right through. When you change monitor or the session ends, the drawings are erased.",
+          },
+          {
+            type: "shot",
+            shot: "screen",
+            caption: "The Screen sub-tab in Control, with an arrow and a circle drawn over the monitor. Captured in demo mode.",
           },
           {
             type: "note",

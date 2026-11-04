@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { PageIntro } from "../page-intro";
 import { JsonLd } from "../json-ld";
@@ -6,9 +7,11 @@ import { localizedPath, type Locale, type LocalizedProps } from "@/i18n/config";
 import { guides, type Guide, type GuideBlock } from "@/content/guides";
 import { guidePath } from "@/content/guide-paths";
 import { articleData } from "@/config/structured-data";
+import { assetPath } from "@/config/site";
+import { screenshots } from "@/config/screenshots";
 import styles from "./guides.module.css";
 
-function Block({ block }: { block: GuideBlock }) {
+function Block({ block, locale }: { block: GuideBlock; locale: Locale }) {
   switch (block.type) {
     case "p":
       return <p>{block.text}</p>;
@@ -30,6 +33,20 @@ function Block({ block }: { block: GuideBlock }) {
       );
     case "note":
       return <p className={styles.note}>{block.text}</p>;
+    case "shot": {
+      const shot = screenshots[block.shot];
+      return (
+        <figure className={styles.shot}>
+          <Image
+            src={assetPath(shot.src[locale])}
+            alt={getDictionary(locale).images[shot.altKey]}
+            width={shot.width}
+            height={shot.height}
+          />
+          <figcaption>{block.caption}</figcaption>
+        </figure>
+      );
+    }
   }
 }
 
@@ -91,7 +108,7 @@ export function GuidePage({ locale, guide }: LocalizedProps & { guide: Guide }) 
           <section key={section.heading}>
             <h2>{section.heading}</h2>
             {section.blocks.map((block, index) => (
-              <Block block={block} key={index} />
+              <Block block={block} locale={locale} key={index} />
             ))}
           </section>
         ))}
