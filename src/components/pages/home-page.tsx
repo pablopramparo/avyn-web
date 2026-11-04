@@ -25,7 +25,7 @@ export function HomePage({ locale }: LocalizedProps) {
       <LocalFirst locale={locale} />
       <Integrations locale={locale} />
       <Editions locale={locale} />
-      <RelatedGuides locale={locale} ids={["control-pc", "tv", "karaoke"]} />
+      <RelatedGuides locale={locale} ids={["control-pc", "screen", "tv", "karaoke"]} />
       <FinalCta locale={locale} />
     </>
   );

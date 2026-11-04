@@ -145,7 +145,8 @@
       "items": [
         "Touchpad & keyboard",
         "Windows & apps",
-        "Media & volume"
+        "Media & volume",
+        "Live screen, with pointer and drawings"
       ]
     },
     {
@@ -173,7 +174,7 @@
     "eyebrow": "TWO DEVICES. ONE SIMPLE CONNECTION.",
     "title": "Set up. Sit back.",
     "text": "The PC is the remote device. Your phone is its interface.",
-    "detail": "Actions, not screen streaming.",
+    "detail": "Actions and, when you need it, your screen live.",
     "steps": [
       {
         "title": "Install on both devices.",
