@@ -533,7 +533,7 @@ const es: Guide[] = [
             type: "list",
             items: [
               "El teléfono ya vinculado con la PC en tu red local.",
-              "La app Avyn Remote 1.3.0 o posterior y una versión de Avyn Agent que incluya esta función.",
+              "La última versión de la app Avyn Remote y de Avyn Agent.",
               "Una VPN que conecte la PC y el teléfono entre sí. Tailscale sirve para probar.",
             ],
           },
@@ -1113,7 +1113,7 @@ const en: Guide[] = [
             type: "list",
             items: [
               "The phone already paired with the PC on your local network.",
-              "Avyn Remote app 1.3.0 or later and a version of Avyn Agent that includes this feature.",
+              "The latest version of the Avyn Remote app and of Avyn Agent.",
               "A VPN that connects the PC and the phone to each other. Tailscale works for trying it out.",
             ],
           },
