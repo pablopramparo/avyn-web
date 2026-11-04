@@ -94,6 +94,10 @@
     "note": "Real Avyn screenshots in demo mode.",
     "details": [
       {
+        "title": "Watch your screen live",
+        "text": "Watch one of your PC's monitors on your phone. Point with the pointer, draw arrows and circles, and erase with the eraser."
+      },
+      {
         "title": "Browse your files",
         "text": "Find and open files on your PC. Upload or download them."
       },
@@ -265,6 +269,7 @@
     "control": "Avyn Android: media controls in demo mode",
     "touchpad": "Avyn Android: touchpad and keyboard in demo mode",
     "programs": "Avyn Android: programs and favorites in demo mode",
+    "screen": "Avyn Android: live PC screen with a drawn arrow and circle",
     "heroPhone": "Android phone running Avyn"
   },
   "security": {

@@ -11,6 +11,7 @@ const mainScreenshots = [
   screenshots.control,
 ];
 const detailScreenshots = [
+  screenshots.screen,
   screenshots.files,
   screenshots.programs,
   screenshots.power,

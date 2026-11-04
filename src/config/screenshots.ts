@@ -7,6 +7,7 @@ export type ScreenshotKey =
   | "subtitles"
   | "touchpad"
   | "programs"
+  | "screen"
   | "agent";
 export type Screenshot = {
   src: Record<Locale, string>;
@@ -19,7 +20,7 @@ function product(
   name: string,
   altKey: ScreenshotKey,
   width = 720,
-  height = 1480,
+  height = 1458,
 ): Screenshot {
   return {
     src: {
@@ -40,5 +41,6 @@ export const screenshots = {
   files: product("files", "files"),
   power: product("power", "power"),
   subtitles: product("subtitles", "subtitles"),
+  screen: product("screen", "screen"),
 };
 export const agentScreenshot: Screenshot | null = null;

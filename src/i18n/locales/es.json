@@ -94,6 +94,10 @@
     "note": "Capturas reales de Avyn en modo demo.",
     "details": [
       {
+        "title": "Mirá tu pantalla en vivo",
+        "text": "Mirá un monitor de tu PC en el teléfono. Señalá con el puntero, dibujá flechas y círculos y borrá con la goma."
+      },
+      {
         "title": "Explorá tus archivos",
         "text": "Buscá y abrí archivos en tu PC. Envialos o descargalos."
       },
@@ -265,6 +269,7 @@
     "control": "Avyn Android: controles multimedia en modo demo",
     "touchpad": "Avyn Android: touchpad y teclado en modo demo",
     "programs": "Avyn Android: programas y favoritos en modo demo",
+    "screen": "Avyn Android: pantalla de la PC en vivo con una flecha y un círculo dibujados",
     "heroPhone": "Teléfono Android con Avyn"
   },
   "security": {
