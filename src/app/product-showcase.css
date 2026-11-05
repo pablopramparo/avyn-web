@@ -760,21 +760,18 @@
 }
 
 /* Interactive cards: a spotlight follows the cursor (see card-glow.tsx), the card lifts a little and its screenshot or icon reacts.
+   The spotlight is only on cards with their own border and background; the borderless groups and action strip just animate their icons.
    Only for a real mouse and when motion is not reduced; touch and keyboard users get the static cards. */
 @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
-  .actions-grid article,
   .showcase-card,
   .detail-card,
-  .feature-group,
   .all-features-grid article {
     position: relative;
     --gx: 50%;
     --gy: 0%;
   }
-  .actions-grid article::after,
   .showcase-card::after,
   .detail-card::after,
-  .feature-group::after,
   .all-features-grid article::after {
     content: "";
     position: absolute;
@@ -785,10 +782,8 @@
     transition: opacity 0.25s;
     background: radial-gradient(420px circle at var(--gx) var(--gy), #19c5ed26, transparent 72%);
   }
-  .actions-grid article:hover::after,
   .showcase-card:hover::after,
   .detail-card:hover::after,
-  .feature-group:hover::after,
   .all-features-grid article:hover::after {
     opacity: 1;
   }

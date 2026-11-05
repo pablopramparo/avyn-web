@@ -3,10 +3,8 @@ import { useEffect } from "react";
 
 /** Cards that get the cursor-following glow. Only the position is set here; the look is pure CSS. */
 const SELECTOR = [
-  ".actions-grid article",
   ".showcase-card",
   ".detail-card",
-  ".feature-group",
   ".all-features-grid article",
 ].join(",");
 
