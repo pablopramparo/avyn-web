@@ -106,3 +106,35 @@ export function FeatureGroups({ locale }: LocalizedProps) {
     </section>
   );
 }
+export function AllFeatures({ locale }: LocalizedProps) {
+  const t = getDictionary(locale).allFeatures;
+  return (
+    <section className="container all-features">
+      <details>
+        <summary>
+          <span>{t.toggle}</span>
+          <Icon name="chevron" />
+        </summary>
+        <div className="all-features-body">
+          <h2>{t.title}</h2>
+          <p>{t.intro}</p>
+          <div className="all-features-grid">
+            {t.categories.map((c) => (
+              <article key={c.title}>
+                <h3>{c.title}</h3>
+                <ul>
+                  {c.items.map((item) => (
+                    <li key={item}>
+                      <Icon name="check" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+        </div>
+      </details>
+    </section>
+  );
+}

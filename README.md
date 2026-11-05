@@ -108,7 +108,7 @@ Each language uses its own control, windows, demo folder, power, subtitles and A
 
 ## Reference-design refinement
 
-- Hero background: `public/images/brand/hero.png`, copied unchanged from the supplied design asset. It is decorative; its alt is empty.
+- Hero background: `public/images/brand/hero.webp`, converted to WebP from the supplied design asset (`design-assets/hero_image.png`). It is decorative; its alt is empty.
 - `src/config/hero.ts` centralizes the background and future phone photos. Set `phonePhotos.es` and `phonePhotos.en` to `{ src, width, height }` when the transparent phone photos are ready. Both entries can use the same photo if appropriate. Until then the real localized Android screenshot is used. The photo is shown directly without an extra CSS phone frame. Add final reviewed photo assets to the release policy before publishing.
 - Five-feature strip: Wake & Unlock, Open Apps, Move Windows, Play on TV and Transfer Files, with corresponding Spanish copy.
 - Three main screenshot cards: touchpad/control, windows and TV/media. Four compact cards: files, programs, power/displays and subtitles. Preview links open the untouched full-size captures in a new tab. There is no demo-mode Play on TV confirmation capture yet; the TV card uses real media controls rather than an invented dialog.

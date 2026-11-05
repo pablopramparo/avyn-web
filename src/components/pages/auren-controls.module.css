@@ -33,7 +33,7 @@
 .control[data-pinned] { color: var(--cyan); }
 .control[data-pinned]:after { transform: scaleX(1); }
 .control:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
-.stage { position: relative; height: 128px; }
+.stage { position: relative; height: 150px; }
 .preview {
   position: absolute;
   bottom: 6px;
@@ -41,18 +41,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
+  gap: 3px;
   transform: translate(-50%, 6px);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.18s ease, transform 0.18s ease;
 }
 .preview[data-visible] { opacity: 1; transform: translate(-50%, 0); }
-.preview img { display: block; width: 158px; height: auto; border-radius: 8px; border: 1px solid #2a2d33; }
+.stills { position: relative; display: block; width: 158px; aspect-ratio: 158 / 89; }
+.stills img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; border-radius: 8px; border: 1px solid #2a2d33; opacity: 0; }
+.stills img[data-current] { opacity: 1; }
+.chapter { max-width: 220px; text-align: center; font-size: 0.78rem; color: #e6edf2; white-space: nowrap; }
 .glyph { width: 24px; height: 24px; flex: none; }
 .time { font-size: 0.78rem; color: #c9d2da; font-variant-numeric: tabular-nums; }
 .seek { width: 100%; min-height: 44px; gap: 14px; padding: 0 8px; }
 .track { position: relative; flex: 1; height: 3px; border-radius: 2px; background: #4a4d52; }
+.track b { position: absolute; top: 0; bottom: 0; width: 2px; margin-left: -1px; background: #0b0c0f; }
 .track i { position: absolute; left: 0; top: 50%; width: 11px; height: 11px; margin-top: -5.5px; border-radius: 50%; background: #5aa7f0; }
 .row { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 4px 16px; }
 .cluster { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 10px; }
@@ -72,7 +76,7 @@
 @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
 @media (max-width: 640px) {
   .player { padding: 10px 10px 8px; }
-  .stage { height: 120px; }
+  .stage { height: 142px; }
   .row { flex-direction: column; align-items: stretch; gap: 0; }
   .cluster:last-child { justify-content: space-between; }
   .info { min-height: 120px; padding-top: 18px; }

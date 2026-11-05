@@ -7,9 +7,29 @@ import styles from "./auren-controls.module.css";
 type Item = { title: string; text: string };
 
 const THUMB_WIDTH = 158;
-// Illustrative runtime (the sample clip is 9:56); not a real playback position.
-const DURATION = 596;
-const SAMPLE_TIME = 54;
+// The demo episode ("The Silent Orbit" S01E03) is the one used in the product captures: 52:18, ten chapters.
+// Each chapter has its own still, as the player shows when the pointer moves along the bar. Illustrative, not a real playback.
+const DURATION = 3138;
+const SAMPLE_TIME = 1615;
+const CHAPTERS = [
+  { start: 0, title: "Cold Open" },
+  { start: 150, title: "The Signal" },
+  { start: 510, title: "Mapping the Surface" },
+  { start: 840, title: "Landfall" },
+  { start: 1140, title: "Toward Sector 7" },
+  { start: 1470, title: "The Facility" },
+  { start: 1770, title: "The Corridor" },
+  { start: 2130, title: "The Message" },
+  { start: 2460, title: "The Hall" },
+  { start: 2820, title: "Epilogue" },
+] as const;
+const chapterAt = (seconds: number) => {
+  let found = 0;
+  CHAPTERS.forEach((chapter, index) => {
+    if (seconds >= chapter.start) found = index;
+  });
+  return found;
+};
 const clock = (seconds: number) =>
   `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, "0")}`;
 
@@ -72,6 +92,7 @@ export function AurenControls({
   const player = useRef<HTMLDivElement>(null);
   const active = hover ?? pinned;
   const current = active === null ? null : controls[active];
+  const chapter = chapterAt(seek?.time ?? SAMPLE_TIME);
 
   // Hover only reacts to a real mouse; touch selects through the tap (click).
   const bind = (index: number, extra = "") => ({
@@ -99,7 +120,7 @@ export function AurenControls({
     if (!player.current || !track.current) return;
     const box = player.current.getBoundingClientRect();
     const bar = track.current.getBoundingClientRect();
-    const half = THUMB_WIDTH / 2 + 8;
+    const half = 120; // keeps the chapter title inside the player
     const fraction = Math.min(Math.max((e.clientX - bar.left) / bar.width, 0), 1);
     setSeek({
       x: Math.min(Math.max(e.clientX - box.left, half), box.width - half),
@@ -116,18 +137,31 @@ export function AurenControls({
             data-visible={active === 0 || undefined}
             style={{ left: seek?.x ?? "50%" }}
           >
-            <Image
-              src={assetPath("/images/brand/auren-thumbnail.png")}
-              alt=""
-              width={THUMB_WIDTH}
-              height={90}
-            />
+            {/* All ten stills are in the page (about 110 KB) and only the current one is shown, so moving along the bar never waits for an image. */}
+            <span className={styles.stills}>
+              {CHAPTERS.map((c, index) => (
+                <Image
+                  key={c.start}
+                  src={assetPath(`/images/brand/auren-demo/chapter-${String(index + 1).padStart(2, "0")}.webp`)}
+                  alt=""
+                  width={THUMB_WIDTH}
+                  height={89}
+                  data-current={index === chapter || undefined}
+                />
+              ))}
+            </span>
             <span className={styles.time}>{clock(seek?.time ?? SAMPLE_TIME)}</span>
+            <span className={styles.chapter}>{CHAPTERS[chapter].title}</span>
           </div>
         </div>
         <button type="button" {...bind(0, styles.seek)} onPointerMove={trackSeek} onPointerDown={trackSeek}>
           <span className={styles.time}>0:00</span>
-          <span ref={track} className={styles.track} aria-hidden="true"><i /></span>
+          <span ref={track} className={styles.track} aria-hidden="true">
+            {CHAPTERS.slice(1).map((c) => (
+              <b key={c.start} style={{ left: `${(c.start / DURATION) * 100}%` }} />
+            ))}
+            <i />
+          </span>
           <span className={styles.time}>{clock(DURATION)}</span>
         </button>
         <div className={styles.row}>

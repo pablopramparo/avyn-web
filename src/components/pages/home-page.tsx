@@ -3,6 +3,7 @@ import {
   Actions,
   Everyday,
   FeatureGroups,
+  AllFeatures,
 } from "@/components/sections/features";
 import { Intent } from "@/components/sections/intent";
 import { HowItWorks, LocalFirst } from "@/components/sections/local";
@@ -21,6 +22,7 @@ export function HomePage({ locale }: LocalizedProps) {
       <Everyday locale={locale} />
       <Intent locale={locale} />
       <FeatureGroups locale={locale} />
+      <AllFeatures locale={locale} />
       <HowItWorks locale={locale} />
       <LocalFirst locale={locale} />
       <Integrations locale={locale} />

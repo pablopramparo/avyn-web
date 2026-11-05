@@ -332,7 +332,7 @@
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
-  padding-bottom: 4px;
+  padding-block: 8px 4px; /* room for the hover lift of the cards */
 }
 .screenshot-carousel-track::-webkit-scrollbar {
   display: none;
@@ -756,5 +756,82 @@
   .showcase-card,
   .detail-card {
     transition: none;
+  }
+}
+
+/* Interactive cards: a spotlight follows the cursor (see card-glow.tsx), the card lifts a little and its screenshot or icon reacts.
+   Only for a real mouse and when motion is not reduced; touch and keyboard users get the static cards. */
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .actions-grid article,
+  .showcase-card,
+  .detail-card,
+  .feature-group,
+  .all-features-grid article {
+    position: relative;
+    --gx: 50%;
+    --gy: 0%;
+  }
+  .actions-grid article::after,
+  .showcase-card::after,
+  .detail-card::after,
+  .feature-group::after,
+  .all-features-grid article::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.25s;
+    background: radial-gradient(260px circle at var(--gx) var(--gy), #19c5ed24, transparent 70%);
+  }
+  .actions-grid article:hover::after,
+  .showcase-card:hover::after,
+  .detail-card:hover::after,
+  .feature-group:hover::after,
+  .all-features-grid article:hover::after {
+    opacity: 1;
+  }
+  .showcase-card,
+  .detail-card,
+  .all-features-grid article {
+    transition:
+      border-color 0.2s,
+      transform 0.25s ease,
+      box-shadow 0.25s ease;
+  }
+  .showcase-card:hover,
+  .detail-card:hover,
+  .all-features-grid article:hover {
+    transform: translateY(-4px);
+    border-color: #2f7f9d;
+    box-shadow:
+      0 14px 34px #0009,
+      0 0 0 1px #19c5ed33;
+  }
+  .showcase-card .phone-mockup,
+  .detail-card .phone-mockup {
+    transition: transform 0.35s ease;
+  }
+  .showcase-card:hover .phone-mockup,
+  .detail-card:hover .phone-mockup {
+    transform: translateY(-6px) scale(1.025);
+  }
+  .action-icon {
+    transition:
+      transform 0.25s ease,
+      border-color 0.25s,
+      box-shadow 0.25s;
+  }
+  .actions-grid article:hover .action-icon {
+    transform: translateY(-3px) scale(1.06);
+    border-color: #19c5ed88;
+    box-shadow: 0 0 22px #19c5ed33;
+  }
+  .feature-group:hover li svg {
+    transform: scale(1.2);
+  }
+  .feature-group li svg {
+    transition: transform 0.2s;
   }
 }

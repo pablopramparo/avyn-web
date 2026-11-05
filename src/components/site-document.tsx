@@ -1,4 +1,5 @@
 import { Header, Footer } from "./site-shell";
+import { CardGlow } from "./card-glow";
 import { getDictionary } from "@/i18n/dictionaries";
 import type { Locale } from "@/i18n/config";
 import "@/app/globals.css";
@@ -19,6 +20,7 @@ export function SiteDocument({
         <Header locale={locale} />
         <main id="main">{children}</main>
         <Footer locale={locale} />
+        <CardGlow />
       </body>
     </html>
   );

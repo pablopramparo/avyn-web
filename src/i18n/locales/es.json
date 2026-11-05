@@ -141,6 +141,121 @@
     ],
     "caption": "Tu PC resuelve los pasos. Vos seguís en el sillón."
   },
+  "allFeatures": {
+    "toggle": "Ver todas las funcionalidades",
+    "title": "Todo lo que podés hacer con Avyn",
+    "intro": "El detalle completo, de lo más llamativo a lo más fino.",
+    "categories": [
+      {
+        "title": "Encender y desbloquear",
+        "items": [
+          "Encender la PC desde el celular con Wake-on-LAN.",
+          "Desbloquear la PC con tu huella o el bloqueo del teléfono, incluso recién encendida y antes de que Avyn esté abierto en la PC (opcional).",
+          "Funciona también con una PC sin PIN.",
+          "Bloquear, suspender, reiniciar y apagar la PC, con confirmación."
+        ]
+      },
+      {
+        "title": "Ver tu PC en vivo",
+        "items": [
+          "Transmisión de un monitor de la PC al teléfono por tu red local, hasta 720p a 30 fps.",
+          "Zoom con dos dedos y pantalla completa en horizontal.",
+          "Dibujá flechas y elipses o señalá con un puntero resaltado; se ven en la PC.",
+          "Cambiá de monitor en vivo. Un teléfono por vez; Avyn te avisa quién la está usando."
+        ]
+      },
+      {
+        "title": "TV y pantallas",
+        "items": [
+          "Ver en la TV: manda a la TV el video que se reproduce o un archivo.",
+          "Apagá las demás pantallas mientras mirás.",
+          "Encendé y apagá cada monitor, o todos juntos.",
+          "TV Samsung: encendido y apagado por red.",
+          "Moví ventanas entre monitores con un esquema visual y vistas previas."
+        ]
+      },
+      {
+        "title": "Multimedia",
+        "items": [
+          "Play, pausa, siguiente, anterior, barra de tiempo y saltos de 10 segundos, con carátula y datos de lo que suena.",
+          "Auren: pantalla completa, pistas de audio y subtítulos, y sincronización con pasos de 100 ms.",
+          "Edge y Chrome con la extensión de Avyn: pantalla completa, velocidad, subtítulos de YouTube y los botones del sitio (saltar intro, siguiente episodio, «¿Seguís mirando?»).",
+          "Volumen: nivel, pasos y silencio, reflejando los cambios hechos en la PC."
+        ]
+      },
+      {
+        "title": "Rutinas",
+        "items": [
+          "Rutinas de hasta 20 pasos que se ejecutan con un toque: abrir programas en la pantalla que elijas, ver en la TV, volumen, apagar pantallas, esperas y bloquear o suspender al final.",
+          "Se crean y editan desde el teléfono y se comparten entre tus teléfonos.",
+          "Si un paso falla, te dice cuál y por qué."
+        ]
+      },
+      {
+        "title": "Touchpad y teclado",
+        "items": [
+          "Touchpad: mover, clic, doble clic, clic derecho y scroll con dos dedos.",
+          "Velocidad del puntero ajustable.",
+          "Teclado remoto con texto Unicode, Enter, Backspace, Escape, Tab y flechas.",
+          "Atajos con Ctrl, Alt, Shift y Windows."
+        ]
+      },
+      {
+        "title": "Programas y ventanas",
+        "items": [
+          "Abrí cualquier programa del menú Inicio desde el teléfono, con buscador y tus recientes arriba.",
+          "Lista de ventanas abiertas con buscador: enfocá, minimizá, maximizá, restaurá o cerrá.",
+          "Icono, aplicación y pantalla de cada ventana."
+        ]
+      },
+      {
+        "title": "Archivos",
+        "items": [
+          "Explorá las carpetas que compartís, con miniaturas, búsqueda (también en subcarpetas) y orden.",
+          "Descargá archivos o carpetas enteras al teléfono, con avance y espacio libre.",
+          "Subí archivos a la PC, o compartilos desde cualquier app de Android con la hoja Compartir.",
+          "Creá carpetas y abrí archivos o carpetas en la PC.",
+          "Elegís qué se comparte, sin ejecutables ni scripts."
+        ]
+      },
+      {
+        "title": "Karaoke con Kantaria",
+        "items": [
+          "Biblioteca, cola, jugadores, partidas y puntajes en vivo desde el teléfono.",
+          "Historial por partida y por jugador.",
+          "Varios teléfonos a la vez, cada uno viendo los cambios de los demás."
+        ]
+      },
+      {
+        "title": "Varias PCs y conexión",
+        "items": [
+          "Vinculá varias PCs y cambiá entre ellas; «Tus PCs» te deja encender, conectar o desbloquear cada una.",
+          "Reconexión automática al volver a la app o después de reiniciar.",
+          "Si no encuentra la PC, conectá escribiendo su IP.",
+          "Fuera de casa, reconectá una PC ya vinculada con su dirección dentro de una VPN (Tailscale u otra)."
+        ]
+      },
+      {
+        "title": "Seguridad y privacidad",
+        "items": [
+          "Todo ocurre en tu red local: sin cuenta Avyn y sin nube.",
+          "Cada teléfono se aprueba en la PC con un código de verificación, y se puede revocar cuando quieras.",
+          "El teléfono solo habla con tu PC: fija su certificado y no acepta otro.",
+          "Los secretos se guardan cifrados (DPAPI en Windows, almacenamiento seguro en Android).",
+          "El desbloqueo usa un servicio aparte, un desafío de un solo uso y cinco intentos por teléfono; tu PIN nunca viaja sin tu huella.",
+          "Programas, archivos, pantalla en vivo y desbloqueo se pueden apagar desde la PC."
+        ]
+      },
+      {
+        "title": "Comodidad",
+        "items": [
+          "El Agent vive en la bandeja de Windows, arranca con el sistema y se actualiza solo sin cortar una conexión en uso.",
+          "Español e inglés.",
+          "Extensiones para Edge y Chrome."
+        ]
+      }
+    ]
+  },
   "groups": [
     {
       "label": "CONTROLÁ",

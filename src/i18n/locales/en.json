@@ -141,6 +141,121 @@
     ],
     "caption": "Your PC handles the steps. You keep the couch."
   },
+  "allFeatures": {
+    "toggle": "See all features",
+    "title": "Everything you can do with Avyn",
+    "intro": "The complete detail, from the most striking to the finest points.",
+    "categories": [
+      {
+        "title": "Power on and unlock",
+        "items": [
+          "Turn the PC on from your phone with Wake-on-LAN.",
+          "Unlock the PC with your fingerprint or the phone's screen lock, even right after boot and before Avyn is open on the PC (optional).",
+          "Works with a PC that has no PIN, too.",
+          "Lock, sleep, restart and shut down the PC, with confirmation."
+        ]
+      },
+      {
+        "title": "Watch your PC live",
+        "items": [
+          "Stream one PC monitor to your phone over your local network, up to 720p at 30 fps.",
+          "Two-finger zoom and landscape full screen.",
+          "Draw arrows and ellipses or point with a highlighted pointer; they show up on the PC.",
+          "Switch monitors live. One phone at a time; Avyn tells you who is using it."
+        ]
+      },
+      {
+        "title": "TV and displays",
+        "items": [
+          "Play on TV: send the video that is playing, or a file, to the TV.",
+          "Turn off the other displays while you watch.",
+          "Turn each monitor on or off, or all of them at once.",
+          "Samsung TV: power on and off over the network.",
+          "Move windows between monitors with a visual layout and previews."
+        ]
+      },
+      {
+        "title": "Media",
+        "items": [
+          "Play, pause, next, previous, seek bar and 10-second jumps, with cover art and what is playing.",
+          "Auren: full screen, audio tracks and subtitles, and sync in 100 ms steps.",
+          "Edge and Chrome with the Avyn extension: full screen, speed, YouTube subtitles and the site's own buttons (skip intro, next episode, “Are you still watching?”).",
+          "Volume: level, steps and mute, reflecting changes made on the PC."
+        ]
+      },
+      {
+        "title": "Routines",
+        "items": [
+          "Routines of up to 20 steps that run with one tap: open programs on the screen you choose, play on TV, volume, turn displays off, waits, and lock or sleep at the end.",
+          "Created and edited from the phone and shared across your phones.",
+          "If a step fails, it tells you which one and why."
+        ]
+      },
+      {
+        "title": "Touchpad and keyboard",
+        "items": [
+          "Touchpad: move, click, double-click, right-click and two-finger scroll.",
+          "Adjustable pointer speed.",
+          "Remote keyboard with Unicode text, Enter, Backspace, Escape, Tab and arrows.",
+          "Shortcuts with Ctrl, Alt, Shift and Windows."
+        ]
+      },
+      {
+        "title": "Programs and windows",
+        "items": [
+          "Open any Start menu program from your phone, with search and your recent ones on top.",
+          "List of open windows with search: focus, minimize, maximize, restore or close.",
+          "Icon, app and display for each window."
+        ]
+      },
+      {
+        "title": "Files",
+        "items": [
+          "Browse the folders you share, with thumbnails, search (subfolders too) and sorting.",
+          "Download files or whole folders to the phone, with progress and free-space check.",
+          "Upload files to the PC, or share them from any Android app with the Share sheet.",
+          "Create folders and open files or folders on the PC.",
+          "You choose what is shared, with no executables or scripts."
+        ]
+      },
+      {
+        "title": "Karaoke with Kantaria",
+        "items": [
+          "Library, queue, players, sessions and live scores from your phone.",
+          "History per session and per player.",
+          "Several phones at once, each seeing the others' changes."
+        ]
+      },
+      {
+        "title": "Several PCs and connection",
+        "items": [
+          "Pair several PCs and switch between them; “Your PCs” lets you turn on, connect to or unlock each one.",
+          "Automatic reconnection when you return to the app or after a restart.",
+          "If it can't find the PC, connect by typing its IP.",
+          "Away from home, reconnect an already paired PC through its address inside a VPN (Tailscale or another)."
+        ]
+      },
+      {
+        "title": "Security and privacy",
+        "items": [
+          "Everything happens on your local network: no Avyn account and no cloud.",
+          "Each phone is approved on the PC with a verification code, and can be revoked at any time.",
+          "The phone only talks to your PC: it pins its certificate and accepts no other.",
+          "Secrets are stored encrypted (DPAPI on Windows, secure storage on Android).",
+          "Unlocking uses a separate service, a one-time challenge and five attempts per phone; your PIN never leaves without your fingerprint.",
+          "Programs, files, live screen and unlock can each be turned off from the PC."
+        ]
+      },
+      {
+        "title": "Convenience",
+        "items": [
+          "The Agent lives in the Windows tray, starts with the system and updates itself without cutting a connection in use.",
+          "Spanish and English.",
+          "Extensions for Edge and Chrome."
+        ]
+      }
+    ]
+  },
   "groups": [
     {
       "label": "CONTROL",

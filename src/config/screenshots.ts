@@ -20,7 +20,7 @@ function product(
   name: string,
   altKey: ScreenshotKey,
   width = 720,
-  height = 1458,
+  height = 1544,
 ): Screenshot {
   return {
     src: {

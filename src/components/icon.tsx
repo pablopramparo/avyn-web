@@ -56,6 +56,7 @@ const paths: Record<string, React.ReactNode> = {
     </>
   ),
   check: <path d="m5 12 4 4L19 6" />,
+  chevron: <path d="m6 9 6 6 6-6" />,
 };
 export function Icon({
   name,

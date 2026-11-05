@@ -52,11 +52,11 @@ if (process.argv.includes("--export")) {
         const screenshots = [...html.matchAll(/<img[^>]*src="([^"]+)"/g)]
           .map((match) => match[1])
           .filter((src) => src.includes("/images/product/"));
-        // Seven phone screenshots, each rendered in the carousel and in the desktop grid.
+        // Eight phone screenshots, each rendered in the carousel and in the desktop grid.
         assert.equal(
           new Set(screenshots).size,
-          7,
-          route + " expected seven localized phone screenshots",
+          8,
+          route + " expected eight localized phone screenshots",
         );
         for (const src of screenshots)
           assert.ok(
@@ -74,7 +74,7 @@ if (process.argv.includes("--export")) {
           route + " must not show the other language's hero mockup",
         );
         assert.ok(
-          html.includes("/images/brand/hero.png"),
+          html.includes("/images/brand/hero.webp"),
           route + " hero background",
         );
         assert.ok(
