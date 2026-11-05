@@ -125,8 +125,7 @@ export function FinalCta({ locale }: LocalizedProps) {
         <br />
         <span>{t.subtitle}</span>
       </h2>
-      <DownloadButtons locale={locale} />
-      <p>{t.detail}</p>
+      <DownloadButtons locale={locale} lead={false} />
     </section>
   );
 }

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { DownloadButtons } from "../download-buttons";
 import { PhoneMockup } from "../device-frames";
-import { Icon } from "../icon";
 import { HeroParallax } from "../hero-parallax";
 import { screenshots } from "@/config/screenshots";
 import { heroVisuals } from "@/config/hero";
@@ -12,11 +11,6 @@ export function Hero({ locale }: LocalizedProps) {
   const d = getDictionary(locale),
     t = d.hero,
     photo = heroVisuals.phonePhotos[locale];
-  const assurances = [
-    { icon: "wifi", title: t.local, text: t.localDetail },
-    { icon: "lock", title: t.secure, text: t.secureDetail },
-    { icon: "power", title: t.simple, text: t.simpleDetail },
-  ];
   return (
     <section className="hero">
       <Image
@@ -38,22 +32,9 @@ export function Hero({ locale }: LocalizedProps) {
             {t.from} <span>{t.phone}</span>
           </h1>
           <p className="hero-description">
-            {t.description}
-            <br />
-            <strong>{t.comfort}</strong>
+            {t.description} <strong>{t.comfort}</strong>
           </p>
-          <DownloadButtons locale={locale} />
-          <ul className="hero-assurances">
-            {assurances.map((item) => (
-              <li key={item.icon}>
-                <Icon name={item.icon} />
-                <div>
-                  <strong>{item.title}</strong>
-                  <span>{item.text}</span>
-                </div>
-              </li>
-            ))}
-          </ul>
+          <DownloadButtons locale={locale} notes={false} />
         </div>
         <div className="hero-devices">
           <div className={photo ? "hero-phone hero-phone-photo" : "hero-phone"}>

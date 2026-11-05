@@ -17,7 +17,7 @@ const es: FaqGroup[] = [
       {
         q: "¿Qué es Avyn, en una frase?",
         a: [
-          "El control remoto de tu PC con Windows, en tu teléfono Android. Movés el mouse, escribís, abrís programas, mandás archivos o ponés una película en la TV sin levantarte del sillón (el sillón es, oficialmente, parte de la red local).",
+          "El control remoto de tu PC con Windows, en tu teléfono Android. Controlás la película, mandás archivos, movés el mouse, escribís o abrís programas sin levantarte del sillón (el sillón es, oficialmente, parte de la red local).",
         ],
       },
       {
@@ -199,13 +199,6 @@ const es: FaqGroup[] = [
           "Más de un teléfono con la misma PC, sí: cada uno se aprueba y se revoca por separado. Más de una PC desde el mismo teléfono también, y es una de las funciones avanzadas (la primera PC es gratis).",
         ],
       },
-      {
-        q: "La app no encuentra mi PC. ¿Qué hago?",
-        a: [
-          "Revisá que los dos estén en la misma red (una red de invitados o los datos móviles no sirven). Si igual no aparece, tocá \"Conectar por IP\" y escribí la IP que muestra Avyn Agent en su pantalla de Estado: algunos routers no dejan pasar la búsqueda automática.",
-        ],
-        link: { guide: "pair-phone", label: "Qué revisar si la PC no aparece" },
-      },
     ],
   },
   {
@@ -259,6 +252,14 @@ const es: FaqGroup[] = [
     title: "Cuando algo no anda",
     items: [
       {
+        q: "La app no encuentra mi PC. ¿Qué hago?",
+        a: [
+          "Revisá cuatro cosas, en este orden: que Avyn Agent esté abierto en la PC (su ícono está junto al reloj); que el teléfono y la PC estén en el mismo Wi-Fi (una red de invitados o los datos móviles no sirven); que Windows tenga esa red como Privada y no como Pública; y que el Firewall de Windows no haya bloqueado al Agent. Después tocá \"Escanear de nuevo\".",
+          "Si igual no aparece, tocá \"Conectar por IP\" en la app (desde la versión 1.1.3) y escribí la IP que muestra Avyn Agent en su pantalla de Estado, por ejemplo 192.168.0.81: algunos routers no dejan pasar la búsqueda automática, pero sí la conexión directa.",
+        ],
+        link: { guide: "pair-phone", label: "Qué revisar si la PC no aparece" },
+      },
+      {
         q: "Los códigos de verificación son distintos en cada equipo.",
         a: [
           "Tendrían que ser idénticos. Si difieren, rechazá la solicitud: algo en la red podría estar interponiéndose. Es una de esas veces en las que desconfiar es de buena educación.",
@@ -289,7 +290,7 @@ const en: FaqGroup[] = [
       {
         q: "What is Avyn, in one sentence?",
         a: [
-          "The remote control for your Windows PC, on your Android phone. You move the mouse, type, open programs, send files or put a movie on the TV without leaving the couch (the couch is, officially, part of the local network).",
+          "The remote control for your Windows PC, on your Android phone. You control the movie, send files, move the mouse, type or open programs without leaving the couch (the couch is, officially, part of the local network).",
         ],
       },
       {
@@ -471,13 +472,6 @@ const en: FaqGroup[] = [
           "More than one phone with the same PC, yes: each is approved and revoked separately. More than one PC from the same phone too, and that's one of the advanced features (the first PC is free).",
         ],
       },
-      {
-        q: "The app can't find my PC. What do I do?",
-        a: [
-          "Check that both are on the same network (a guest network or mobile data won't work). If it still doesn't show up, tap \"Connect by IP\" and type the IP address Avyn Agent shows on its Status screen: some routers don't let the automatic search through.",
-        ],
-        link: { guide: "pair-phone", label: "What to check if the PC doesn't show up" },
-      },
     ],
   },
   {
@@ -530,6 +524,14 @@ const en: FaqGroup[] = [
     id: "troubleshooting",
     title: "When something doesn't work",
     items: [
+      {
+        q: "The app can't find my PC. What do I do?",
+        a: [
+          "Check four things, in this order: that Avyn Agent is open on the PC (its icon is next to the clock); that the phone and the PC are on the same Wi-Fi (a guest network or mobile data won't work); that Windows has that network set to Private, not Public; and that Windows Firewall hasn't blocked the Agent. Then tap \"Scan again\".",
+          "If it still doesn't show up, tap \"Connect by IP\" in the app (version 1.1.3 and later) and type the IP address Avyn Agent shows on its Status screen, for example 192.168.0.81: some routers drop the automatic search but let the direct connection through.",
+        ],
+        link: { guide: "pair-phone", label: "What to check if the PC doesn't show up" },
+      },
       {
         q: "The verification codes are different on each device.",
         a: [

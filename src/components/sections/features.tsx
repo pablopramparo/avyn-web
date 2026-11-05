@@ -4,21 +4,28 @@ import { ScreenshotCard } from "../screenshot-card";
 import { ScreenshotCarousel } from "../screenshot-carousel";
 import { getDictionary } from "@/i18n/dictionaries";
 import type { LocalizedProps } from "@/i18n/config";
-const actionIcons = ["power", "windows", "move", "monitor", "folder"];
+const actionIcons = ["play", "folder", "windows", "monitor", "power"];
+// The everyday uses first (media, subtitles and streaming, files); the rest of the phone's reach goes in the gallery.
 const mainScreenshots = [
-  screenshots.touchpad,
-  screenshots.windows,
   screenshots.control,
+  screenshots.subtitles,
+  screenshots.files,
 ];
 const detailScreenshots = [
   screenshots.screen,
-  screenshots.files,
+  screenshots.windows,
+  screenshots.touchpad,
   screenshots.programs,
   screenshots.power,
-  screenshots.subtitles,
 ];
 export function Actions({ locale }: LocalizedProps) {
-  const t = getDictionary(locale).actions;
+  const d = getDictionary(locale),
+    t = d.actions;
+  const assurances = [
+    { icon: "wifi", title: d.hero.local, text: d.hero.localDetail },
+    { icon: "lock", title: d.hero.secure, text: d.hero.secureDetail },
+    { icon: "power", title: d.hero.simple, text: d.hero.simpleDetail },
+  ];
   return (
     <section
       id="features"
@@ -37,6 +44,17 @@ export function Actions({ locale }: LocalizedProps) {
           </article>
         ))}
       </div>
+      <ul className="assurances">
+        {assurances.map((item) => (
+          <li key={item.icon}>
+            <Icon name={item.icon} />
+            <div>
+              <strong>{item.title}</strong>
+              <span>{item.text}</span>
+            </div>
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }
@@ -60,6 +78,13 @@ export function Everyday({ locale }: LocalizedProps) {
           />
         ))}
       </div>
+    </section>
+  );
+}
+export function Gallery({ locale }: LocalizedProps) {
+  const t = getDictionary(locale).everyday;
+  return (
+    <section className="container product-showcase gallery">
       <ScreenshotCarousel
         label={t.carouselLabel}
         description={t.carouselDescription}

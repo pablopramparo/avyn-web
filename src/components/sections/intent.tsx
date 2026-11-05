@@ -16,7 +16,6 @@ export function Intent({ locale }: LocalizedProps) {
             <span className="muted">{t.how}</span>
           </h2>
           <p className="lead">{t.lead}</p>
-          <p>{t.text}</p>
           <p className="fine-print">{t.note}</p>
         </div>
         <div className="intent-flow">

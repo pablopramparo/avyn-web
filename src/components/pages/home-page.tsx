@@ -2,6 +2,7 @@ import { Hero } from "@/components/sections/hero";
 import {
   Actions,
   Everyday,
+  Gallery,
   FeatureGroups,
   AllFeatures,
 } from "@/components/sections/features";
@@ -22,6 +23,7 @@ export function HomePage({ locale }: LocalizedProps) {
       <Everyday locale={locale} />
       <Intent locale={locale} />
       <FeatureGroups locale={locale} />
+      <Gallery locale={locale} />
       <AllFeatures locale={locale} />
       <HowItWorks locale={locale} />
       <LocalFirst locale={locale} />

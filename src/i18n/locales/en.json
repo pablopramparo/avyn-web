@@ -12,6 +12,15 @@
     "betaOn": "Closed beta on",
     "androidBeta": "The Android app is in closed beta: the Google Play button only installs for testers.",
     "androidBetaLink": "How to join",
+    "installLead": "To get started, install Avyn on both devices:",
+    "stepPc": "1 · Windows",
+    "stepPhone": "2 · Android",
+    "betaKicker": "Closed beta",
+    "betaRequest": "Request access",
+    "testerQuestion": "Already a tester?",
+    "testerLink": "Open Google Play",
+    "sameNetwork": "Your PC and phone on the same local network, or connected through a compatible VPN.",
+    "sameNetworkLink": "How to use a VPN",
     "verify": "Verify Avyn",
     "trust": "Don’t trust us. Verify it."
   },
@@ -36,7 +45,7 @@
     "title": "Your Windows PC.",
     "from": "From your",
     "phone": "Android phone.",
-    "description": "Turn it on. Unlock it. Open apps. Move windows. Play on your TV. Transfer files.",
+    "description": "Control your video. Transfer files. Move windows. Turn it on. Unlock it.",
     "comfort": "Without leaving the couch.",
     "local": "Local first",
     "secure": "Secure by design",
@@ -52,24 +61,24 @@
     "title": "Your PC. From here.",
     "items": [
       {
-        "title": "Wake & Unlock",
-        "text": "Wake your PC and unlock Windows from your phone."
+        "title": "Media control",
+        "text": "Pause, seek and change the volume without getting up."
       },
       {
-        "title": "Open Apps",
-        "text": "Your favorite applications, ready with a tap."
+        "title": "File transfer",
+        "text": "Send files from Android and download the ones on your PC."
       },
       {
-        "title": "Move Windows",
-        "text": "Organize your windows and send them to the right screen."
+        "title": "Windows control",
+        "text": "Windows, monitors, mouse and keyboard, from your phone."
       },
       {
-        "title": "Play on TV",
-        "text": "Move a window to your TV and enjoy it in fullscreen."
+        "title": "Live screen",
+        "text": "Watch your PC on your phone, zoom in and point out details."
       },
       {
-        "title": "Transfer Files",
-        "text": "Browse, upload and download files between your devices."
+        "title": "Power on and unlock",
+        "text": "Wake your PC and unlock Windows. Needs compatible hardware and setup."
       }
     ]
   },
@@ -79,27 +88,31 @@
     "description": "The little things that interrupt a good moment.",
     "cards": [
       {
-        "title": "Take control",
-        "text": "Mouse, keyboard and media controls. Your PC, within reach."
+        "title": "Your movie, your pace",
+        "text": "Play, pause, seek bar and 10-second jumps, with the cover art of what is playing."
       },
       {
-        "title": "Manage your windows",
-        "text": "Find open windows. Move, minimize or maximize them."
+        "title": "Subtitles and audio, without getting up",
+        "text": "In Auren, and in YouTube, Netflix, Disney+, HBO Max, Apple TV and Prime Video with the optional Chrome or Edge extension."
       },
       {
-        "title": "Play on TV",
-        "text": "Send Auren or a window to your TV. Avyn coordinates the steps for your setup."
+        "title": "Files between Android and Windows",
+        "text": "Share from any Android app, browse your PC’s folders and download files or whole folders."
       }
     ],
     "note": "Real Avyn screenshots in demo mode.",
     "details": [
       {
         "title": "Watch your screen live",
-        "text": "Watch one of your PC's monitors on your phone. Point with the pointer, draw arrows and circles, and erase with the eraser."
+        "text": "Watch your PC screen live, zoom in and point out details from your phone. Draw arrows and circles when you need to."
       },
       {
-        "title": "Browse your files",
-        "text": "Find and open files on your PC. Upload or download them."
+        "title": "Manage your windows",
+        "text": "Find open windows. Move them between monitors, minimize or maximize them."
+      },
+      {
+        "title": "Take control",
+        "text": "Touchpad, keyboard and shortcuts. Your PC, within reach."
       },
       {
         "title": "Launch applications",
@@ -108,10 +121,6 @@
       {
         "title": "Power & displays",
         "text": "Lock, sleep, restart or shut down your PC. Control your displays."
-      },
-      {
-        "title": "Subtitles & audio",
-        "text": "Choose tracks and fine-tune timing in Auren."
       }
     ],
     "openScreenshot": "View larger screenshot",
@@ -127,17 +136,16 @@
     "title": "Tell your PC",
     "want": "what you want.",
     "how": "Not how to do it.",
-    "lead": "One intention. Several actions coordinated by Avyn.",
-    "text": "Ask to play on your TV and Avyn organizes the steps that are available.",
-    "note": "Available actions depend on your TV, displays and setup.",
-    "action": "Play on TV",
+    "lead": "Get your movie night ready with a single tap. Avyn runs the routine you set up.",
+    "note": "Routines are built once from your phone. Full screen works with Auren, or with the browser and the Avyn extension.",
+    "action": "Movie night",
     "one": "Your intention",
     "sequenceLabel": "Actions coordinated by Avyn",
     "steps": [
-      "Activate the display",
-      "Move the window to the TV",
-      "Expand to fullscreen",
-      "Arrange other displays"
+      "Open the player",
+      "Set the volume",
+      "Go full screen",
+      "Turn off the other displays"
     ],
     "caption": "Your PC handles the steps. You keep the couch."
   },
@@ -146,34 +154,6 @@
     "title": "Everything you can do with Avyn",
     "intro": "The complete detail, from the most striking to the finest points.",
     "categories": [
-      {
-        "title": "Power on and unlock",
-        "items": [
-          "Turn the PC on from your phone with Wake-on-LAN.",
-          "Unlock the PC with your fingerprint or the phone's screen lock, even right after boot and before Avyn is open on the PC (optional).",
-          "Works with a PC that has no PIN, too.",
-          "Lock, sleep, restart and shut down the PC, with confirmation."
-        ]
-      },
-      {
-        "title": "Watch your PC live",
-        "items": [
-          "Stream one PC monitor to your phone over your local network, up to 720p at 30 fps.",
-          "Two-finger zoom and landscape full screen.",
-          "Draw arrows and ellipses or point with a highlighted pointer; they show up on the PC.",
-          "Switch monitors live. One phone at a time; Avyn tells you who is using it."
-        ]
-      },
-      {
-        "title": "TV and displays",
-        "items": [
-          "Play on TV: send the video that is playing, or a file, to the TV.",
-          "Turn off the other displays while you watch.",
-          "Turn each monitor on or off, or all of them at once.",
-          "Samsung TV: power on and off over the network.",
-          "Move windows between monitors with a visual layout and previews."
-        ]
-      },
       {
         "title": "Media",
         "items": [
@@ -184,11 +164,32 @@
         ]
       },
       {
-        "title": "Routines",
+        "title": "TV and displays",
         "items": [
-          "Routines of up to 20 steps that run with one tap: open programs on the screen you choose, play on TV, volume, turn displays off, waits, and lock or sleep at the end.",
-          "Created and edited from the phone and shared across your phones.",
-          "If a step fails, it tells you which one and why."
+          "Play on TV: move the video that is playing, or a file, to a TV or screen connected to the PC (for example, over HDMI) and maximize it.",
+          "Turn off the other displays while you watch.",
+          "Turn each monitor on or off, or all of them at once.",
+          "Samsung TV: power on and off over the network.",
+          "Move windows between monitors with a visual layout and previews."
+        ]
+      },
+      {
+        "title": "Files",
+        "items": [
+          "Browse the folders you share, with thumbnails, search (subfolders too) and sorting.",
+          "Download files or whole folders to the phone, with progress and free-space check.",
+          "Upload files to the PC, or share them from any Android app with the Share sheet.",
+          "Create folders and open files or folders on the PC.",
+          "You choose what is shared, with no executables or scripts."
+        ]
+      },
+      {
+        "title": "Watch your PC live",
+        "items": [
+          "Stream one PC monitor to your phone over your local network, up to 720p at 30 fps.",
+          "Two-finger zoom and landscape full screen.",
+          "Draw arrows and ellipses or point with a highlighted pointer; they show up on the PC.",
+          "Switch monitors live. One phone at a time; Avyn tells you who is using it."
         ]
       },
       {
@@ -209,21 +210,20 @@
         ]
       },
       {
-        "title": "Files",
+        "title": "Power on and unlock",
         "items": [
-          "Browse the folders you share, with thumbnails, search (subfolders too) and sorting.",
-          "Download files or whole folders to the phone, with progress and free-space check.",
-          "Upload files to the PC, or share them from any Android app with the Share sheet.",
-          "Create folders and open files or folders on the PC.",
-          "You choose what is shared, with no executables or scripts."
+          "Turn the PC on from your phone with Wake-on-LAN (needs compatible hardware and setup).",
+          "Unlock the PC with your fingerprint or the phone's screen lock, even right after boot and before Avyn is open on the PC (optional; needs setup).",
+          "Works with a PC that has no PIN, too.",
+          "Lock, sleep, restart and shut down the PC, with confirmation."
         ]
       },
       {
-        "title": "Karaoke with Kantaria",
+        "title": "Routines",
         "items": [
-          "Library, queue, players, sessions and live scores from your phone.",
-          "History per session and per player.",
-          "Several phones at once, each seeing the others' changes."
+          "Create routines that run several actions with a single tap, up to 20 steps: open programs on the screen you choose, play on TV, volume, turn displays off, waits, and lock or sleep at the end.",
+          "Created and edited from the phone and shared across your phones.",
+          "If a step fails, it tells you which one and why."
         ]
       },
       {
@@ -233,6 +233,14 @@
           "Automatic reconnection when you return to the app or after a restart.",
           "If it can't find the PC, connect by typing its IP.",
           "Away from home, reconnect an already paired PC through its address inside a VPN (Tailscale or another)."
+        ]
+      },
+      {
+        "title": "Karaoke with Kantaria",
+        "items": [
+          "Library, queue, players, sessions and live scores from your phone.",
+          "History per session and per player.",
+          "Several phones at once, each seeing the others' changes."
         ]
       },
       {
@@ -258,34 +266,33 @@
   },
   "groups": [
     {
-      "label": "CONTROL",
-      "title": "A PC at your fingertips.",
-      "text": "Touchpad and keyboard when you need them. Direct actions for the things you do every day.",
+      "label": "WATCH & LISTEN",
+      "title": "Your movie, without getting up.",
+      "text": "From the couch to the screen, without interruptions.",
       "items": [
-        "Touchpad & keyboard",
-        "Windows & apps",
-        "Media & volume",
-        "Live screen, with pointer and drawings"
+        "Pause and jump 10 seconds from the couch.",
+        "Switch subtitles and audio without stopping the movie.",
+        "If your PC is connected to the TV, send the video to that screen and control it from your phone."
       ]
     },
     {
-      "label": "MOVE",
+      "label": "TRANSFER",
       "title": "Less emailing yourself.",
-      "text": "Send a file from your phone. Share straight from Android. Keep your devices working together.",
+      "text": "From phone to PC and from PC to phone.",
       "items": [
-        "File transfers",
-        "Android Share",
-        "Uploads & downloads"
+        "Share a photo from any Android app straight to your PC.",
+        "Download a whole folder to your phone.",
+        "Search the folders you share and open a file on the PC."
       ]
     },
     {
-      "label": "POWER",
-      "title": "From wake-up to lights-out.",
-      "text": "Wake your PC, lock it, or call it a night. Bring your displays into the same routine.",
+      "label": "CONTROL YOUR PC",
+      "title": "A PC at your fingertips.",
+      "text": "Everything else you do at the PC, from your phone.",
       "items": [
-        "Wake-on-LAN",
-        "Lock & opt-in unlock",
-        "Sleep, restart & displays"
+        "Watch your screen live, zoom in and point out a detail.",
+        "Move a window to another monitor.",
+        "Use your phone’s mouse and keyboard when you need them."
       ]
     }
   ],
@@ -293,6 +300,7 @@
     "eyebrow": "TWO DEVICES. ONE SIMPLE CONNECTION.",
     "title": "Set up. Sit back.",
     "text": "The PC is the remote device. Your phone is its interface.",
+    "pairLink": "See how to pair them, step by step",
     "detail": "Actions and, when you need it, your screen live.",
     "steps": [
       {
@@ -346,10 +354,10 @@
     "aurenDetails": "Discover Auren Player",
     "captureAlt": "Auren Player playing a movie on Windows",
     "included": "Its full Avyn integration is free, too.",
-    "browserEyebrow": "CHROME + EDGE",
+    "browserEyebrow": "OPTIONAL · CHROME + EDGE",
     "browserTitle": "Your browser. Your remote.",
     "browserText": "Control videos playing in Chrome and Edge, right from your phone: play and pause, subtitles, audio track, skip intro and jump back or forward 10 seconds. Works with YouTube, Netflix, HBO Max, Disney+, Prime Video and Apple TV.",
-    "browserNote": "Install the extension in your PC browser and use it with Avyn Agent. Available actions depend on each site and each video."
+    "browserNote": "Not needed to use Avyn. Install the extension in your PC browser and use it with Avyn Agent. Available actions depend on each site and each video."
   },
   "editions": {
     "eyebrow": "USEFUL FROM THE START",
@@ -369,8 +377,7 @@
   "cta": {
     "eyebrow": "MAKE YOURSELF COMFORTABLE",
     "title": "Your PC is over there.",
-    "subtitle": "You’re good right here.",
-    "detail": "Avyn for Android + Avyn Agent for Windows"
+    "subtitle": "You’re good right here."
   },
   "images": {
     "windows": "Avyn Android: windows and connected displays",
@@ -461,7 +468,7 @@
   "download": {
     "eyebrow": "GET AVYN",
     "title": "Two devices. One connection.",
-    "intro": "Install the Windows Agent on your PC and Avyn on your Android phone. Pair them on your local network.",
+    "intro": "Install the Windows Agent on your PC and Avyn Remote on your Android phone. Pair them on your local network.",
     "windowsTitle": "Windows Agent",
     "windowsText": "The part that runs on your PC and carries out your actions.",
     "androidTitle": "Android app",
@@ -470,8 +477,16 @@
     "windowsDirectLink": "direct download",
     "betaText": "The Android app is in closed beta. To join as a tester, email us from the address of your Google Play account at",
     "betaSubject": "I want to test Avyn Remote (closed beta)",
-    "extensionTitle": "Browser extension",
-    "extensionText": "Control YouTube, Netflix, HBO Max, Disney+, Prime Video and Apple TV from your phone: playback, subtitles, audio track, skip intro and ±10 seconds. Requires Avyn Agent on your PC. Available actions depend on each site.",
+    "betaUnlocked": "During the beta, every feature is unlocked.",
+    "betaTitle": "How to request beta access",
+    "pairEyebrow": "ONCE YOU HAVE BOTH",
+    "pairTitle": "Pair them once.",
+    "pairText": "The app finds your PC, both screens show the same code and you approve on the PC. No passwords.",
+    "pairLink": "Pair step by step",
+    "testerPlay": "If you are already a tester:",
+    "optionalEyebrow": "OPTIONAL",
+    "extensionTitle": "Upgrades for your browser",
+    "extensionText": "Not needed to use Avyn. With the Chrome or Edge extension, control YouTube, Netflix, HBO Max, Disney+, Prime Video and Apple TV from your phone: playback, subtitles, audio track, skip intro and ±10 seconds. Requires Avyn Agent on your PC. Available actions depend on each site.",
     "chromeExtension": "Install in Chrome",
     "edgeExtension": "Install in Edge",
     "before": "BEFORE YOU START",
@@ -479,7 +494,7 @@
     "windowsRequirements": "Windows 10 (version 2004, build 19041) or Windows 11, 64-bit. About 330 MB installed.",
     "androidRequirements": "Android 7.0 or later.",
     "networkTitle": "A shared local network",
-    "networkText": "Keep your PC and phone on the same LAN for normal local operation.",
+    "networkText": "Keep your PC and phone on the same local network (or connected through a compatible VPN).",
     "compatibility": "Wake-on-LAN, display control and TV actions depend on compatible hardware and configuration. The detailed compatibility guide is being prepared.",
     "editionsTitle": "Start with Free. Go further with Premium.",
     "editionsText": "No ads. No subscription. No Avyn account required. Premium is planned as a one-time purchase; the feature split and release details are still being finalized."
@@ -605,7 +620,7 @@
     },
     "home": {
       "title": "Control your Windows PC from Android | Avyn Remote",
-      "description": "Avyn Remote: control your Windows PC from your Android phone. Open apps, move windows, play on your TV and transfer files over your local network."
+      "description": "Avyn Remote: control your Windows PC from your Android phone. Control playback, transfer files, move windows and watch your PC screen over your local network."
     },
     "security": {
       "title": "Security: encrypted local connection",

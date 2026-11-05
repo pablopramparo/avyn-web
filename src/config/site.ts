@@ -5,6 +5,10 @@ export const siteConfig = {
   // Search engines stay blocked until the site is launched: set NEXT_PUBLIC_INDEXING=on.
   indexing: process.env.NEXT_PUBLIC_INDEXING === "on",
   contactEmail: "avyn.remote@gmail.com",
+  // The Android app is in closed beta on Google Play: the listing only installs for invited testers.
+  // While true, every "get the Android app" call to action asks for beta access instead of linking to Google Play.
+  // When the app goes public, set NEXT_PUBLIC_ANDROID_CLOSED_BETA=off (or flip this default): the CTAs become plain Google Play links.
+  androidClosedBeta: process.env.NEXT_PUBLIC_ANDROID_CLOSED_BETA !== "off",
   urls: {
     auren: "https://apps.microsoft.com/store/detail/9PGX6BJ5B1JL?cid=DevShareMCLPCS",
     kantaria: "https://apps.microsoft.com/store/detail/9P8ZKZBJ4RHB?cid=DevShareMCLPCS",

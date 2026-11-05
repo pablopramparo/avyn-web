@@ -2,6 +2,8 @@ import { Icon } from "./icon";
 import Image from "next/image";
 import Link from "next/link";
 import { assetPath, siteConfig } from "@/config/site";
+import { androidAccess } from "@/config/android-access";
+import { guidePath, guideSlugs } from "@/content/guide-paths";
 import { getDictionary } from "@/i18n/dictionaries";
 import type { LocalizedProps } from "@/i18n/config";
 const storeMarks: Record<string, string> = {
@@ -18,14 +20,17 @@ export function ComingSoon({
   store,
   icon,
   href,
+  internal,
 }: {
   kicker: string;
   store: string;
   icon: string;
   href?: string;
+  /** The link stays on this site: no store mark, same tab. */
+  internal?: boolean;
 }) {
   // Once the listing exists, the button carries the store's own mark.
-  const mark = href && storeMarks[icon];
+  const mark = href && !internal && storeMarks[icon];
   const content = (
     <>
       {mark ? (
@@ -40,36 +45,69 @@ export function ComingSoon({
     </>
   );
   if (!href) return <span className="coming-soon">{content}</span>;
+  if (internal) {
+    return (
+      <Link className="coming-soon coming-soon-link" href={href}>
+        {content}
+      </Link>
+    );
+  }
   return (
     <a className="coming-soon coming-soon-link" href={href} target="_blank" rel="noopener noreferrer">
       {content}
     </a>
   );
 }
-export function DownloadButtons({ locale }: LocalizedProps) {
+/** `lead` is the line above the buttons; `notes` the network and tester lines below them (the hero leaves them to /download). */
+export function DownloadButtons({
+  locale,
+  lead = true,
+  notes = true,
+}: LocalizedProps & { lead?: boolean; notes?: boolean }) {
   const t = getDictionary(locale).common;
+  const android = androidAccess(locale);
   return (
-    <>
+    <div className="install">
+      {lead && <p className="install-lead">{t.installLead}</p>}
       <div className="button-row">
-        <ComingSoon
-          kicker={siteConfig.urls.windows ? t.availableOn : t.comingSoonOn}
-          store="Microsoft Store"
-          icon="windows"
-          href={siteConfig.urls.windows}
-        />
-        <ComingSoon
-          kicker={siteConfig.urls.android ? t.betaOn : t.comingSoonOn}
-          store="Google Play"
-          icon="phone"
-          href={siteConfig.urls.android}
-        />
+        <div className="install-step">
+          <span className="install-step-label">{t.stepPc}</span>
+          <ComingSoon
+            kicker={siteConfig.urls.windows ? t.availableOn : t.comingSoonOn}
+            store="Microsoft Store"
+            icon="windows"
+            href={siteConfig.urls.windows}
+          />
+        </div>
+        <div className="install-step">
+          <span className="install-step-label">{t.stepPhone}</span>
+          {android.closedBeta ? (
+            <ComingSoon kicker={t.betaKicker} store={t.betaRequest} icon="phone" href={android.primaryHref} internal />
+          ) : (
+            <ComingSoon
+              kicker={siteConfig.urls.android ? t.availableOn : t.comingSoonOn}
+              store="Google Play"
+              icon="phone"
+              href={android.primaryHref}
+            />
+          )}
+        </div>
       </div>
-      {siteConfig.urls.android && (
-        <p className="fine-print beta-note">
-          {t.androidBeta} <Link href={`/${locale}/download/#android`}>{t.androidBetaLink}</Link>
+      {notes && (
+        <p className="fine-print install-note">
+        {t.sameNetwork}{" "}
+        <Link href={guidePath(locale, guideSlugs.vpn[locale])}>{t.sameNetworkLink}</Link>
         </p>
       )}
-    </>
+      {notes && android.closedBeta && android.playHref && (
+        <p className="fine-print install-note">
+          {t.testerQuestion}{" "}
+          <a href={android.playHref} target="_blank" rel="noopener noreferrer">
+            {t.testerLink}
+          </a>
+        </p>
+      )}
+    </div>
   );
 }
 export function ExtensionButtons({ locale }: LocalizedProps) {

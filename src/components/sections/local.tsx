@@ -5,6 +5,7 @@ import styles from "./local.module.css";
 import { Icon } from "../icon";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedPath, type LocalizedProps } from "@/i18n/config";
+import { guidePath, guideSlugs } from "@/content/guide-paths";
 export function HowItWorks({ locale }: LocalizedProps) {
   const t = getDictionary(locale).how;
   return (
@@ -24,6 +25,11 @@ export function HowItWorks({ locale }: LocalizedProps) {
             <span className="large-number">0{i + 1}</span>
             <h3>{s.title}</h3>
             <p>{s.text}</p>
+            {i === 1 && (
+              <Link className="text-link" href={guidePath(locale, guideSlugs["pair-phone"][locale])}>
+                {t.pairLink}
+              </Link>
+            )}
           </article>
         ))}
       </div>
