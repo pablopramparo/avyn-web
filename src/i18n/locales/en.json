@@ -179,7 +179,7 @@
         "items": [
           "Play, pause, next, previous, seek bar and 10-second jumps, with cover art and what is playing.",
           "Auren: full screen, audio tracks and subtitles, and sync in 100 ms steps.",
-          "Edge and Chrome with the Avyn extension: full screen, speed, YouTube subtitles and the site's own buttons (skip intro, next episode, “Are you still watching?”).",
+          "Edge and Chrome with the Avyn extension: full screen, speed, subtitles and audio (YouTube, Netflix, Disney+, HBO Max, Apple TV and Prime Video) and the site's own buttons (skip intro, next episode, “Are you still watching?”).",
           "Volume: level, steps and mute, reflecting changes made on the PC."
         ]
       },
@@ -314,7 +314,7 @@
     "network": "Your local network",
     "eyebrow": "YOUR DEVICES. YOUR CONNECTION.",
     "title": "Local first. By design.",
-    "text": "Your phone talks directly to your PC over your local network. No Avyn account. No Avyn cloud required for everyday control.",
+    "text": "Your phone talks directly to your PC, through no Avyn server: over your local network and, away from home, over your own VPN. No Avyn account. No cloud for everyday control.",
     "security": "Explore security",
     "verifyText": "See what to inspect, what to test, and what still needs documenting.",
     "titleLead": "Local first.",
@@ -362,7 +362,7 @@
       "No Avyn account required",
       "Free Auren integration"
     ],
-    "note": "Later, Avyn may offer advanced features through a one-time purchase. Features and terms are still being defined.",
+    "note": "The advanced features will be a one-time purchase, with no subscription: unlocking the PC, live screen, Play on TV, moving windows between monitors, turning monitors and TVs off, browsing the PC's files and pairing several PCs. There is no price yet and it may be adjusted before launch.",
     "freeSummary": "Everyday control, full security and Auren integration.",
     "premiumSummary": "Advanced capabilities. Planned as a one-time purchase."
   },
@@ -581,8 +581,9 @@
   "faq": {
     "eyebrow": "FAQ",
     "title": "What people ask most.",
-    "intro": "Short answers, grouped by topic. Each group links to the guide with the step-by-step.",
-    "guide": "Read the full guide"
+    "intro": "What people ask before installing, with no fine print: what is free, why two programs are needed, which permissions each thing asks for and what happens away from home. And if you want the step by step, there are guides.",
+    "guide": "Read the full guide",
+    "topics": "FAQ topics"
   },
   "guides": {
     "eyebrow": "GUIDES",
@@ -620,7 +621,7 @@
     },
     "faq": {
       "title": "Frequently asked questions about Avyn, Auren and Kantaria",
-      "description": "Short answers to the most common questions: pairing, local network, Internet, TV, karaoke and VPN, each linking to the guide for that topic."
+      "description": "Clear answers to what people ask before installing Avyn: what is free and what is not, why the Agent and the app are both needed, which permissions it asks for, how it works away from home and what the extensions are for."
     },
     "kantaria": {
       "title": "Kantaria — Karaoke for Windows with UltraStar songs",

@@ -28,5 +28,17 @@
 .faq { margin: 18px 0 0; display: grid; gap: 22px; }
 .faq dt { font-weight: 700; color: #edf5fb; }
 .faq dd { margin: 6px 0 0; }
+.faq dd p + p, .faq dd p + ul, .faq dd ul + p { margin-top: 10px; }
+.faq dd ul { margin: 10px 0 0; padding-left: 20px; }
+.faq dd li { margin-top: 4px; }
+.faqSection { margin-top: 64px; }
+.faqNav + .faqSection { margin-top: 36px; }
+.faqLink { display: inline-flex; align-items: center; gap: 8px; margin-top: 16px; padding: 9px 16px; border: 1px solid #2a5d75; border-radius: 999px; background: #0a1c28; color: var(--cyan); font-size: .88rem; font-weight: 700; text-decoration: none; transition: border-color .18s, background-color .18s, transform .18s; }
+.faqLink span { transition: transform .18s; }
+.faqLink:hover, .faqLink:focus-visible { border-color: var(--cyan); background: #0d2536; }
+.faqLink:hover span, .faqLink:focus-visible span { transform: translateX(3px); }
+.faqNav { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
+.faqNav a { padding: 8px 14px; border: 1px solid var(--line); border-radius: 999px; font-size: .88rem; color: var(--muted); text-decoration: none; transition: border-color .18s, color .18s; }
+.faqNav a:hover, .faqNav a:focus-visible { border-color: var(--cyan); color: var(--text); }
 .article .related ul { list-style: none; padding: 0; }
 @media (max-width: 900px) { .cards { grid-template-columns: 1fr; } }

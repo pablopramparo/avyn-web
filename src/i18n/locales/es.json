@@ -179,7 +179,7 @@
         "items": [
           "Play, pausa, siguiente, anterior, barra de tiempo y saltos de 10 segundos, con carátula y datos de lo que suena.",
           "Auren: pantalla completa, pistas de audio y subtítulos, y sincronización con pasos de 100 ms.",
-          "Edge y Chrome con la extensión de Avyn: pantalla completa, velocidad, subtítulos de YouTube y los botones del sitio (saltar intro, siguiente episodio, «¿Seguís mirando?»).",
+          "Edge y Chrome con la extensión de Avyn: pantalla completa, velocidad, subtítulos y audio (YouTube, Netflix, Disney+, HBO Max, Apple TV y Prime Video) y los botones del sitio (saltar intro, siguiente episodio, «¿Seguís mirando?»).",
           "Volumen: nivel, pasos y silencio, reflejando los cambios hechos en la PC."
         ]
       },
@@ -314,7 +314,7 @@
     "network": "Tu red local",
     "eyebrow": "TUS DISPOSITIVOS. TU CONEXIÓN.",
     "title": "Local desde el diseño.",
-    "text": "Tu teléfono se comunica directamente con tu PC por la red local. Sin cuenta Avyn. Sin necesitar una nube de Avyn para el control cotidiano.",
+    "text": "Tu teléfono se comunica directamente con tu PC, sin pasar por ningún servidor de Avyn: por tu red local y, fuera de casa, por tu propia VPN. Sin cuenta Avyn. Sin nube para el control cotidiano.",
     "security": "Conocé la seguridad",
     "verifyText": "Descubrí qué inspeccionar, qué probar y qué falta documentar.",
     "titleLead": "Local",
@@ -362,7 +362,7 @@
       "Sin necesidad de crear una cuenta Avyn",
       "Integración gratuita con Auren"
     ],
-    "note": "Más adelante, Avyn podrá ofrecer funciones avanzadas mediante una compra única. Las funciones y condiciones todavía están en definición.",
+    "note": "Las funciones avanzadas serán una compra única, sin suscripción: desbloquear la PC, pantalla en vivo, Ver en la TV, mover ventanas entre monitores, apagar monitores y TV, explorar archivos de la PC y vincular varias PC. Todavía no hay precio y puede ajustarse antes del lanzamiento.",
     "freeSummary": "Control cotidiano, seguridad completa e integración con Auren.",
     "premiumSummary": "Funciones avanzadas. Pensado como una compra única."
   },
@@ -581,8 +581,9 @@
   "faq": {
     "eyebrow": "PREGUNTAS FRECUENTES",
     "title": "Lo que más se pregunta.",
-    "intro": "Respuestas cortas, agrupadas por tema. Cada grupo enlaza con la guía donde está el paso a paso.",
-    "guide": "Ver la guía completa"
+    "intro": "Lo que se pregunta antes de instalar, sin letra chica: qué es gratis, por qué hacen falta dos programas, qué permisos pide cada cosa y qué pasa fuera de casa. Y si querés el paso a paso, hay guías.",
+    "guide": "Ver la guía completa",
+    "topics": "Temas de la FAQ"
   },
   "guides": {
     "eyebrow": "GUÍAS",
@@ -620,7 +621,7 @@
     },
     "faq": {
       "title": "Preguntas frecuentes sobre Avyn, Auren y Kantaria",
-      "description": "Respuestas cortas a las preguntas más comunes: vinculación, red local, Internet, TV, karaoke y VPN, con enlace a la guía de cada tema."
+      "description": "Respuestas claras a lo que se pregunta antes de instalar Avyn: qué es gratis y qué no, por qué hacen falta el Agent y la app, qué permisos pide, cómo funciona fuera de casa y para qué sirven las extensiones."
     },
     "kantaria": {
       "title": "Kantaria — Karaoke para Windows con canciones UltraStar",

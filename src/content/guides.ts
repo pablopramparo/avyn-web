@@ -126,7 +126,7 @@ const es: Guide[] = [
       },
       {
         q: "¿Funciona fuera de mi casa?",
-        a: "Avyn está pensado para la red local: el teléfono y la PC tienen que estar en la misma red.",
+        a: "Sí, con tu propia VPN: Avyn no tiene servidores en el medio, así que el teléfono tiene que llegar a tu PC como si estuviera en tu red, y eso lo hace la VPN. Vincular un teléfono nuevo y desbloquear la PC siguen siendo solo en casa.",
       },
       {
         q: "¿Puedo controlar más de una PC?",
@@ -707,6 +707,133 @@ const es: Guide[] = [
       { path: "/security/", label: "Cómo cuida Avyn tu PC" },
     ],
   },
+  {
+    id: "extensions",
+    slug: guideSlugs["extensions"].es,
+    title: "Cómo controlar los videos del navegador desde el celular con la extensión de Avyn",
+    description:
+      "Guía de la extensión Avyn Remote para Edge y Chrome: para qué sirve, cómo instalarla, qué controles suma (pantalla completa, subtítulos, velocidad y los botones del sitio) y qué datos usa.",
+    intro:
+      "Avyn ya puede pausar, adelantar y subir el volumen de lo que se reproduce en tu PC. Con la extensión Avyn Remote para Edge y Chrome suma lo que solo el navegador sabe: poner el video en pantalla completa, elegir subtítulos, cambiar la velocidad y apretar los botones propios del sitio, como saltar la intro o pasar al siguiente episodio.",
+    updated: "2026-11-05",
+    image: "home",
+    sections: [
+      {
+        heading: "Para qué sirve",
+        blocks: [
+          {
+            type: "p",
+            text: "Windows le cuenta a Avyn qué se está reproduciendo, y eso alcanza para play, pausa, siguiente y volumen. Pero un sitio como YouTube o Netflix guarda en su propia página los botones de subtítulos, de saltar intro o de \"¿Seguís mirando?\". La extensión es el puente: le avisa al Agent qué botones se ven en ese momento y el teléfono puede apretarlos por vos.",
+          },
+          {
+            type: "note",
+            text: "Es opcional. Si no la instalás, todo lo demás de Avyn funciona igual; solo no vas a ver los controles propios del navegador.",
+          },
+        ],
+      },
+      {
+        heading: "Qué necesitás",
+        blocks: [
+          {
+            type: "list",
+            items: [
+              "Avyn Agent en la PC y la app Avyn Remote en el teléfono, ya vinculados.",
+              "Microsoft Edge o Google Chrome en la PC.",
+              "La extensión Avyn Remote, desde la Chrome Web Store o Edge Add-ons. Los enlaces están en la página de descargas.",
+            ],
+          },
+          {
+            type: "p",
+            text: "No hace falta ser administrador: Avyn Agent registra la extensión solo para tu usuario de Windows y la mantiene actualizada con cada versión.",
+          },
+        ],
+      },
+      {
+        heading: "Paso a paso",
+        blocks: [
+          {
+            type: "steps",
+            items: [
+              "Instalá Avyn Remote en tu navegador desde su tienda (Chrome Web Store para Chrome, Edge Add-ons para Edge).",
+              "Abrí Avyn Agent y entrá en Integraciones: ahí ves si la extensión está conectada.",
+              "Poné un video en el navegador, por ejemplo en YouTube.",
+              "En la app, entrá en Control y abrí Media: junto a los controles de siempre aparecen los del navegador.",
+              "Probá pantalla completa, subtítulos, velocidad o el botón del sitio que aparezca (saltar intro, siguiente episodio, \"¿Seguís mirando?\").",
+            ],
+          },
+          {
+            type: "p",
+            text: "Si hay un video en Edge o Chrome y todavía no tenés la extensión, la app te lo sugiere y te manda el enlace de instalación para abrirlo en la PC. Podés ocultar ese aviso para siempre.",
+          },
+        ],
+      },
+      {
+        heading: "Qué podés hacer desde el teléfono",
+        blocks: [
+          {
+            type: "list",
+            items: [
+              "Poner el video en pantalla completa y salir de ella.",
+              "Elegir los subtítulos y la pista de audio de la lista del reproductor (YouTube, Netflix, Disney+, HBO Max, Apple TV y Prime Video).",
+              "Saltar a cualquier capítulo de un video de YouTube.",
+              "Cambiar la velocidad de reproducción.",
+              "Apretar los botones que la página muestra en ese momento: saltar intro, saltar resumen o anuncio, siguiente episodio y el \"¿Seguís mirando?\" de Netflix.",
+            ],
+          },
+          {
+            type: "p",
+            text: "Para la pantalla completa, Avyn trae el navegador al frente en la PC y usa la tecla del propio sitio. Si no lo logra, la app te avisa en lugar de hacerte creer que funcionó.",
+          },
+        ],
+      },
+      {
+        heading: "Qué ve la extensión y qué no",
+        blocks: [
+          {
+            type: "p",
+            text: "Solo mira las pestañas que tienen un video: el sitio, el título, si se está reproduciendo, la velocidad, si está en pantalla completa y qué botones del reproductor se ven. Cuando el teléfono lo pide, también lee lo que el reproductor ya muestra, como los idiomas de subtítulos.",
+          },
+          {
+            type: "p",
+            text: "Todo eso va únicamente a Avyn Agent, en tu misma PC. La extensión no manda nada a Internet, no lee contraseñas ni tu historial y no usa publicidad ni cookies propias.",
+          },
+        ],
+      },
+      {
+        heading: "Si algo no aparece",
+        blocks: [
+          {
+            type: "list",
+            items: [
+              "Fijate en Integraciones de Avyn Agent que la extensión figure conectada. Si no, reiniciá el navegador.",
+              "Los botones propios dependen de cada sitio: si el sitio cambió su diseño, puede que alguno deje de aparecer hasta que actualicemos la extensión.",
+              "Avyn reconoce la pestaña por el título exacto que la página publica. Si hay varias pestañas con el mismo título, prefiere no tocar nada antes que apretar el botón equivocado.",
+              "Para la pantalla completa, el navegador tiene que poder pasar al frente: si hay una ventana que no deja, la app te lo dice.",
+            ],
+          },
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "¿Funciona en Firefox u otros navegadores?",
+        a: "Hoy la extensión es solo para Microsoft Edge y Google Chrome.",
+      },
+      {
+        q: "¿Necesito la extensión para pausar o subir el volumen?",
+        a: "No. Eso lo hace Avyn con lo que Windows ya publica. La extensión suma pantalla completa, subtítulos, velocidad y los botones propios de cada sitio.",
+      },
+      {
+        q: "¿Con qué sitios funciona?",
+        a: "Reconoce YouTube, Netflix, Disney+, Apple TV, HBO Max y Prime Video, y también funciona con la mayoría de las páginas que tienen un video. Elegir subtítulos y audio desde el teléfono está disponible en YouTube, Netflix, Disney+, HBO Max, Apple TV y Prime Video.",
+      },
+    ],
+    related: [
+      { path: "/guias/controlar-pc-windows-desde-android/", label: "Controlar tu PC desde el celular" },
+      { path: "/download/", label: "Descargar la extensión" },
+      { path: "/security/", label: "Cómo cuida Avyn tu PC" },
+    ],
+  },
 ];
 
 const en: Guide[] = [
@@ -811,7 +938,7 @@ const en: Guide[] = [
       },
       {
         q: "Does it work away from home?",
-        a: "Avyn is designed for the local network: the phone and the PC need to be on the same network.",
+        a: "Yes, with your own VPN: Avyn has no servers in the middle, so the phone has to reach your PC as if it were on your network, and the VPN does that. Pairing a new phone and unlocking the PC stay at home only.",
       },
       {
         q: "Can I control more than one PC?",
@@ -1389,6 +1516,133 @@ const en: Guide[] = [
     ],
     related: [
       { path: "/guides/control-windows-pc-from-android/", label: "Control your PC from your phone" },
+      { path: "/security/", label: "How Avyn protects your PC" },
+    ],
+  },
+  {
+    id: "extensions",
+    slug: guideSlugs["extensions"].en,
+    title: "How to control browser videos from your phone with the Avyn extension",
+    description:
+      "Guide to the Avyn Remote extension for Edge and Chrome: what it is for, how to install it, which controls it adds (full screen, subtitles, speed and the site's own buttons) and what data it uses.",
+    intro:
+      "Avyn can already pause, skip and change the volume of whatever is playing on your PC. With the Avyn Remote extension for Edge and Chrome it adds what only the browser knows: putting the video in full screen, choosing subtitles, changing the speed and pressing the site's own buttons, like skipping the intro or going to the next episode.",
+    updated: "2026-11-05",
+    image: "home",
+    sections: [
+      {
+        heading: "What it is for",
+        blocks: [
+          {
+            type: "p",
+            text: "Windows tells Avyn what is playing, and that is enough for play, pause, next and volume. But a site like YouTube or Netflix keeps the subtitle, skip-intro and \"Are you still watching?\" buttons inside its own page. The extension is the bridge: it tells the Agent which buttons are visible right now so your phone can press them for you.",
+          },
+          {
+            type: "note",
+            text: "It is optional. If you don't install it, everything else in Avyn works the same; you just won't see the browser's own controls.",
+          },
+        ],
+      },
+      {
+        heading: "What you need",
+        blocks: [
+          {
+            type: "list",
+            items: [
+              "Avyn Agent on the PC and the Avyn Remote app on the phone, already paired.",
+              "Microsoft Edge or Google Chrome on the PC.",
+              "The Avyn Remote extension, from the Chrome Web Store or Edge Add-ons. The links are on the downloads page.",
+            ],
+          },
+          {
+            type: "p",
+            text: "You don't need to be an administrator: Avyn Agent registers the extension for your Windows user only and keeps it up to date with every version.",
+          },
+        ],
+      },
+      {
+        heading: "Step by step",
+        blocks: [
+          {
+            type: "steps",
+            items: [
+              "Install Avyn Remote in your browser from its store (Chrome Web Store for Chrome, Edge Add-ons for Edge).",
+              "Open Avyn Agent and go to Integrations: it shows whether the extension is connected.",
+              "Play a video in the browser, for example on YouTube.",
+              "In the app, go to Control and open Media: next to the usual controls, the browser's controls appear.",
+              "Try full screen, subtitles, speed or the site's button that shows up (skip intro, next episode, \"Are you still watching?\").",
+            ],
+          },
+          {
+            type: "p",
+            text: "If there is a video in Edge or Chrome and you don't have the extension yet, the app suggests it and sends you the install link to open on the PC. You can hide that notice forever.",
+          },
+        ],
+      },
+      {
+        heading: "What you can do from the phone",
+        blocks: [
+          {
+            type: "list",
+            items: [
+              "Put the video in full screen and leave it.",
+              "Pick the subtitles and the audio track from the player's list (YouTube, Netflix, Disney+, HBO Max, Apple TV and Prime Video).",
+              "Jump to any chapter of a YouTube video.",
+              "Change the playback speed.",
+              "Press the buttons the page shows at that moment: skip intro, skip recap or ad, next episode and Netflix's \"Are you still watching?\".",
+            ],
+          },
+          {
+            type: "p",
+            text: "For full screen, Avyn brings the browser to the front on the PC and uses the site's own key. If it can't, the app tells you instead of making you think it worked.",
+          },
+        ],
+      },
+      {
+        heading: "What the extension sees and what it doesn't",
+        blocks: [
+          {
+            type: "p",
+            text: "It only looks at tabs that have a video: the site, the title, whether it is playing, the speed, whether it is in full screen and which player buttons are visible. When the phone asks, it also reads what the player already shows, such as the subtitle languages.",
+          },
+          {
+            type: "p",
+            text: "All of that goes only to Avyn Agent, on the same PC. The extension sends nothing to the Internet, doesn't read passwords or your history, and uses no ads or cookies of its own.",
+          },
+        ],
+      },
+      {
+        heading: "If something doesn't show up",
+        blocks: [
+          {
+            type: "list",
+            items: [
+              "Check in Avyn Agent's Integrations that the extension shows as connected. If not, restart the browser.",
+              "The site's own buttons depend on each site: if the site changed its design, one may stop appearing until we update the extension.",
+              "Avyn recognizes the tab by the exact title the page publishes. If several tabs share a title, it prefers to do nothing rather than press the wrong button.",
+              "For full screen, the browser has to be able to come to the front: if a window won't let it, the app tells you.",
+            ],
+          },
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Does it work in Firefox or other browsers?",
+        a: "Today the extension is only for Microsoft Edge and Google Chrome.",
+      },
+      {
+        q: "Do I need the extension to pause or change the volume?",
+        a: "No. Avyn does that with what Windows already publishes. The extension adds full screen, subtitles, speed and each site's own buttons.",
+      },
+      {
+        q: "Which sites does it work with?",
+        a: "It recognizes YouTube, Netflix, Disney+, Apple TV, HBO Max and Prime Video, and it also works with most pages that have a video. Picking subtitles and audio from the phone is available on YouTube, Netflix, Disney+, HBO Max, Apple TV and Prime Video.",
+      },
+    ],
+    related: [
+      { path: "/guides/control-windows-pc-from-android/", label: "Control your PC from your phone" },
+      { path: "/download/", label: "Download the extension" },
       { path: "/security/", label: "How Avyn protects your PC" },
     ],
   },
