@@ -783,7 +783,7 @@
     pointer-events: none;
     opacity: 0;
     transition: opacity 0.25s;
-    background: radial-gradient(260px circle at var(--gx) var(--gy), #19c5ed24, transparent 70%);
+    background: radial-gradient(420px circle at var(--gx) var(--gy), #19c5ed26, transparent 72%);
   }
   .actions-grid article:hover::after,
   .showcase-card:hover::after,
